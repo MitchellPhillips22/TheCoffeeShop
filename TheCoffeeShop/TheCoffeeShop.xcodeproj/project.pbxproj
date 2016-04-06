@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BE92E351CB49A27009284A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E341CB49A27009284A0 /* AppDelegate.swift */; };
+		1BE92E371CB49A27009284A0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E361CB49A27009284A0 /* HomeViewController.swift */; };
+		1BE92E3A1CB49A27009284A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE92E381CB49A27009284A0 /* Main.storyboard */; };
+		1BE92E3C1CB49A27009284A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BE92E3B1CB49A27009284A0 /* Assets.xcassets */; };
+		1BE92E3F1CB49A27009284A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE92E3D1CB49A27009284A0 /* LaunchScreen.storyboard */; };
+		1BE92E471CB49EAD009284A0 /* LoyaltyCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E461CB49EAD009284A0 /* LoyaltyCardViewController.swift */; };
+		1BE92E491CB49F9D009284A0 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E481CB49F9D009284A0 /* AboutViewController.swift */; };
+		1BE92E4B1CB49FE8009284A0 /* MenuHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E4A1CB49FE8009284A0 /* MenuHomeViewController.swift */; };
+		1BE92E4D1CB4A002009284A0 /* SignaturesMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E4C1CB4A002009284A0 /* SignaturesMenuViewController.swift */; };
+		1BE92E4F1CB4A019009284A0 /* StandardsMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E4E1CB4A019009284A0 /* StandardsMenuViewController.swift */; };
+		1BE92E511CB4A027009284A0 /* NonCoffeeeMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E501CB4A027009284A0 /* NonCoffeeeMenuViewController.swift */; };
+		1BE92E531CB4A035009284A0 /* JuiceMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E521CB4A035009284A0 /* JuiceMenuViewController.swift */; };
+		1BE92E551CB4A0CA009284A0 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E541CB4A0CA009284A0 /* CalendarViewController.swift */; };
+		1BE92E571CB4A0D7009284A0 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E561CB4A0D7009284A0 /* EventsTableViewController.swift */; };
+		1BE92E591CB4A155009284A0 /* FoodMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E581CB4A155009284A0 /* FoodMenuViewController.swift */; };
+		1BE92E5B1CB4A9E8009284A0 /* Sigs Revamp.pages in Resources */ = {isa = PBXBuildFile; fileRef = 1BE92E5A1CB4A9E8009284A0 /* Sigs Revamp.pages */; };
+		1BE92E5D1CB568C6009284A0 /* SignPainter-HouseScript.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE92E5C1CB568C6009284A0 /* SignPainter-HouseScript.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1BE92E311CB49A27009284A0 /* TheCoffeeShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheCoffeeShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BE92E341CB49A27009284A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1BE92E361CB49A27009284A0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1BE92E391CB49A27009284A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1BE92E3B1CB49A27009284A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BE92E3E1CB49A27009284A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1BE92E401CB49A27009284A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BE92E461CB49EAD009284A0 /* LoyaltyCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoyaltyCardViewController.swift; sourceTree = "<group>"; };
+		1BE92E481CB49F9D009284A0 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		1BE92E4A1CB49FE8009284A0 /* MenuHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuHomeViewController.swift; sourceTree = "<group>"; };
+		1BE92E4C1CB4A002009284A0 /* SignaturesMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignaturesMenuViewController.swift; sourceTree = "<group>"; };
+		1BE92E4E1CB4A019009284A0 /* StandardsMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardsMenuViewController.swift; sourceTree = "<group>"; };
+		1BE92E501CB4A027009284A0 /* NonCoffeeeMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonCoffeeeMenuViewController.swift; sourceTree = "<group>"; };
+		1BE92E521CB4A035009284A0 /* JuiceMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuiceMenuViewController.swift; sourceTree = "<group>"; };
+		1BE92E541CB4A0CA009284A0 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		1BE92E561CB4A0D7009284A0 /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
+		1BE92E581CB4A155009284A0 /* FoodMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodMenuViewController.swift; sourceTree = "<group>"; };
+		1BE92E5A1CB4A9E8009284A0 /* Sigs Revamp.pages */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sigs Revamp.pages"; path = "../../../Downloads/Sigs Revamp.pages"; sourceTree = "<group>"; };
+		1BE92E5C1CB568C6009284A0 /* SignPainter-HouseScript.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SignPainter-HouseScript.ttf"; path = "../../../Developer/Fonts/SignPainter-HouseScript.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BE92E2E1CB49A27009284A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BE92E281CB49A27009284A0 = {
+			isa = PBXGroup;
+			children = (
+				1BE92E331CB49A27009284A0 /* TheCoffeeShop */,
+				1BE92E321CB49A27009284A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BE92E321CB49A27009284A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BE92E311CB49A27009284A0 /* TheCoffeeShop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BE92E331CB49A27009284A0 /* TheCoffeeShop */ = {
+			isa = PBXGroup;
+			children = (
+				1BE92E341CB49A27009284A0 /* AppDelegate.swift */,
+				1BE92E361CB49A27009284A0 /* HomeViewController.swift */,
+				1BE92E461CB49EAD009284A0 /* LoyaltyCardViewController.swift */,
+				1BE92E481CB49F9D009284A0 /* AboutViewController.swift */,
+				1BE92E4A1CB49FE8009284A0 /* MenuHomeViewController.swift */,
+				1BE92E4C1CB4A002009284A0 /* SignaturesMenuViewController.swift */,
+				1BE92E4E1CB4A019009284A0 /* StandardsMenuViewController.swift */,
+				1BE92E501CB4A027009284A0 /* NonCoffeeeMenuViewController.swift */,
+				1BE92E521CB4A035009284A0 /* JuiceMenuViewController.swift */,
+				1BE92E581CB4A155009284A0 /* FoodMenuViewController.swift */,
+				1BE92E541CB4A0CA009284A0 /* CalendarViewController.swift */,
+				1BE92E561CB4A0D7009284A0 /* EventsTableViewController.swift */,
+				1BE92E381CB49A27009284A0 /* Main.storyboard */,
+				1BE92E5C1CB568C6009284A0 /* SignPainter-HouseScript.ttf */,
+				1BE92E3B1CB49A27009284A0 /* Assets.xcassets */,
+				1BE92E5A1CB4A9E8009284A0 /* Sigs Revamp.pages */,
+				1BE92E3D1CB49A27009284A0 /* LaunchScreen.storyboard */,
+				1BE92E401CB49A27009284A0 /* Info.plist */,
+			);
+			path = TheCoffeeShop;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BE92E301CB49A27009284A0 /* TheCoffeeShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BE92E431CB49A27009284A0 /* Build configuration list for PBXNativeTarget "TheCoffeeShop" */;
+			buildPhases = (
+				1BE92E2D1CB49A27009284A0 /* Sources */,
+				1BE92E2E1CB49A27009284A0 /* Frameworks */,
+				1BE92E2F1CB49A27009284A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheCoffeeShop;
+			productName = TheCoffeeShop;
+			productReference = 1BE92E311CB49A27009284A0 /* TheCoffeeShop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BE92E291CB49A27009284A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Wasted Potential LLC";
+				TargetAttributes = {
+					1BE92E301CB49A27009284A0 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 1BE92E2C1CB49A27009284A0 /* Build configuration list for PBXProject "TheCoffeeShop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BE92E281CB49A27009284A0;
+			productRefGroup = 1BE92E321CB49A27009284A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BE92E301CB49A27009284A0 /* TheCoffeeShop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BE92E2F1CB49A27009284A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BE92E5B1CB4A9E8009284A0 /* Sigs Revamp.pages in Resources */,
+				1BE92E3F1CB49A27009284A0 /* LaunchScreen.storyboard in Resources */,
+				1BE92E3C1CB49A27009284A0 /* Assets.xcassets in Resources */,
+				1BE92E3A1CB49A27009284A0 /* Main.storyboard in Resources */,
+				1BE92E5D1CB568C6009284A0 /* SignPainter-HouseScript.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BE92E2D1CB49A27009284A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BE92E551CB4A0CA009284A0 /* CalendarViewController.swift in Sources */,
+				1BE92E371CB49A27009284A0 /* HomeViewController.swift in Sources */,
+				1BE92E471CB49EAD009284A0 /* LoyaltyCardViewController.swift in Sources */,
+				1BE92E531CB4A035009284A0 /* JuiceMenuViewController.swift in Sources */,
+				1BE92E4D1CB4A002009284A0 /* SignaturesMenuViewController.swift in Sources */,
+				1BE92E4B1CB49FE8009284A0 /* MenuHomeViewController.swift in Sources */,
+				1BE92E491CB49F9D009284A0 /* AboutViewController.swift in Sources */,
+				1BE92E591CB4A155009284A0 /* FoodMenuViewController.swift in Sources */,
+				1BE92E511CB4A027009284A0 /* NonCoffeeeMenuViewController.swift in Sources */,
+				1BE92E571CB4A0D7009284A0 /* EventsTableViewController.swift in Sources */,
+				1BE92E4F1CB4A019009284A0 /* StandardsMenuViewController.swift in Sources */,
+				1BE92E351CB49A27009284A0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1BE92E381CB49A27009284A0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BE92E391CB49A27009284A0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1BE92E3D1CB49A27009284A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BE92E3E1CB49A27009284A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BE92E411CB49A27009284A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1BE92E421CB49A27009284A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BE92E441CB49A27009284A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TheCoffeeShop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitchell.TheCoffeeShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1BE92E451CB49A27009284A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TheCoffeeShop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitchell.TheCoffeeShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BE92E2C1CB49A27009284A0 /* Build configuration list for PBXProject "TheCoffeeShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BE92E411CB49A27009284A0 /* Debug */,
+				1BE92E421CB49A27009284A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BE92E431CB49A27009284A0 /* Build configuration list for PBXNativeTarget "TheCoffeeShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BE92E441CB49A27009284A0 /* Debug */,
+				1BE92E451CB49A27009284A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BE92E291CB49A27009284A0 /* Project object */;
+}

@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KnE-PH-nX1">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SignPainter-HouseScript.ttf">
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="TheCoffeeShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sq-w3-l9D">
+                                <rect key="frame" x="477" y="315" width="58" height="35"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <state key="normal" title="Loyalty">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fm7-ki-TAZ">
+                                <rect key="frame" x="72" y="315" width="44" height="35"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <state key="normal" title="About">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TzW-K9-H8u">
+                                <rect key="frame" x="69" y="538" width="50" height="35"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <state key="normal" title="Menus">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VtP-Gt-2X9">
+                                <rect key="frame" x="482" y="538" width="48" height="35"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <state key="normal" title="Events">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Logo white black back copy" translatesAutoresizingMaskIntoConstraints="NO" id="pYX-fM-qpX">
+                                <rect key="frame" x="180" y="32" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="33f-Bb-sYp"/>
+                                    <constraint firstAttribute="width" constant="240" id="SUY-VS-for"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tI1-rN-9f8">
+                                <rect key="frame" x="30" y="177" width="128" height="128"/>
+                                <state key="normal" image="about"/>
+                                <connections>
+                                    <segue destination="OEN-Hq-Iqe" kind="show" id="AUQ-Ae-New"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eA-9d-Ful">
+                                <rect key="frame" x="442" y="177" width="128" height="128"/>
+                                <state key="normal" image="heart"/>
+                                <connections>
+                                    <segue destination="oiR-4y-evp" kind="show" id="kfk-pW-yne"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8I-LP-1zv">
+                                <rect key="frame" x="30" y="400" width="128" height="128"/>
+                                <state key="normal" image="coffee"/>
+                                <connections>
+                                    <segue destination="5H5-mB-2aW" kind="show" id="3YJ-QF-STO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4m-gQ-w16">
+                                <rect key="frame" x="442" y="392" width="128" height="128"/>
+                                <state key="normal" image="calendar"/>
+                                <connections>
+                                    <segue destination="Fvb-IN-hsm" kind="show" id="B0d-sm-dZd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tI1-rN-9f8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="1r6-EL-Dbc"/>
+                            <constraint firstItem="Fm7-ki-TAZ" firstAttribute="centerX" secondItem="tI1-rN-9f8" secondAttribute="centerX" id="3mL-fx-Az5"/>
+                            <constraint firstItem="TzW-K9-H8u" firstAttribute="centerX" secondItem="X8I-LP-1zv" secondAttribute="centerX" id="4X0-Td-zx0"/>
+                            <constraint firstAttribute="trailing" secondItem="X4m-gQ-w16" secondAttribute="trailing" constant="30" id="5W0-X1-H30"/>
+                            <constraint firstItem="X8I-LP-1zv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="7AO-IT-ZNp"/>
+                            <constraint firstItem="pYX-fM-qpX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7hz-QV-YN0"/>
+                            <constraint firstItem="Fm7-ki-TAZ" firstAttribute="top" secondItem="tI1-rN-9f8" secondAttribute="bottom" constant="10" id="9cd-BO-fsP"/>
+                            <constraint firstItem="5eA-9d-Ful" firstAttribute="top" secondItem="pYX-fM-qpX" secondAttribute="bottom" constant="17" id="I2r-ye-trm"/>
+                            <constraint firstItem="X4m-gQ-w16" firstAttribute="top" secondItem="9sq-w3-l9D" secondAttribute="bottom" constant="50" id="Kqb-4W-Kda"/>
+                            <constraint firstItem="9sq-w3-l9D" firstAttribute="centerX" secondItem="5eA-9d-Ful" secondAttribute="centerX" id="VKK-iW-ijd"/>
+                            <constraint firstItem="VtP-Gt-2X9" firstAttribute="top" secondItem="X4m-gQ-w16" secondAttribute="bottom" constant="10" id="Xiq-Eg-yqo"/>
+                            <constraint firstItem="X8I-LP-1zv" firstAttribute="top" secondItem="Fm7-ki-TAZ" secondAttribute="bottom" constant="50" id="Ylh-4W-Eil"/>
+                            <constraint firstItem="tI1-rN-9f8" firstAttribute="top" secondItem="pYX-fM-qpX" secondAttribute="bottom" constant="17" id="bYz-sX-ngz"/>
+                            <constraint firstItem="VtP-Gt-2X9" firstAttribute="centerX" secondItem="X4m-gQ-w16" secondAttribute="centerX" id="c1b-gf-8fj"/>
+                            <constraint firstItem="TzW-K9-H8u" firstAttribute="top" secondItem="X8I-LP-1zv" secondAttribute="bottom" constant="10" id="k2T-YZ-y7k"/>
+                            <constraint firstItem="pYX-fM-qpX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="k8G-LG-zgp"/>
+                            <constraint firstItem="9sq-w3-l9D" firstAttribute="top" secondItem="5eA-9d-Ful" secondAttribute="bottom" constant="10" id="udX-wg-1Ol"/>
+                            <constraint firstAttribute="trailing" secondItem="5eA-9d-Ful" secondAttribute="trailing" constant="30" id="xA7-h8-3kP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ij0-6R-yC7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1108" y="316"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="KBv-qV-neD">
+            <objects>
+                <viewController id="OEN-Hq-Iqe" customClass="AboutViewController" customModule="TheCoffeeShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pRe-hq-KgC"/>
+                        <viewControllerLayoutGuide type="bottom" id="jOt-6s-XS2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZOD-re-gi1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNt-8k-V3n">
+                                <rect key="frame" x="60" y="258" width="67" height="35"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <state key="normal" title="About us">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBM-yj-hvT">
+                                <rect key="frame" x="441" y="258" width="130" height="35"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <state key="normal" title="Coffee Education">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9Z-nr-Jw7">
+                                <rect key="frame" x="62" y="471" width="64" height="35"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <state key="normal" title="Location">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaH-Bn-J2B">
+                                <rect key="frame" x="482" y="471" width="47" height="35"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <state key="normal" title="Hours">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JW2-pd-lpF">
+                                <rect key="frame" x="30" y="120" width="128" height="128"/>
+                                <state key="normal" image="history"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxM-tI-nal">
+                                <rect key="frame" x="442" y="120" width="128" height="128"/>
+                                <state key="normal" image="education"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dq2-KA-6LW">
+                                <rect key="frame" x="30" y="333" width="128" height="128"/>
+                                <state key="normal" image="location"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJs-1h-Jt6">
+                                <rect key="frame" x="442" y="333" width="128" height="128"/>
+                                <state key="normal" image="hours"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vz0-zl-DxN">
+                                <rect key="frame" x="278.5" y="550" width="43" height="35"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JW2-pd-lpF" firstAttribute="leading" secondItem="ZOD-re-gi1" secondAttribute="leading" constant="30" id="1qI-ye-jcc"/>
+                            <constraint firstItem="JW2-pd-lpF" firstAttribute="top" secondItem="pRe-hq-KgC" secondAttribute="bottom" constant="100" id="3gR-Vx-UVa"/>
+                            <constraint firstItem="dq2-KA-6LW" firstAttribute="leading" secondItem="ZOD-re-gi1" secondAttribute="leading" constant="30" id="4BP-7L-WsD"/>
+                            <constraint firstItem="JBM-yj-hvT" firstAttribute="centerX" secondItem="WxM-tI-nal" secondAttribute="centerX" id="5aa-Ey-X0x"/>
+                            <constraint firstItem="sNt-8k-V3n" firstAttribute="top" secondItem="JW2-pd-lpF" secondAttribute="bottom" constant="10" id="60F-v8-ieE"/>
+                            <constraint firstItem="oJs-1h-Jt6" firstAttribute="top" secondItem="JBM-yj-hvT" secondAttribute="bottom" constant="40" id="66e-nf-ZGJ"/>
+                            <constraint firstAttribute="trailing" secondItem="WxM-tI-nal" secondAttribute="trailing" constant="30" id="7lR-Yb-kwr"/>
+                            <constraint firstItem="f9Z-nr-Jw7" firstAttribute="centerX" secondItem="dq2-KA-6LW" secondAttribute="centerX" id="Atq-UX-fwY"/>
+                            <constraint firstItem="f9Z-nr-Jw7" firstAttribute="top" secondItem="dq2-KA-6LW" secondAttribute="bottom" constant="10" id="LX2-LD-QbG"/>
+                            <constraint firstItem="OaH-Bn-J2B" firstAttribute="top" secondItem="oJs-1h-Jt6" secondAttribute="bottom" constant="10" id="VTn-sc-gUr"/>
+                            <constraint firstItem="OaH-Bn-J2B" firstAttribute="centerX" secondItem="oJs-1h-Jt6" secondAttribute="centerX" id="Zfg-kX-S6z"/>
+                            <constraint firstItem="jOt-6s-XS2" firstAttribute="top" secondItem="Vz0-zl-DxN" secondAttribute="bottom" constant="15" id="bVT-8k-7Bv"/>
+                            <constraint firstItem="Vz0-zl-DxN" firstAttribute="centerX" secondItem="ZOD-re-gi1" secondAttribute="centerX" id="bZ1-On-HSO"/>
+                            <constraint firstItem="JBM-yj-hvT" firstAttribute="top" secondItem="WxM-tI-nal" secondAttribute="bottom" constant="10" id="deu-mE-hqN"/>
+                            <constraint firstItem="sNt-8k-V3n" firstAttribute="centerX" secondItem="JW2-pd-lpF" secondAttribute="centerX" id="eVm-Uw-lgf"/>
+                            <constraint firstItem="dq2-KA-6LW" firstAttribute="top" secondItem="sNt-8k-V3n" secondAttribute="bottom" constant="40" id="oLG-st-D1J"/>
+                            <constraint firstAttribute="trailing" secondItem="oJs-1h-Jt6" secondAttribute="trailing" constant="30" id="s8i-Tc-mEJ"/>
+                            <constraint firstItem="WxM-tI-nal" firstAttribute="top" secondItem="pRe-hq-KgC" secondAttribute="bottom" constant="100" id="wpo-op-3PL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qbr-0k-G7q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1763" y="316"/>
+        </scene>
+        <!--Calendar View Controller-->
+        <scene sceneID="XTF-zA-rsd">
+            <objects>
+                <viewController id="Fvb-IN-hsm" customClass="CalendarViewController" customModule="TheCoffeeShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qrw-bf-LHQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="d55-di-zzg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qoy-pp-QbT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zgb-IL-H2u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2429" y="316"/>
+        </scene>
+        <!--Events Table View Controller-->
+        <scene sceneID="REN-sh-8tP">
+            <objects>
+                <viewController id="09d-Ch-woh" customClass="EventsTableViewController" customModule="TheCoffeeShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6yz-Ou-Yva"/>
+                        <viewControllerLayoutGuide type="bottom" id="zH5-as-iat"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AHN-Dc-PXl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WcI-b6-S0w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1627" y="998"/>
+        </scene>
+        <!--Menu Home View Controller-->
+        <scene sceneID="7nK-VN-qFR">
+            <objects>
+                <viewController id="5H5-mB-2aW" customClass="MenuHomeViewController" customModule="TheCoffeeShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3lj-Bu-fPC"/>
+                        <viewControllerLayoutGuide type="bottom" id="UYj-ue-0pi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CU1-AJ-3JX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P43-th-h6g">
+                                <rect key="frame" x="442" y="120" width="128" height="128"/>
+                                <state key="normal" image="espresso"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Epi-Ou-6Tg">
+                                <rect key="frame" x="29" y="258" width="129" height="35"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <state key="normal" title="Signature Lattes">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5O-Ob-PxO">
+                                <rect key="frame" x="440" y="258" width="132" height="35"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <state key="normal" title="Standard Drinks">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzp-p7-Mjc">
+                                <rect key="frame" x="30" y="333" width="128" height="128"/>
+                                <state key="normal" image="noCoffee"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2m-JD-xyE">
+                                <rect key="frame" x="442" y="333" width="128" height="128"/>
+                                <state key="normal" image="juice"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9u-lc-cDB">
+                                <rect key="frame" x="51" y="471" width="86" height="35"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <state key="normal" title="Non-Coffee">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUA-Oc-AH2">
+                                <rect key="frame" x="481" y="471" width="50" height="35"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <state key="normal" title="Juices">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOa-B0-77B">
+                                <rect key="frame" x="278.5" y="550" width="43" height="35"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipS-ec-Vyr">
+                                <rect key="frame" x="30" y="120" width="128" height="128"/>
+                                <state key="normal" image="latte"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UYj-ue-0pi" firstAttribute="top" secondItem="jOa-B0-77B" secondAttribute="bottom" constant="15" id="0Yd-TN-saU"/>
+                            <constraint firstItem="Rzp-p7-Mjc" firstAttribute="top" secondItem="Epi-Ou-6Tg" secondAttribute="bottom" constant="40" id="936-4U-ySG"/>
+                            <constraint firstItem="P43-th-h6g" firstAttribute="top" secondItem="3lj-Bu-fPC" secondAttribute="bottom" constant="100" id="97h-dR-SzK"/>
+                            <constraint firstItem="jOa-B0-77B" firstAttribute="centerX" secondItem="CU1-AJ-3JX" secondAttribute="centerX" id="CWv-DJ-Izy"/>
+                            <constraint firstItem="a2m-JD-xyE" firstAttribute="top" secondItem="z5O-Ob-PxO" secondAttribute="bottom" constant="40" id="GGy-W2-Vgr"/>
+                            <constraint firstAttribute="trailing" secondItem="P43-th-h6g" secondAttribute="trailing" constant="30" id="II4-wr-rTr"/>
+                            <constraint firstItem="Epi-Ou-6Tg" firstAttribute="top" secondItem="ipS-ec-Vyr" secondAttribute="bottom" constant="10" id="Oxt-Id-zKx"/>
+                            <constraint firstItem="ipS-ec-Vyr" firstAttribute="leading" secondItem="CU1-AJ-3JX" secondAttribute="leading" constant="30" id="U5S-f4-9Ve"/>
+                            <constraint firstItem="Epi-Ou-6Tg" firstAttribute="centerX" secondItem="ipS-ec-Vyr" secondAttribute="centerX" id="YoP-dr-p8g"/>
+                            <constraint firstItem="Rzp-p7-Mjc" firstAttribute="leading" secondItem="CU1-AJ-3JX" secondAttribute="leading" constant="30" id="b1b-xS-cOQ"/>
+                            <constraint firstItem="h9u-lc-cDB" firstAttribute="top" secondItem="Rzp-p7-Mjc" secondAttribute="bottom" constant="10" id="dzQ-HU-LwG"/>
+                            <constraint firstItem="z5O-Ob-PxO" firstAttribute="centerX" secondItem="P43-th-h6g" secondAttribute="centerX" id="eA3-90-X4h"/>
+                            <constraint firstItem="ipS-ec-Vyr" firstAttribute="top" secondItem="3lj-Bu-fPC" secondAttribute="bottom" constant="100" id="fPR-pQ-2h3"/>
+                            <constraint firstItem="oUA-Oc-AH2" firstAttribute="top" secondItem="a2m-JD-xyE" secondAttribute="bottom" constant="10" id="hsD-Te-xJ5"/>
+                            <constraint firstAttribute="trailing" secondItem="a2m-JD-xyE" secondAttribute="trailing" constant="30" id="j1Z-XL-4bm"/>
+                            <constraint firstItem="oUA-Oc-AH2" firstAttribute="centerX" secondItem="a2m-JD-xyE" secondAttribute="centerX" id="nQ3-nL-mdy"/>
+                            <constraint firstItem="h9u-lc-cDB" firstAttribute="centerX" secondItem="Rzp-p7-Mjc" secondAttribute="centerX" id="oZE-83-dqC"/>
+                            <constraint firstItem="z5O-Ob-PxO" firstAttribute="top" secondItem="P43-th-h6g" secondAttribute="bottom" constant="10" id="vjg-Fk-4xd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="an4-tR-JVA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951" y="998"/>
+        </scene>
+        <!--Standards Menu View Controller-->
+        <scene sceneID="yWh-ub-lOp">
+            <objects>
+                <viewController id="wKK-ls-krB" customClass="StandardsMenuViewController" customModule="TheCoffeeShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nF3-Gf-za6"/>
+                        <viewControllerLayoutGuide type="bottom" id="HnI-Qt-Ke7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ncj-uR-Jbg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FhF-uR-g4U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951" y="1691"/>
+        </scene>
+        <!--Signatures Menu View Controller-->
+        <scene sceneID="XDU-id-ubK">
+            <objects>
+                <viewController id="abD-m4-5Vf" customClass="SignaturesMenuViewController" customModule="TheCoffeeShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TF0-s0-Ian"/>
+                        <viewControllerLayoutGuide type="bottom" id="vo7-s0-Op4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bmp-2L-48y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2sq-z2-Gtf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947" y="2377"/>
+        </scene>
+        <!--Non Coffeee Menu View Controller-->
+        <scene sceneID="HZl-yL-Qbu">
+            <objects>
+                <viewController id="PUi-sK-qDi" customClass="NonCoffeeeMenuViewController" customModule="TheCoffeeShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0ZA-6k-4qK"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZpD-vt-og1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="y4K-7R-Vov">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7T8-Rq-iRI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947" y="3081"/>
+        </scene>
+        <!--Juice Menu View Controller-->
+        <scene sceneID="KxV-th-jFX">
+            <objects>
+                <viewController id="2lJ-JR-SPP" customClass="JuiceMenuViewController" customModule="TheCoffeeShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h25-RJ-fhK"/>
+                        <viewControllerLayoutGuide type="bottom" id="L8h-Mq-JjO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Xn-v6-Wxp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Vt-LH-Arz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947" y="3781"/>
+        </scene>
+        <!--Food Menu View Controller-->
+        <scene sceneID="8C9-Ng-iAk">
+            <objects>
+                <viewController id="lmr-mT-Kab" customClass="FoodMenuViewController" customModule="TheCoffeeShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ljy-a2-kBf"/>
+                        <viewControllerLayoutGuide type="bottom" id="b1H-Dh-8pU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BVc-bM-cvn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="icg-GL-gUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947" y="4487"/>
+        </scene>
+        <!--Loyalty Card View Controller-->
+        <scene sceneID="YyD-jg-Ria">
+            <objects>
+                <viewController id="oiR-4y-evp" customClass="LoyaltyCardViewController" customModule="TheCoffeeShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UrF-9l-JF9"/>
+                        <viewControllerLayoutGuide type="bottom" id="C3q-Os-EAV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bC7-3u-bzA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5cD-wT-8bc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="296" y="998"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0gh-Vf-S3u">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="KnE-PH-nX1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Eio-gP-Jpa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1ez-0B-YSx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iV0-4V-dBn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="296" y="316"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo white black back copy" width="2000" height="999"/>
+        <image name="about" width="128" height="128"/>
+        <image name="calendar" width="128" height="128"/>
+        <image name="coffee" width="128" height="128"/>
+        <image name="education" width="128" height="128"/>
+        <image name="espresso" width="128" height="128"/>
+        <image name="heart" width="128" height="128"/>
+        <image name="history" width="128" height="128"/>
+        <image name="hours" width="128" height="128"/>
+        <image name="juice" width="128" height="128"/>
+        <image name="latte" width="128" height="128"/>
+        <image name="location" width="128" height="128"/>
+        <image name="noCoffee" width="128" height="128"/>
+    </resources>
+</document>
