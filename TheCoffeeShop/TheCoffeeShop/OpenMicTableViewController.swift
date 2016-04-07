@@ -1,5 +1,5 @@
 //
-//  EventsTableViewController.swift
+//  OpenMicTableViewController.swift
 //  TheCoffeeShop
 //
 //  Created by Mitchell Phillips on 4/5/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EventsTableViewController: UIViewController {
+class OpenMicTableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

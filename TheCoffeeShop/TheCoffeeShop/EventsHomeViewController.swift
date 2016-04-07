@@ -1,21 +1,19 @@
 //
-//  AboutViewController.swift
+//  EventsHomeViewController.swift
 //  TheCoffeeShop
 //
-//  Created by Mitchell Phillips on 4/5/16.
+//  Created by Mitchell Phillips on 4/6/16.
 //  Copyright © 2016 Wasted Potential LLC. All rights reserved.
 //
 
 import UIKit
 
-class AboutViewController: UIViewController {
-    
-    @IBAction func goHome(sender: UIButton) {
-        
-        self.navigationController?.popToRootViewControllerAnimated(true)
-        
-    }
+class EventsHomeViewController: UIViewController {
 
+    @IBAction func goBack(sender: UIButton) {
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

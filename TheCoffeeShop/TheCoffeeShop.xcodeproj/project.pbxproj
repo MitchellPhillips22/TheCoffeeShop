@@ -20,10 +20,11 @@
 		1BE92E511CB4A027009284A0 /* NonCoffeeeMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E501CB4A027009284A0 /* NonCoffeeeMenuViewController.swift */; };
 		1BE92E531CB4A035009284A0 /* JuiceMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E521CB4A035009284A0 /* JuiceMenuViewController.swift */; };
 		1BE92E551CB4A0CA009284A0 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E541CB4A0CA009284A0 /* CalendarViewController.swift */; };
-		1BE92E571CB4A0D7009284A0 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E561CB4A0D7009284A0 /* EventsTableViewController.swift */; };
+		1BE92E571CB4A0D7009284A0 /* OpenMicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E561CB4A0D7009284A0 /* OpenMicTableViewController.swift */; };
 		1BE92E591CB4A155009284A0 /* FoodMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E581CB4A155009284A0 /* FoodMenuViewController.swift */; };
 		1BE92E5B1CB4A9E8009284A0 /* Sigs Revamp.pages in Resources */ = {isa = PBXBuildFile; fileRef = 1BE92E5A1CB4A9E8009284A0 /* Sigs Revamp.pages */; };
 		1BE92E5D1CB568C6009284A0 /* SignPainter-HouseScript.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE92E5C1CB568C6009284A0 /* SignPainter-HouseScript.ttf */; };
+		1BE92E5F1CB5C40C009284A0 /* EventsHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E5E1CB5C40C009284A0 /* EventsHomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,10 +43,11 @@
 		1BE92E501CB4A027009284A0 /* NonCoffeeeMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonCoffeeeMenuViewController.swift; sourceTree = "<group>"; };
 		1BE92E521CB4A035009284A0 /* JuiceMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuiceMenuViewController.swift; sourceTree = "<group>"; };
 		1BE92E541CB4A0CA009284A0 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
-		1BE92E561CB4A0D7009284A0 /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
+		1BE92E561CB4A0D7009284A0 /* OpenMicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenMicTableViewController.swift; sourceTree = "<group>"; };
 		1BE92E581CB4A155009284A0 /* FoodMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodMenuViewController.swift; sourceTree = "<group>"; };
 		1BE92E5A1CB4A9E8009284A0 /* Sigs Revamp.pages */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sigs Revamp.pages"; path = "../../../Downloads/Sigs Revamp.pages"; sourceTree = "<group>"; };
 		1BE92E5C1CB568C6009284A0 /* SignPainter-HouseScript.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SignPainter-HouseScript.ttf"; path = "../../../Developer/Fonts/SignPainter-HouseScript.ttf"; sourceTree = "<group>"; };
+		1BE92E5E1CB5C40C009284A0 /* EventsHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsHomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +90,9 @@
 				1BE92E501CB4A027009284A0 /* NonCoffeeeMenuViewController.swift */,
 				1BE92E521CB4A035009284A0 /* JuiceMenuViewController.swift */,
 				1BE92E581CB4A155009284A0 /* FoodMenuViewController.swift */,
+				1BE92E5E1CB5C40C009284A0 /* EventsHomeViewController.swift */,
 				1BE92E541CB4A0CA009284A0 /* CalendarViewController.swift */,
-				1BE92E561CB4A0D7009284A0 /* EventsTableViewController.swift */,
+				1BE92E561CB4A0D7009284A0 /* OpenMicTableViewController.swift */,
 				1BE92E381CB49A27009284A0 /* Main.storyboard */,
 				1BE92E5C1CB568C6009284A0 /* SignPainter-HouseScript.ttf */,
 				1BE92E3B1CB49A27009284A0 /* Assets.xcassets */,
@@ -181,8 +184,9 @@
 				1BE92E4B1CB49FE8009284A0 /* MenuHomeViewController.swift in Sources */,
 				1BE92E491CB49F9D009284A0 /* AboutViewController.swift in Sources */,
 				1BE92E591CB4A155009284A0 /* FoodMenuViewController.swift in Sources */,
+				1BE92E5F1CB5C40C009284A0 /* EventsHomeViewController.swift in Sources */,
 				1BE92E511CB4A027009284A0 /* NonCoffeeeMenuViewController.swift in Sources */,
-				1BE92E571CB4A0D7009284A0 /* EventsTableViewController.swift in Sources */,
+				1BE92E571CB4A0D7009284A0 /* OpenMicTableViewController.swift in Sources */,
 				1BE92E4F1CB4A019009284A0 /* StandardsMenuViewController.swift in Sources */,
 				1BE92E351CB49A27009284A0 /* AppDelegate.swift in Sources */,
 			);
