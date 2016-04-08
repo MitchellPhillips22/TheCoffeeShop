@@ -47,7 +47,7 @@ class LoyaltyCardViewController: UIViewController {
     }
     
     @IBAction func goHome(sender: UIButton) {
-        self.navigationController?.popToRootViewControllerAnimated(true)
+        self.navigationController?.popToRootViewControllerAnimated(false)
     }
     //MARK: - Outlets
     @IBOutlet weak var doneOutlet: UIButton!
@@ -76,9 +76,25 @@ class LoyaltyCardViewController: UIViewController {
         
     }
     // forces view to present in landscape only
-//    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-//        return .Landscape
-//    }
+    override func viewDidAppear(animated: Bool) {
+        let value = UIInterfaceOrientation.LandscapeLeft.rawValue
+        UIDevice.currentDevice().setValue(value, forKey: "orientation")
+    }
+    
+    override func shouldAutorotate() -> Bool {
+        if UIInterfaceOrientationIsLandscape(self.interfaceOrientation) {
+            return false
+        }
+        return true
+    }
+    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return .Landscape
+    }
+    
+    override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
+        return .LandscapeLeft
+    }
     //MARK: - Button functions
     
     func latteButtonTapped(sender:UIButton) {

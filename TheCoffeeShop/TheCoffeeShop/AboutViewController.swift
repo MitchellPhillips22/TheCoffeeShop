@@ -21,6 +21,25 @@ class AboutViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    override func viewDidAppear(animated: Bool) {
+        let value = UIInterfaceOrientation.Portrait.rawValue
+        UIDevice.currentDevice().setValue(value, forKey: "orientation")
+    }
+    
+    override func shouldAutorotate() -> Bool {
+        if UIInterfaceOrientationIsPortrait(self.interfaceOrientation) {
+            return true
+        }
+        return false
+    }
+    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return .Portrait
+    }
+    
+    override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
+        return .Portrait
+    }
 
 
 }
