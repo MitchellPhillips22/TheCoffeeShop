@@ -14,6 +14,9 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+//    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+//        return .Portrait
+//    }
 
 
 }

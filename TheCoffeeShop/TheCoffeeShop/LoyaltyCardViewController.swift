@@ -5,31 +5,210 @@
 //  Created by Mitchell Phillips on 4/5/16.
 //  Copyright © 2016 Wasted Potential LLC. All rights reserved.
 //
-
 import UIKit
 
 class LoyaltyCardViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    //MARK: - Actions
+    @IBAction func addStampTapped(sender: UIButton) {
+        showAlert()
+        checkForRedeemable()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func latteTapped(sender: UIButton) {
+        latteButtonTapped(sender)
     }
-    */
-
+    
+    @IBAction func coffeeTapped(sender: UIButton) {
+        coffeeButtonTapped(sender)
+    }
+    
+    @IBAction func doneTapped(sender: UIButton) {
+        saveDefaults()
+        doneOutlet.hidden = true
+        addStampsOutlet.hidden = false
+        isAuthorized = false
+        updateUI()
+    }
+    
+    @IBAction func redeemLatteTapped(sender: UIButton) {
+        if isAuthorized == true {
+        latteStamps = 0
+        redeemLatteOutlet.hidden = true
+        updateUI()
+        }
+    }
+    @IBAction func redeemCoffeeTapped(sender: UIButton) {
+        if isAuthorized == true {
+        coffeeStamps = 0
+        redeemCoffeeOutlet.hidden = true
+        updateUI()
+        }
+    }
+    
+    @IBAction func goHome(sender: UIButton) {
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
+    //MARK: - Outlets
+    @IBOutlet weak var doneOutlet: UIButton!
+    @IBOutlet weak var addStampsOutlet: UIButton!
+    @IBOutlet weak var redeemLatteOutlet: UIButton!
+    @IBOutlet weak var redeemCoffeeOutlet: UIButton!
+    @IBOutlet var latteButtonCollection: Array<UIButton>?
+    
+    @IBOutlet var coffeeButtonCollection: Array<UIButton>?
+    
+    var verificationCode = "4444"
+    
+    var latteStamps = 0
+    
+    var coffeeStamps = 0
+    
+    var isAuthorized: Bool = false
+    
+    //MARK: - View
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        loadDefaults()
+        checkForRedeemable()
+        updateUI()
+        
+    }
+    // forces view to present in landscape only
+//    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+//        return .Landscape
+//    }
+    //MARK: - Button functions
+    
+    func latteButtonTapped(sender:UIButton) {
+        if isAuthorized == true {
+            if sender.selected == true {
+                latteStamps = latteStamps - 1
+                sender.selected = false
+            } else {
+                latteStamps = latteStamps + 1
+                sender.selected = true
+            }
+        }
+        
+        checkForRedeemable()
+        
+        print("stamps equals \(latteStamps)")
+        
+    }
+    
+    func coffeeButtonTapped(sender:UIButton) {
+        if isAuthorized == true {
+            if sender.selected == true {
+                coffeeStamps = coffeeStamps - 1
+                sender.selected = false
+            } else {
+                coffeeStamps = coffeeStamps + 1
+                sender.selected = true
+            }
+        }
+        checkForRedeemableCoffee()
+    }
+    // MARK: - Check for redeem
+    func checkForRedeemable() {
+        
+        if self.latteStamps == 15 {
+            self.redeemLatteOutlet.hidden = false
+        } else {
+            self.redeemLatteOutlet.hidden = true
+        }
+    }
+    func checkForRedeemableCoffee() {
+        
+        if self.coffeeStamps == 15 {
+            self.redeemCoffeeOutlet.hidden = false
+        } else {
+            self.redeemCoffeeOutlet.hidden = true
+        }
+    }
+    //MARK: - Alert set up
+    
+    func showAlert() {
+        
+        let alertController = UIAlertController(title: "Edit", message: "Enter code", preferredStyle: .Alert)
+        
+        let verifyAction = UIAlertAction(title: "Edit", style: .Default) {
+            (verifyAction) -> Void in
+            
+            let textField = alertController.textFields?.first
+            // test for verification
+            if textField!.text == self.verificationCode {
+                print("approved")
+                self.latteStamps = 0
+                self.coffeeStamps = 0
+                self.loadDefaults()
+                self.updateUI()
+                self.doneOutlet.hidden = false
+                self.addStampsOutlet.hidden = true
+                self.isAuthorized = true
+                
+            } else {
+                // fails authorization
+            }
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) {
+            (alertAction) -> Void in
+            
+        }
+        alertController.addTextFieldWithConfigurationHandler { (textField) -> Void in
+            
+        }
+        alertController.addAction(verifyAction)
+        alertController.addAction(cancelAction)
+        
+        presentViewController(alertController, animated: true, completion: nil)
+    }
+   
+ 
+     //MARK: - UI interaction functions
+    func updateUI() {
+        
+        for button in latteButtonCollection! {
+            button.selected = false
+            
+            if button.tag <= latteStamps {
+                button.selected = true
+            }
+            
+        }
+        for button in coffeeButtonCollection! {
+            button.selected = false
+            
+            if button.tag <= coffeeStamps {
+                button.selected = true
+            }
+            
+        }
+        
+    }
+    
+    //MARK: - NSUserDefaults functions
+    func saveDefaults() {
+        print("saved")
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let numberOfLattes = NSNumber(integer: self.latteStamps)
+        let numberOfCoffees = NSNumber(integer: self.coffeeStamps)
+        defaults.setValue(numberOfLattes, forKey: "stampsNumber")
+        defaults.setValue(numberOfCoffees, forKey: "coffeeStamps")
+        defaults.synchronize()
+        
+    }
+    
+    func loadDefaults() {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        if let value = defaults.valueForKey("stampsNumber") as? NSNumber {
+            self.latteStamps = value.integerValue
+        }
+        if let coffeeValue = defaults.valueForKey("coffeeStamps") as? NSNumber {
+            self.coffeeStamps = coffeeValue.integerValue
+        }
+        print("loaded stamps \(latteStamps)")
+        
+    }
 }

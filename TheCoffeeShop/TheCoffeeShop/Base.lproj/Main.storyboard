@@ -24,18 +24,25 @@
             <string>SignPainter-HouseScript</string>
             <string>SignPainter-HouseScript</string>
             <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
         </mutableArray>
     </customFonts>
     <scenes>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="TheCoffeeShop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="TheCoffeeShop" customModuleProvider="target" propertyAccessControl="localizable" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" propertyAccessControl="localizable">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -85,7 +92,7 @@
                                 <rect key="frame" x="442" y="177" width="128" height="128"/>
                                 <state key="normal" image="heart"/>
                                 <connections>
-                                    <segue destination="oiR-4y-evp" kind="show" id="kfk-pW-yne"/>
+                                    <segue destination="jeA-0f-who" kind="show" id="cMF-g6-hbR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8I-LP-1zv">
@@ -95,8 +102,8 @@
                                     <segue destination="5H5-mB-2aW" kind="show" id="3YJ-QF-STO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4m-gQ-w16">
-                                <rect key="frame" x="442" y="392" width="128" height="128"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4m-gQ-w16">
+                                <rect key="frame" x="442" y="400" width="128" height="128"/>
                                 <state key="normal" image="calendar"/>
                                 <connections>
                                     <segue destination="Fvb-IN-hsm" kind="show" id="B0d-sm-dZd"/>
@@ -126,10 +133,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ij0-6R-yC7"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1108" y="316"/>
+            <point key="canvasLocation" x="1123" y="305"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="KBv-qV-neD">
@@ -463,7 +471,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="an4-tR-JVA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="951" y="998"/>
+            <point key="canvasLocation" x="1279" y="999"/>
         </scene>
         <!--Standards Menu View Controller-->
         <scene sceneID="yWh-ub-lOp">
@@ -555,24 +563,6 @@
             </objects>
             <point key="canvasLocation" x="947" y="4487"/>
         </scene>
-        <!--Loyalty Card View Controller-->
-        <scene sceneID="YyD-jg-Ria">
-            <objects>
-                <viewController id="oiR-4y-evp" customClass="LoyaltyCardViewController" customModule="TheCoffeeShop" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="UrF-9l-JF9"/>
-                        <viewControllerLayoutGuide type="bottom" id="C3q-Os-EAV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bC7-3u-bzA">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5cD-wT-8bc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="296" y="998"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="0gh-Vf-S3u">
             <objects>
@@ -591,6 +581,476 @@
             </objects>
             <point key="canvasLocation" x="296" y="316"/>
         </scene>
+        <!--Loyalty Card View Controller-->
+        <scene sceneID="5ZV-ub-fHW">
+            <objects>
+                <viewController id="jeA-0f-who" customClass="LoyaltyCardViewController" customModule="TheCoffeeShop" customModuleProvider="target" propertyAccessControl="localizable" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z0C-yq-PYI"/>
+                        <viewControllerLayoutGuide type="bottom" id="65L-4I-u6m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a5v-hL-nhs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aqd-jZ-nIN">
+                                <rect key="frame" x="61" y="520" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="latteTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="vnd-gX-3FC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPO-f9-YRW">
+                                <rect key="frame" x="114" y="520" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="latteTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="Ay7-Qc-WVQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4J-DB-DAm">
+                                <rect key="frame" x="167" y="520" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="latteTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="Lvt-0a-x9C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRx-im-cqD">
+                                <rect key="frame" x="220" y="520" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="latteTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="djv-fg-TtZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNo-TN-n1x">
+                                <rect key="frame" x="34" y="467" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="latteTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="reh-Os-qP3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRI-dm-L69">
+                                <rect key="frame" x="87" y="467" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="latteTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="t18-xz-l22"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgq-pr-W4T">
+                                <rect key="frame" x="140" y="467" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="latteTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="P3I-jr-QOe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3a4-DO-Huz">
+                                <rect key="frame" x="193" y="467" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="latteTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="n6q-6N-Zdi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ig2-IW-hpi">
+                                <rect key="frame" x="61" y="414" width="50" height="50"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" selected="YES"/>
+                                </accessibility>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="latteTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="TKJ-92-bPj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPK-W1-7Rc">
+                                <rect key="frame" x="114" y="414" width="50" height="50"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" selected="YES"/>
+                                </accessibility>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="latteTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="KQ4-Hu-Rwr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alJ-Kl-9eV">
+                                <rect key="frame" x="167" y="414" width="50" height="50"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" selected="YES"/>
+                                </accessibility>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="latteTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="jUP-6X-n8N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vrp-bR-buA">
+                                <rect key="frame" x="87" y="361" width="50" height="50"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" selected="YES"/>
+                                </accessibility>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="latteTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="dGt-fB-GVY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QF8-1M-VL7">
+                                <rect key="frame" x="140" y="361" width="50" height="50"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" selected="YES"/>
+                                </accessibility>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="latteTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="rfl-16-ihF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hua-kz-rZU">
+                                <rect key="frame" x="114" y="308" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="latteTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="3mb-ql-dWX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgb-by-IVc">
+                                <rect key="frame" x="330" y="520" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="coffeeTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="rGo-Pm-kG2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqa-ty-JXe">
+                                <rect key="frame" x="383" y="520" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="coffeeTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="UhY-v9-7PK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TjQ-YT-h9V">
+                                <rect key="frame" x="436" y="520" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="coffeeTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="csN-AE-UcF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5C1-Pq-D7J">
+                                <rect key="frame" x="489" y="520" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="coffeeTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="fyo-me-Wpc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5d-AZ-RTz">
+                                <rect key="frame" x="542" y="520" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="coffeeTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="CMm-2L-d1n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J72-lw-jSw">
+                                <rect key="frame" x="356" y="467" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="coffeeTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="mhG-7L-9Cy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ef1-WT-4Xs">
+                                <rect key="frame" x="409" y="467" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="coffeeTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="9sT-cb-HR5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Z2-do-4ky">
+                                <rect key="frame" x="462" y="467" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="coffeeTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="O4w-qn-di8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wv9-nx-3Yf">
+                                <rect key="frame" x="515" y="467" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="coffeeTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="0r4-ra-SVl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJU-Gk-Ed4">
+                                <rect key="frame" x="383" y="414" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="coffeeTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="ZN8-dm-jf2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5l-bd-UeL">
+                                <rect key="frame" x="436" y="414" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="coffeeTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="Nbv-YU-7cV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bs8-ua-2nu">
+                                <rect key="frame" x="489" y="414" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="coffeeTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="CbM-uF-B0Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1s-Se-qOe">
+                                <rect key="frame" x="409" y="361" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="coffeeTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="goh-jF-6tl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R80-LT-D9y">
+                                <rect key="frame" x="462" y="361" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="coffeeTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="eJ8-zn-a3T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGt-dQ-OJl">
+                                <rect key="frame" x="436" y="308" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="coffeeTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="nj1-n5-PIg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Uc-qv-rgM">
+                                <rect key="frame" x="252" y="415" width="95" height="35"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <state key="normal" title="Add Stamps">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addStampTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="aNH-zL-YLc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gz4-lt-mFK">
+                                <rect key="frame" x="8" y="520" width="50" height="50"/>
+                                <state key="normal" image="unselectedStar"/>
+                                <state key="selected" image="selectedStar"/>
+                                <connections>
+                                    <action selector="latteTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="YN5-iw-QYE"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVY-i8-H8O">
+                                <rect key="frame" x="281" y="452" width="38" height="35"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="1Iq-EZ-DUg"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffm-LZ-mOg">
+                                <rect key="frame" x="427" y="570" width="68" height="35"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <state key="normal" title="Redeem!">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="redeemCoffeeTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="978-0U-t8e"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lattes and Juices" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSa-J7-VG4">
+                                <rect key="frame" x="71" y="282" width="135.5" height="23"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drip Coffees and Teas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjF-EJ-ijm">
+                                <rect key="frame" x="374" y="282" width="173" height="23"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTt-Pr-Uyz">
+                                <rect key="frame" x="278" y="562" width="43" height="35"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="goHome:" destination="jeA-0f-who" eventType="touchUpInside" id="QL2-ET-Jee"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bql-dB-rOP">
+                                <rect key="frame" x="105" y="570" width="68" height="35"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <state key="normal" title="Redeem!">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="redeemLatteTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="MQk-9l-nFy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ef1-WT-4Xs" firstAttribute="top" secondItem="YJU-Gk-Ed4" secondAttribute="bottom" constant="3" id="0BS-em-lMs"/>
+                            <constraint firstItem="0Z2-do-4ky" firstAttribute="top" secondItem="R5l-bd-UeL" secondAttribute="bottom" constant="3" id="0D1-yW-DVK"/>
+                            <constraint firstItem="R5l-bd-UeL" firstAttribute="top" secondItem="b1s-Se-qOe" secondAttribute="bottom" constant="3" id="1Cp-DZ-bMH"/>
+                            <constraint firstItem="Ffm-LZ-mOg" firstAttribute="centerX" secondItem="TjQ-YT-h9V" secondAttribute="centerX" id="2jx-R9-Lym"/>
+                            <constraint firstItem="R5l-bd-UeL" firstAttribute="leading" secondItem="YJU-Gk-Ed4" secondAttribute="trailing" constant="3" id="30h-ry-vSZ"/>
+                            <constraint firstItem="z5d-AZ-RTz" firstAttribute="leading" secondItem="5C1-Pq-D7J" secondAttribute="trailing" constant="3" id="4Kv-VN-dth"/>
+                            <constraint firstItem="bql-dB-rOP" firstAttribute="centerX" secondItem="pPO-f9-YRW" secondAttribute="centerX" id="5yG-mw-FwJ"/>
+                            <constraint firstItem="R80-LT-D9y" firstAttribute="top" secondItem="bGt-dQ-OJl" secondAttribute="bottom" constant="3" id="8dU-bh-E7q"/>
+                            <constraint firstItem="65L-4I-u6m" firstAttribute="top" secondItem="gqa-ty-JXe" secondAttribute="bottom" constant="30" id="9Ok-i7-Sy4"/>
+                            <constraint firstItem="Hua-kz-rZU" firstAttribute="leading" secondItem="a5v-hL-nhs" secondAttribute="leading" constant="114" id="AJC-Oz-Lhl"/>
+                            <constraint firstItem="bs8-ua-2nu" firstAttribute="top" secondItem="R80-LT-D9y" secondAttribute="bottom" constant="3" id="AvM-AO-NXg"/>
+                            <constraint firstItem="bs8-ua-2nu" firstAttribute="top" secondItem="R80-LT-D9y" secondAttribute="bottom" constant="3" id="B3Q-1c-nRe"/>
+                            <constraint firstItem="5C1-Pq-D7J" firstAttribute="leading" secondItem="TjQ-YT-h9V" secondAttribute="trailing" constant="3" id="BB4-N9-ohH"/>
+                            <constraint firstItem="R5l-bd-UeL" firstAttribute="leading" secondItem="YJU-Gk-Ed4" secondAttribute="trailing" constant="3" id="Bog-uY-HVg"/>
+                            <constraint firstItem="5C1-Pq-D7J" firstAttribute="top" secondItem="0Z2-do-4ky" secondAttribute="bottom" constant="3" id="Bxm-J3-Kaa"/>
+                            <constraint firstItem="65L-4I-u6m" firstAttribute="top" secondItem="zTt-Pr-Uyz" secondAttribute="bottom" constant="3" id="CMN-sz-C3H"/>
+                            <constraint firstItem="VSa-J7-VG4" firstAttribute="centerX" secondItem="Hua-kz-rZU" secondAttribute="centerX" id="DOr-bH-JrJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Wv9-nx-3Yf" secondAttribute="trailing" constant="35" id="Dce-M9-GTa"/>
+                            <constraint firstItem="bGt-dQ-OJl" firstAttribute="top" secondItem="KjF-EJ-ijm" secondAttribute="bottom" constant="3" id="ELR-0O-Oun"/>
+                            <constraint firstItem="R5l-bd-UeL" firstAttribute="top" secondItem="b1s-Se-qOe" secondAttribute="bottom" constant="3" id="Ejd-4e-8eO"/>
+                            <constraint firstItem="65L-4I-u6m" firstAttribute="top" secondItem="gRx-im-cqD" secondAttribute="bottom" constant="30" id="FYx-Mf-NHR"/>
+                            <constraint firstItem="alJ-Kl-9eV" firstAttribute="top" secondItem="QF8-1M-VL7" secondAttribute="bottom" constant="3" id="Fh2-br-2zI"/>
+                            <constraint firstItem="Wgq-pr-W4T" firstAttribute="top" secondItem="OPK-W1-7Rc" secondAttribute="bottom" constant="3" id="H7v-B3-5MQ"/>
+                            <constraint firstItem="Ef1-WT-4Xs" firstAttribute="leading" secondItem="J72-lw-jSw" secondAttribute="trailing" constant="3" id="HVt-Nl-MhW"/>
+                            <constraint firstItem="0Z2-do-4ky" firstAttribute="leading" secondItem="Ef1-WT-4Xs" secondAttribute="trailing" constant="3" id="IfJ-h5-ilW"/>
+                            <constraint firstItem="ig2-IW-hpi" firstAttribute="leading" secondItem="a5v-hL-nhs" secondAttribute="leading" constant="61" id="Ikq-Qr-0kf"/>
+                            <constraint firstAttribute="trailing" secondItem="bGt-dQ-OJl" secondAttribute="trailing" constant="114" id="JFD-tT-AWN"/>
+                            <constraint firstItem="XRI-dm-L69" firstAttribute="top" secondItem="ig2-IW-hpi" secondAttribute="bottom" constant="3" id="L1u-NA-5Yo"/>
+                            <constraint firstItem="65L-4I-u6m" firstAttribute="top" secondItem="z5d-AZ-RTz" secondAttribute="bottom" constant="30" id="LGr-qa-Tqq"/>
+                            <constraint firstItem="QF8-1M-VL7" firstAttribute="top" secondItem="Hua-kz-rZU" secondAttribute="bottom" constant="3" id="LIt-b6-4PL"/>
+                            <constraint firstAttribute="trailing" secondItem="R80-LT-D9y" secondAttribute="trailing" constant="88" id="Lba-51-bu3"/>
+                            <constraint firstItem="gqa-ty-JXe" firstAttribute="top" secondItem="J72-lw-jSw" secondAttribute="bottom" constant="3" id="MOq-gj-zfZ"/>
+                            <constraint firstItem="5C1-Pq-D7J" firstAttribute="leading" secondItem="TjQ-YT-h9V" secondAttribute="trailing" constant="3" id="O8W-zk-s6Z"/>
+                            <constraint firstItem="z5d-AZ-RTz" firstAttribute="top" secondItem="Wv9-nx-3Yf" secondAttribute="bottom" constant="3" id="PLv-nd-YVS"/>
+                            <constraint firstItem="R80-LT-D9y" firstAttribute="leading" secondItem="b1s-Se-qOe" secondAttribute="trailing" constant="3" id="QLv-Dn-a2i"/>
+                            <constraint firstItem="gqa-ty-JXe" firstAttribute="leading" secondItem="jgb-by-IVc" secondAttribute="trailing" constant="3" id="QM1-Yr-mwk"/>
+                            <constraint firstAttribute="trailing" secondItem="bs8-ua-2nu" secondAttribute="trailing" constant="61" id="Qez-zu-WB5"/>
+                            <constraint firstItem="R80-LT-D9y" firstAttribute="leading" secondItem="b1s-Se-qOe" secondAttribute="trailing" constant="3" id="Qwe-mu-MYJ"/>
+                            <constraint firstItem="65L-4I-u6m" firstAttribute="top" secondItem="p4J-DB-DAm" secondAttribute="bottom" constant="30" id="Smv-bZ-PVD"/>
+                            <constraint firstItem="65L-4I-u6m" firstAttribute="top" secondItem="Gz4-lt-mFK" secondAttribute="bottom" constant="30" id="T7c-7t-3nX"/>
+                            <constraint firstItem="Wv9-nx-3Yf" firstAttribute="top" secondItem="bs8-ua-2nu" secondAttribute="bottom" constant="3" id="TuK-PG-SeW"/>
+                            <constraint firstItem="Aqd-jZ-nIN" firstAttribute="top" secondItem="wNo-TN-n1x" secondAttribute="bottom" constant="3" id="UJW-dc-HQX"/>
+                            <constraint firstItem="65L-4I-u6m" firstAttribute="top" secondItem="TjQ-YT-h9V" secondAttribute="bottom" constant="30" id="UW1-J9-KRt"/>
+                            <constraint firstItem="pPO-f9-YRW" firstAttribute="top" secondItem="XRI-dm-L69" secondAttribute="bottom" constant="3" id="Uem-Wa-2M0"/>
+                            <constraint firstItem="Vrp-bR-buA" firstAttribute="leading" secondItem="a5v-hL-nhs" secondAttribute="leading" constant="87" id="VOF-FN-HNU"/>
+                            <constraint firstItem="Ffm-LZ-mOg" firstAttribute="top" secondItem="TjQ-YT-h9V" secondAttribute="bottom" id="Xdh-vw-Ups"/>
+                            <constraint firstItem="Gz4-lt-mFK" firstAttribute="leading" secondItem="a5v-hL-nhs" secondAttribute="leading" constant="8" id="YU9-kb-rzu"/>
+                            <constraint firstItem="wNo-TN-n1x" firstAttribute="leading" secondItem="a5v-hL-nhs" secondAttribute="leading" constant="34" id="YlT-aE-f7x"/>
+                            <constraint firstItem="z5d-AZ-RTz" firstAttribute="leading" secondItem="5C1-Pq-D7J" secondAttribute="trailing" constant="3" id="YvU-lb-a8P"/>
+                            <constraint firstItem="pPO-f9-YRW" firstAttribute="leading" secondItem="Aqd-jZ-nIN" secondAttribute="trailing" constant="3" id="ZXX-wc-rzu"/>
+                            <constraint firstItem="z5d-AZ-RTz" firstAttribute="top" secondItem="Wv9-nx-3Yf" secondAttribute="bottom" constant="3" id="ZaF-Mc-fGw"/>
+                            <constraint firstItem="Wgq-pr-W4T" firstAttribute="leading" secondItem="XRI-dm-L69" secondAttribute="trailing" constant="3" id="Zh7-cl-pcm"/>
+                            <constraint firstItem="R80-LT-D9y" firstAttribute="top" secondItem="bGt-dQ-OJl" secondAttribute="bottom" constant="3" id="a06-Dd-Ovr"/>
+                            <constraint firstAttribute="trailing" secondItem="z5d-AZ-RTz" secondAttribute="trailing" constant="8" id="anI-RA-cGV"/>
+                            <constraint firstItem="alJ-Kl-9eV" firstAttribute="leading" secondItem="OPK-W1-7Rc" secondAttribute="trailing" constant="3" id="ava-QX-cpC"/>
+                            <constraint firstItem="gqa-ty-JXe" firstAttribute="top" secondItem="J72-lw-jSw" secondAttribute="bottom" constant="3" id="b6O-VN-N2W"/>
+                            <constraint firstItem="Wv9-nx-3Yf" firstAttribute="leading" secondItem="0Z2-do-4ky" secondAttribute="trailing" constant="3" id="c1E-CA-4GN"/>
+                            <constraint firstItem="bql-dB-rOP" firstAttribute="top" secondItem="pPO-f9-YRW" secondAttribute="bottom" id="c3P-4Y-EHh"/>
+                            <constraint firstItem="OPK-W1-7Rc" firstAttribute="top" secondItem="Vrp-bR-buA" secondAttribute="bottom" constant="3" id="cWf-D1-g76"/>
+                            <constraint firstItem="Hua-kz-rZU" firstAttribute="top" secondItem="VSa-J7-VG4" secondAttribute="bottom" constant="3" id="cab-pq-d3y"/>
+                            <constraint firstItem="0Z2-do-4ky" firstAttribute="top" secondItem="R5l-bd-UeL" secondAttribute="bottom" constant="3" id="cfh-AZ-U3L"/>
+                            <constraint firstItem="3a4-DO-Huz" firstAttribute="top" secondItem="alJ-Kl-9eV" secondAttribute="bottom" constant="3" id="d2K-Ra-3bY"/>
+                            <constraint firstItem="bs8-ua-2nu" firstAttribute="leading" secondItem="R5l-bd-UeL" secondAttribute="trailing" constant="3" id="dKA-HE-4pH"/>
+                            <constraint firstItem="zTt-Pr-Uyz" firstAttribute="centerX" secondItem="a5v-hL-nhs" secondAttribute="centerX" id="dRz-Bh-H2k"/>
+                            <constraint firstItem="65L-4I-u6m" firstAttribute="top" secondItem="Aqd-jZ-nIN" secondAttribute="bottom" constant="30" id="deZ-AF-cJp"/>
+                            <constraint firstItem="p4J-DB-DAm" firstAttribute="leading" secondItem="pPO-f9-YRW" secondAttribute="trailing" constant="3" id="e2J-LD-fdT"/>
+                            <constraint firstItem="TjQ-YT-h9V" firstAttribute="top" secondItem="Ef1-WT-4Xs" secondAttribute="bottom" constant="3" id="eea-HE-MCE"/>
+                            <constraint firstItem="Ef1-WT-4Xs" firstAttribute="leading" secondItem="J72-lw-jSw" secondAttribute="trailing" constant="3" id="g26-Se-S9N"/>
+                            <constraint firstItem="XRI-dm-L69" firstAttribute="leading" secondItem="wNo-TN-n1x" secondAttribute="trailing" constant="3" id="gwv-2q-wVq"/>
+                            <constraint firstItem="TjQ-YT-h9V" firstAttribute="top" secondItem="Ef1-WT-4Xs" secondAttribute="bottom" constant="3" id="h0K-EF-kZM"/>
+                            <constraint firstItem="65L-4I-u6m" firstAttribute="top" secondItem="pPO-f9-YRW" secondAttribute="bottom" constant="30" id="h5u-Fp-79u"/>
+                            <constraint firstItem="p4J-DB-DAm" firstAttribute="top" secondItem="Wgq-pr-W4T" secondAttribute="bottom" constant="3" id="iOP-W8-ATl"/>
+                            <constraint firstItem="TVY-i8-H8O" firstAttribute="centerX" secondItem="a5v-hL-nhs" secondAttribute="centerX" id="kuj-gw-H0N"/>
+                            <constraint firstItem="3Uc-qv-rgM" firstAttribute="centerX" secondItem="a5v-hL-nhs" secondAttribute="centerX" id="lCf-Ut-ea8"/>
+                            <constraint firstItem="Wv9-nx-3Yf" firstAttribute="top" secondItem="bs8-ua-2nu" secondAttribute="bottom" constant="3" id="lTu-wc-g3j"/>
+                            <constraint firstAttribute="bottom" secondItem="3Uc-qv-rgM" secondAttribute="bottom" constant="150" id="lvN-jE-FIP"/>
+                            <constraint firstItem="gRx-im-cqD" firstAttribute="top" secondItem="3a4-DO-Huz" secondAttribute="bottom" constant="3" id="mrb-76-Rjc"/>
+                            <constraint firstItem="TVY-i8-H8O" firstAttribute="top" secondItem="3Uc-qv-rgM" secondAttribute="bottom" constant="2" id="oxE-Bm-2N0"/>
+                            <constraint firstItem="QF8-1M-VL7" firstAttribute="leading" secondItem="Vrp-bR-buA" secondAttribute="trailing" constant="3" id="pFd-Jo-FUn"/>
+                            <constraint firstItem="TjQ-YT-h9V" firstAttribute="leading" secondItem="gqa-ty-JXe" secondAttribute="trailing" constant="3" id="pNK-VO-e9j"/>
+                            <constraint firstItem="65L-4I-u6m" firstAttribute="top" secondItem="jgb-by-IVc" secondAttribute="bottom" constant="30" id="pWc-Wu-lWf"/>
+                            <constraint firstItem="Aqd-jZ-nIN" firstAttribute="leading" secondItem="Gz4-lt-mFK" secondAttribute="trailing" constant="3" id="pbw-Aw-PNi"/>
+                            <constraint firstItem="Ef1-WT-4Xs" firstAttribute="top" secondItem="YJU-Gk-Ed4" secondAttribute="bottom" constant="3" id="svB-3I-M5K"/>
+                            <constraint firstItem="gqa-ty-JXe" firstAttribute="leading" secondItem="jgb-by-IVc" secondAttribute="trailing" constant="3" id="uDW-9X-0YN"/>
+                            <constraint firstItem="bs8-ua-2nu" firstAttribute="leading" secondItem="R5l-bd-UeL" secondAttribute="trailing" constant="3" id="wAN-w5-l4V"/>
+                            <constraint firstItem="OPK-W1-7Rc" firstAttribute="leading" secondItem="ig2-IW-hpi" secondAttribute="trailing" constant="3" id="wL7-HU-yZF"/>
+                            <constraint firstItem="3a4-DO-Huz" firstAttribute="leading" secondItem="Wgq-pr-W4T" secondAttribute="trailing" constant="3" id="wS0-cS-EH1"/>
+                            <constraint firstItem="65L-4I-u6m" firstAttribute="top" secondItem="5C1-Pq-D7J" secondAttribute="bottom" constant="30" id="wiy-X8-0eJ"/>
+                            <constraint firstItem="KjF-EJ-ijm" firstAttribute="centerX" secondItem="bGt-dQ-OJl" secondAttribute="centerX" id="xvb-zO-lfX"/>
+                            <constraint firstItem="0Z2-do-4ky" firstAttribute="leading" secondItem="Ef1-WT-4Xs" secondAttribute="trailing" constant="3" id="yan-iI-jQN"/>
+                            <constraint firstItem="gRx-im-cqD" firstAttribute="leading" secondItem="p4J-DB-DAm" secondAttribute="trailing" constant="3" id="yhb-gJ-zoA"/>
+                            <constraint firstItem="5C1-Pq-D7J" firstAttribute="top" secondItem="0Z2-do-4ky" secondAttribute="bottom" constant="3" id="zUL-ME-c7I"/>
+                            <constraint firstItem="Wv9-nx-3Yf" firstAttribute="leading" secondItem="0Z2-do-4ky" secondAttribute="trailing" constant="3" id="znZ-Zo-joa"/>
+                            <constraint firstItem="TjQ-YT-h9V" firstAttribute="leading" secondItem="gqa-ty-JXe" secondAttribute="trailing" constant="3" id="zzU-am-ssd"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="addStampsOutlet" destination="3Uc-qv-rgM" id="vQV-iz-PTl"/>
+                        <outlet property="doneOutlet" destination="TVY-i8-H8O" id="oVK-zl-2R7"/>
+                        <outlet property="redeemCoffeeOutlet" destination="Ffm-LZ-mOg" id="JA5-sD-8eo"/>
+                        <outlet property="redeemLatteOutlet" destination="bql-dB-rOP" id="GQO-t9-1aS"/>
+                        <outletCollection property="latteButtonCollection" destination="Hua-kz-rZU" collectionClass="NSMutableArray" id="PDl-Pm-dU5"/>
+                        <outletCollection property="latteButtonCollection" destination="Vrp-bR-buA" collectionClass="NSMutableArray" id="Gsj-Qz-gac"/>
+                        <outletCollection property="latteButtonCollection" destination="QF8-1M-VL7" collectionClass="NSMutableArray" id="Q1S-NS-iIQ"/>
+                        <outletCollection property="latteButtonCollection" destination="ig2-IW-hpi" collectionClass="NSMutableArray" id="dfS-fL-Rv4"/>
+                        <outletCollection property="latteButtonCollection" destination="OPK-W1-7Rc" collectionClass="NSMutableArray" id="q1a-Gz-GuQ"/>
+                        <outletCollection property="latteButtonCollection" destination="alJ-Kl-9eV" collectionClass="NSMutableArray" id="jRT-dv-pIj"/>
+                        <outletCollection property="latteButtonCollection" destination="wNo-TN-n1x" collectionClass="NSMutableArray" id="m0G-jc-k4W"/>
+                        <outletCollection property="latteButtonCollection" destination="XRI-dm-L69" collectionClass="NSMutableArray" id="q7q-cN-jtf"/>
+                        <outletCollection property="latteButtonCollection" destination="Wgq-pr-W4T" collectionClass="NSMutableArray" id="ubt-2B-NKc"/>
+                        <outletCollection property="latteButtonCollection" destination="3a4-DO-Huz" collectionClass="NSMutableArray" id="Eds-MO-YPd"/>
+                        <outletCollection property="latteButtonCollection" destination="Gz4-lt-mFK" collectionClass="NSMutableArray" id="E5N-jp-ted"/>
+                        <outletCollection property="latteButtonCollection" destination="Aqd-jZ-nIN" collectionClass="NSMutableArray" id="FxV-i3-bhl"/>
+                        <outletCollection property="latteButtonCollection" destination="pPO-f9-YRW" collectionClass="NSMutableArray" id="KHa-Da-ksG"/>
+                        <outletCollection property="latteButtonCollection" destination="p4J-DB-DAm" collectionClass="NSMutableArray" id="9YI-nx-yeN"/>
+                        <outletCollection property="latteButtonCollection" destination="gRx-im-cqD" collectionClass="NSMutableArray" id="vvH-af-q7G"/>
+                        <outletCollection property="coffeeButtonCollection" destination="bGt-dQ-OJl" collectionClass="NSMutableArray" id="fHd-5h-mlb"/>
+                        <outletCollection property="coffeeButtonCollection" destination="b1s-Se-qOe" collectionClass="NSMutableArray" id="Wh0-3O-5gk"/>
+                        <outletCollection property="coffeeButtonCollection" destination="R80-LT-D9y" collectionClass="NSMutableArray" id="IUN-66-cPW"/>
+                        <outletCollection property="coffeeButtonCollection" destination="YJU-Gk-Ed4" collectionClass="NSMutableArray" id="6IE-Nk-OiF"/>
+                        <outletCollection property="coffeeButtonCollection" destination="R5l-bd-UeL" collectionClass="NSMutableArray" id="e5w-Mh-Q5A"/>
+                        <outletCollection property="coffeeButtonCollection" destination="bs8-ua-2nu" collectionClass="NSMutableArray" id="Lnv-ue-mlp"/>
+                        <outletCollection property="coffeeButtonCollection" destination="J72-lw-jSw" collectionClass="NSMutableArray" id="nL8-Vf-8lN"/>
+                        <outletCollection property="coffeeButtonCollection" destination="Ef1-WT-4Xs" collectionClass="NSMutableArray" id="Pdh-BT-AiF"/>
+                        <outletCollection property="coffeeButtonCollection" destination="0Z2-do-4ky" collectionClass="NSMutableArray" id="cjM-En-LuK"/>
+                        <outletCollection property="coffeeButtonCollection" destination="Wv9-nx-3Yf" collectionClass="NSMutableArray" id="uhd-b2-dvJ"/>
+                        <outletCollection property="coffeeButtonCollection" destination="jgb-by-IVc" collectionClass="NSMutableArray" id="1iy-8g-19c"/>
+                        <outletCollection property="coffeeButtonCollection" destination="gqa-ty-JXe" collectionClass="NSMutableArray" id="gRE-P4-uxw"/>
+                        <outletCollection property="coffeeButtonCollection" destination="TjQ-YT-h9V" collectionClass="NSMutableArray" id="8TV-6M-XW3"/>
+                        <outletCollection property="coffeeButtonCollection" destination="5C1-Pq-D7J" collectionClass="NSMutableArray" id="fct-vH-kiH"/>
+                        <outletCollection property="coffeeButtonCollection" destination="z5d-AZ-RTz" collectionClass="NSMutableArray" id="VXa-OC-yy6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4RE-Pb-PrD" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="638" y="970"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Logo white black back copy" width="2000" height="999"/>
@@ -607,5 +1067,7 @@
         <image name="location" width="128" height="128"/>
         <image name="mic" width="128" height="128"/>
         <image name="noCoffee" width="128" height="128"/>
+        <image name="selectedStar" width="50" height="50"/>
+        <image name="unselectedStar" width="50" height="50"/>
     </resources>
 </document>

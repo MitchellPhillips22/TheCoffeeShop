@@ -22,9 +22,8 @@
 		1BE92E551CB4A0CA009284A0 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E541CB4A0CA009284A0 /* CalendarViewController.swift */; };
 		1BE92E571CB4A0D7009284A0 /* OpenMicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E561CB4A0D7009284A0 /* OpenMicTableViewController.swift */; };
 		1BE92E591CB4A155009284A0 /* FoodMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E581CB4A155009284A0 /* FoodMenuViewController.swift */; };
-		1BE92E5B1CB4A9E8009284A0 /* Sigs Revamp.pages in Resources */ = {isa = PBXBuildFile; fileRef = 1BE92E5A1CB4A9E8009284A0 /* Sigs Revamp.pages */; };
-		1BE92E5D1CB568C6009284A0 /* SignPainter-HouseScript.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE92E5C1CB568C6009284A0 /* SignPainter-HouseScript.ttf */; };
 		1BE92E5F1CB5C40C009284A0 /* EventsHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E5E1CB5C40C009284A0 /* EventsHomeViewController.swift */; };
+		1BE92E611CB81188009284A0 /* SignPainter-HouseScript.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE92E601CB81188009284A0 /* SignPainter-HouseScript.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,9 +44,8 @@
 		1BE92E541CB4A0CA009284A0 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		1BE92E561CB4A0D7009284A0 /* OpenMicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenMicTableViewController.swift; sourceTree = "<group>"; };
 		1BE92E581CB4A155009284A0 /* FoodMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodMenuViewController.swift; sourceTree = "<group>"; };
-		1BE92E5A1CB4A9E8009284A0 /* Sigs Revamp.pages */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sigs Revamp.pages"; path = "../../../Downloads/Sigs Revamp.pages"; sourceTree = "<group>"; };
-		1BE92E5C1CB568C6009284A0 /* SignPainter-HouseScript.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SignPainter-HouseScript.ttf"; path = "../../../Developer/Fonts/SignPainter-HouseScript.ttf"; sourceTree = "<group>"; };
 		1BE92E5E1CB5C40C009284A0 /* EventsHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsHomeViewController.swift; sourceTree = "<group>"; };
+		1BE92E601CB81188009284A0 /* SignPainter-HouseScript.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignPainter-HouseScript.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +92,8 @@
 				1BE92E541CB4A0CA009284A0 /* CalendarViewController.swift */,
 				1BE92E561CB4A0D7009284A0 /* OpenMicTableViewController.swift */,
 				1BE92E381CB49A27009284A0 /* Main.storyboard */,
-				1BE92E5C1CB568C6009284A0 /* SignPainter-HouseScript.ttf */,
 				1BE92E3B1CB49A27009284A0 /* Assets.xcassets */,
-				1BE92E5A1CB4A9E8009284A0 /* Sigs Revamp.pages */,
+				1BE92E601CB81188009284A0 /* SignPainter-HouseScript.ttf */,
 				1BE92E3D1CB49A27009284A0 /* LaunchScreen.storyboard */,
 				1BE92E401CB49A27009284A0 /* Info.plist */,
 			);
@@ -135,6 +132,7 @@
 				TargetAttributes = {
 					1BE92E301CB49A27009284A0 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 3Q2C35Y544;
 					};
 				};
 			};
@@ -161,11 +159,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BE92E5B1CB4A9E8009284A0 /* Sigs Revamp.pages in Resources */,
 				1BE92E3F1CB49A27009284A0 /* LaunchScreen.storyboard in Resources */,
 				1BE92E3C1CB49A27009284A0 /* Assets.xcassets in Resources */,
 				1BE92E3A1CB49A27009284A0 /* Main.storyboard in Resources */,
-				1BE92E5D1CB568C6009284A0 /* SignPainter-HouseScript.ttf in Resources */,
+				1BE92E611CB81188009284A0 /* SignPainter-HouseScript.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,10 +298,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TheCoffeeShop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mitchell.TheCoffeeShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -312,10 +312,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TheCoffeeShop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mitchell.TheCoffeeShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
