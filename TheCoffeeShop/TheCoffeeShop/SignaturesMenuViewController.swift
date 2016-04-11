@@ -18,6 +18,9 @@ class SignaturesMenuViewController: UIViewController, UITableViewDelegate, UITab
         
         seedArray()
     }
+    @IBAction func goHome(sender: UIButton) {
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
     
     func seedArray() {
         

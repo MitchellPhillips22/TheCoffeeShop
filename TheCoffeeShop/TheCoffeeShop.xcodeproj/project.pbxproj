@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BDEFB6C1CBC01FB00167920 /* NonCoffeeDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDEFB6B1CBC01FB00167920 /* NonCoffeeDrink.swift */; };
+		1BDEFB6E1CBC025F00167920 /* JuiceDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDEFB6D1CBC025F00167920 /* JuiceDrink.swift */; };
+		1BDEFB701CBC02C800167920 /* NonCoffeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDEFB6F1CBC02C800167920 /* NonCoffeeTableViewCell.swift */; };
+		1BDEFB721CBC02D200167920 /* JuiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDEFB711CBC02D200167920 /* JuiceTableViewCell.swift */; };
 		1BE92E351CB49A27009284A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E341CB49A27009284A0 /* AppDelegate.swift */; };
 		1BE92E371CB49A27009284A0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E361CB49A27009284A0 /* HomeViewController.swift */; };
 		1BE92E3A1CB49A27009284A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE92E381CB49A27009284A0 /* Main.storyboard */; };
@@ -26,9 +30,17 @@
 		1BE92E611CB81188009284A0 /* SignPainter-HouseScript.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE92E601CB81188009284A0 /* SignPainter-HouseScript.ttf */; };
 		1BE92E631CB84528009284A0 /* SignatureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E621CB84528009284A0 /* SignatureTableViewCell.swift */; };
 		1BE92E651CB85077009284A0 /* SignatureLatte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E641CB85077009284A0 /* SignatureLatte.swift */; };
+		1BE92E671CB859B5009284A0 /* StandardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E661CB859B5009284A0 /* StandardsTableViewCell.swift */; };
+		1BE92E691CB859CF009284A0 /* StandardDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E681CB859CF009284A0 /* StandardDrink.swift */; };
+		523674EC7136EC063D341AE1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D7357F5D262A62894137F5 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		073D7B6C3DC018D3C21F1F1F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		1BDEFB6B1CBC01FB00167920 /* NonCoffeeDrink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonCoffeeDrink.swift; sourceTree = "<group>"; };
+		1BDEFB6D1CBC025F00167920 /* JuiceDrink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuiceDrink.swift; sourceTree = "<group>"; };
+		1BDEFB6F1CBC02C800167920 /* NonCoffeeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonCoffeeTableViewCell.swift; sourceTree = "<group>"; };
+		1BDEFB711CBC02D200167920 /* JuiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuiceTableViewCell.swift; sourceTree = "<group>"; };
 		1BE92E311CB49A27009284A0 /* TheCoffeeShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheCoffeeShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE92E341CB49A27009284A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BE92E361CB49A27009284A0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +62,10 @@
 		1BE92E601CB81188009284A0 /* SignPainter-HouseScript.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignPainter-HouseScript.ttf"; sourceTree = "<group>"; };
 		1BE92E621CB84528009284A0 /* SignatureTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureTableViewCell.swift; sourceTree = "<group>"; };
 		1BE92E641CB85077009284A0 /* SignatureLatte.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureLatte.swift; sourceTree = "<group>"; };
+		1BE92E661CB859B5009284A0 /* StandardsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardsTableViewCell.swift; sourceTree = "<group>"; };
+		1BE92E681CB859CF009284A0 /* StandardDrink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardDrink.swift; sourceTree = "<group>"; };
+		40339B7F916E744376877FB2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D9D7357F5D262A62894137F5 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				523674EC7136EC063D341AE1 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +85,8 @@
 			children = (
 				1BE92E331CB49A27009284A0 /* TheCoffeeShop */,
 				1BE92E321CB49A27009284A0 /* Products */,
+				90C56761E5BC6C77E51CBD33 /* Pods */,
+				A8A74C0346E2A7BAB75CB204 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,20 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				1BE92E341CB49A27009284A0 /* AppDelegate.swift */,
-				1BE92E361CB49A27009284A0 /* HomeViewController.swift */,
-				1BE92E461CB49EAD009284A0 /* LoyaltyCardViewController.swift */,
-				1BE92E481CB49F9D009284A0 /* AboutViewController.swift */,
-				1BE92E4A1CB49FE8009284A0 /* MenuHomeViewController.swift */,
-				1BE92E4C1CB4A002009284A0 /* SignaturesMenuViewController.swift */,
-				1BE92E621CB84528009284A0 /* SignatureTableViewCell.swift */,
-				1BE92E4E1CB4A019009284A0 /* StandardsMenuViewController.swift */,
-				1BE92E501CB4A027009284A0 /* NonCoffeeeMenuViewController.swift */,
-				1BE92E521CB4A035009284A0 /* JuiceMenuViewController.swift */,
-				1BE92E581CB4A155009284A0 /* FoodMenuViewController.swift */,
-				1BE92E5E1CB5C40C009284A0 /* EventsHomeViewController.swift */,
-				1BE92E541CB4A0CA009284A0 /* CalendarViewController.swift */,
-				1BE92E561CB4A0D7009284A0 /* OpenMicTableViewController.swift */,
-				1BE92E641CB85077009284A0 /* SignatureLatte.swift */,
+				1BE92E6A1CB859F3009284A0 /* Controllers */,
+				1BE92E6C1CB85A56009284A0 /* Views */,
+				1BE92E6B1CB85A49009284A0 /* Models */,
 				1BE92E381CB49A27009284A0 /* Main.storyboard */,
 				1BE92E3B1CB49A27009284A0 /* Assets.xcassets */,
 				1BE92E601CB81188009284A0 /* SignPainter-HouseScript.ttf */,
@@ -106,6 +114,64 @@
 			path = TheCoffeeShop;
 			sourceTree = "<group>";
 		};
+		1BE92E6A1CB859F3009284A0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1BE92E361CB49A27009284A0 /* HomeViewController.swift */,
+				1BE92E461CB49EAD009284A0 /* LoyaltyCardViewController.swift */,
+				1BE92E481CB49F9D009284A0 /* AboutViewController.swift */,
+				1BE92E4A1CB49FE8009284A0 /* MenuHomeViewController.swift */,
+				1BE92E4C1CB4A002009284A0 /* SignaturesMenuViewController.swift */,
+				1BE92E4E1CB4A019009284A0 /* StandardsMenuViewController.swift */,
+				1BE92E501CB4A027009284A0 /* NonCoffeeeMenuViewController.swift */,
+				1BE92E521CB4A035009284A0 /* JuiceMenuViewController.swift */,
+				1BE92E581CB4A155009284A0 /* FoodMenuViewController.swift */,
+				1BE92E5E1CB5C40C009284A0 /* EventsHomeViewController.swift */,
+				1BE92E541CB4A0CA009284A0 /* CalendarViewController.swift */,
+				1BE92E561CB4A0D7009284A0 /* OpenMicTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1BE92E6B1CB85A49009284A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1BE92E641CB85077009284A0 /* SignatureLatte.swift */,
+				1BE92E681CB859CF009284A0 /* StandardDrink.swift */,
+				1BDEFB6B1CBC01FB00167920 /* NonCoffeeDrink.swift */,
+				1BDEFB6D1CBC025F00167920 /* JuiceDrink.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1BE92E6C1CB85A56009284A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1BE92E621CB84528009284A0 /* SignatureTableViewCell.swift */,
+				1BE92E661CB859B5009284A0 /* StandardsTableViewCell.swift */,
+				1BDEFB6F1CBC02C800167920 /* NonCoffeeTableViewCell.swift */,
+				1BDEFB711CBC02D200167920 /* JuiceTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		90C56761E5BC6C77E51CBD33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40339B7F916E744376877FB2 /* Pods.debug.xcconfig */,
+				073D7B6C3DC018D3C21F1F1F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A8A74C0346E2A7BAB75CB204 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9D7357F5D262A62894137F5 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BE92E431CB49A27009284A0 /* Build configuration list for PBXNativeTarget "TheCoffeeShop" */;
 			buildPhases = (
+				DE09EE7FA57160FEE9E89136 /* Check Pods Manifest.lock */,
 				1BE92E2D1CB49A27009284A0 /* Sources */,
 				1BE92E2E1CB49A27009284A0 /* Frameworks */,
 				1BE92E2F1CB49A27009284A0 /* Resources */,
+				100BDAF89469AAF3DDD454BD /* Embed Pods Frameworks */,
+				7A9CF43BEA91CE44F96CA81B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,25 +243,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		100BDAF89469AAF3DDD454BD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A9CF43BEA91CE44F96CA81B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE09EE7FA57160FEE9E89136 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1BE92E2D1CB49A27009284A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1BE92E631CB84528009284A0 /* SignatureTableViewCell.swift in Sources */,
+				1BDEFB721CBC02D200167920 /* JuiceTableViewCell.swift in Sources */,
+				1BDEFB701CBC02C800167920 /* NonCoffeeTableViewCell.swift in Sources */,
 				1BE92E551CB4A0CA009284A0 /* CalendarViewController.swift in Sources */,
 				1BE92E371CB49A27009284A0 /* HomeViewController.swift in Sources */,
 				1BE92E471CB49EAD009284A0 /* LoyaltyCardViewController.swift in Sources */,
+				1BDEFB6E1CBC025F00167920 /* JuiceDrink.swift in Sources */,
 				1BE92E651CB85077009284A0 /* SignatureLatte.swift in Sources */,
 				1BE92E531CB4A035009284A0 /* JuiceMenuViewController.swift in Sources */,
 				1BE92E4D1CB4A002009284A0 /* SignaturesMenuViewController.swift in Sources */,
 				1BE92E4B1CB49FE8009284A0 /* MenuHomeViewController.swift in Sources */,
 				1BE92E491CB49F9D009284A0 /* AboutViewController.swift in Sources */,
 				1BE92E591CB4A155009284A0 /* FoodMenuViewController.swift in Sources */,
+				1BDEFB6C1CBC01FB00167920 /* NonCoffeeDrink.swift in Sources */,
 				1BE92E5F1CB5C40C009284A0 /* EventsHomeViewController.swift in Sources */,
 				1BE92E511CB4A027009284A0 /* NonCoffeeeMenuViewController.swift in Sources */,
 				1BE92E571CB4A0D7009284A0 /* OpenMicTableViewController.swift in Sources */,
 				1BE92E4F1CB4A019009284A0 /* StandardsMenuViewController.swift in Sources */,
+				1BE92E691CB859CF009284A0 /* StandardDrink.swift in Sources */,
+				1BE92E671CB859B5009284A0 /* StandardsTableViewCell.swift in Sources */,
 				1BE92E351CB49A27009284A0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +427,7 @@
 		};
 		1BE92E441CB49A27009284A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40339B7F916E744376877FB2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -318,6 +442,7 @@
 		};
 		1BE92E451CB49A27009284A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 073D7B6C3DC018D3C21F1F1F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -349,6 +474,7 @@
 				1BE92E451CB49A27009284A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

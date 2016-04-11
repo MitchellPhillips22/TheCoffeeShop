@@ -3,10 +3,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="SignPainter-HouseScript.ttf">
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
             <string>SignPainter-HouseScript</string>
             <string>SignPainter-HouseScript</string>
             <string>SignPainter-HouseScript</string>
@@ -505,42 +509,70 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STANDARD DRINKS " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2B-oF-sUI">
-                                <rect key="frame" x="154" y="20" width="291.5" height="41.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="STANDARD DRINKS " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2B-oF-sUI">
+                                <rect key="frame" x="86.5" y="20" width="427" height="52.5"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="45"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Non-dairy Milk Options: Soy, Almond, &amp; Coconut " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qbh-DY-RQF">
-                                <rect key="frame" x="104" y="76" width="392.5" height="23"/>
-                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rNL-rX-lZn">
-                                <rect key="frame" x="0.0" y="114" width="600" height="485.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rNL-rX-lZn">
+                                <rect key="frame" x="0.0" y="131.5" width="600" height="468"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="oJY-uy-Iug">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="standardCell" id="oJY-uy-Iug" customClass="StandardsTableViewCell" customModule="TheCoffeeShop" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oJY-uy-Iug" id="rJ1-7q-sUq">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xq-zH-TLv">
-                                                    <rect key="frame" x="15" y="8" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="35"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xq-zH-TLv">
+                                                    <rect key="frame" x="15" y="8" width="61.5" height="29.5"/>
+                                                    <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssf-CE-Mah">
+                                                    <rect key="frame" x="25" y="43.5" width="49" height="23.5"/>
+                                                    <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="20"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ssf-CE-Mah" firstAttribute="top" secondItem="7Xq-zH-TLv" secondAttribute="bottom" constant="6" id="45C-P1-iY9"/>
+                                                <constraint firstItem="7Xq-zH-TLv" firstAttribute="top" secondItem="rJ1-7q-sUq" secondAttribute="top" constant="8" id="LGy-Dp-7c9"/>
+                                                <constraint firstItem="ssf-CE-Mah" firstAttribute="leading" secondItem="rJ1-7q-sUq" secondAttribute="leading" constant="25" id="MbG-tK-Ngn"/>
+                                                <constraint firstItem="7Xq-zH-TLv" firstAttribute="leading" secondItem="rJ1-7q-sUq" secondAttribute="leading" constant="15" id="m2K-Jq-92K"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="drinkDescriptionLabel" destination="ssf-CE-Mah" id="3WH-Qp-TeA"/>
+                                            <outlet property="drinkNameLabel" destination="7Xq-zH-TLv" id="wQz-eG-S4N"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="wKK-ls-krB" id="uFj-1l-Mgs"/>
+                                    <outlet property="delegate" destination="wKK-ls-krB" id="DZa-j0-SRa"/>
+                                </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIX-Ux-Xgg">
+                                <rect key="frame" x="12" y="12" width="42" height="42"/>
+                                <state key="normal" image="home"/>
+                                <connections>
+                                    <action selector="goHome:" destination="wKK-ls-krB" eventType="touchUpInside" id="nOh-9S-Zfz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Non-dairy Milk Options: Soy, Almond, &amp; Coconut " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qbh-DY-RQF">
+                                <rect key="frame" x="24" y="87" width="553" height="29.5"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -550,8 +582,10 @@
                             <constraint firstItem="rNL-rX-lZn" firstAttribute="top" secondItem="Qbh-DY-RQF" secondAttribute="bottom" constant="15" id="Jqx-LJ-hH0"/>
                             <constraint firstAttribute="trailing" secondItem="rNL-rX-lZn" secondAttribute="trailing" id="bb5-sH-5nz"/>
                             <constraint firstItem="Qbh-DY-RQF" firstAttribute="centerX" secondItem="Ncj-uR-Jbg" secondAttribute="centerX" id="fci-rA-NUg"/>
+                            <constraint firstItem="EIX-Ux-Xgg" firstAttribute="leading" secondItem="Ncj-uR-Jbg" secondAttribute="leading" constant="12" id="hzd-Ed-iXp"/>
                             <constraint firstItem="H2B-oF-sUI" firstAttribute="centerX" secondItem="Ncj-uR-Jbg" secondAttribute="centerX" id="tKo-Bq-hTs"/>
                             <constraint firstItem="HnI-Qt-Ke7" firstAttribute="top" secondItem="rNL-rX-lZn" secondAttribute="bottom" id="x8e-8Z-Njs"/>
+                            <constraint firstItem="EIX-Ux-Xgg" firstAttribute="top" secondItem="Ncj-uR-Jbg" secondAttribute="top" constant="12" id="xbc-v9-B6t"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -578,14 +612,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All lattes may be HOT, ICED, or BLENDED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3G8-CM-b2W">
-                                <rect key="frame" x="135.5" y="67" width="329.5" height="23"/>
+                                <rect key="frame" x="135" y="67" width="329.5" height="23"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87M-Vr-6N9">
+                                <rect key="frame" x="20" y="20" width="35" height="31"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="20"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goHome:" destination="abD-m4-5Vf" eventType="touchUpInside" id="5TS-bz-yQ6"/>
+                                </connections>
+                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QdD-Sp-eb3">
                                 <rect key="frame" x="0.0" y="96" width="600" height="503.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SignatureCell" id="gn6-Gn-mf7" customClass="SignatureTableViewCell" customModule="TheCoffeeShop" customModuleProvider="target">
@@ -602,7 +646,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKc-wE-uhJ">
-                                                    <rect key="frame" x="33" y="37" width="33.5" height="18.5"/>
+                                                    <rect key="frame" x="25" y="37" width="33.5" height="18.5"/>
                                                     <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="20"/>
                                                     <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     <nil key="highlightedColor"/>
@@ -610,9 +654,9 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="DRG-sK-cbJ" firstAttribute="top" secondItem="p1a-zG-uSw" secondAttribute="top" constant="8" id="3nd-4i-BfV"/>
-                                                <constraint firstItem="uKc-wE-uhJ" firstAttribute="top" secondItem="DRG-sK-cbJ" secondAttribute="bottom" constant="6" id="96z-W3-Q36"/>
                                                 <constraint firstItem="DRG-sK-cbJ" firstAttribute="leading" secondItem="p1a-zG-uSw" secondAttribute="leading" constant="15" id="EnA-av-AI4"/>
-                                                <constraint firstItem="uKc-wE-uhJ" firstAttribute="leading" secondItem="p1a-zG-uSw" secondAttribute="leadingMargin" constant="25" id="IA5-mW-Sst"/>
+                                                <constraint firstItem="uKc-wE-uhJ" firstAttribute="top" secondItem="DRG-sK-cbJ" secondAttribute="bottom" constant="6" id="wwH-dK-5sA"/>
+                                                <constraint firstItem="uKc-wE-uhJ" firstAttribute="leading" secondItem="p1a-zG-uSw" secondAttribute="leading" constant="25" id="zOI-sn-sFq"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -632,11 +676,13 @@
                         <constraints>
                             <constraint firstItem="QdD-Sp-eb3" firstAttribute="top" secondItem="cHk-MR-zBr" secondAttribute="bottom" constant="35" id="7Qe-mJ-xjR"/>
                             <constraint firstAttribute="trailing" secondItem="QdD-Sp-eb3" secondAttribute="trailing" id="FTT-ci-BQ4"/>
+                            <constraint firstItem="87M-Vr-6N9" firstAttribute="top" secondItem="TF0-s0-Ian" secondAttribute="bottom" id="I3F-ML-NQF"/>
                             <constraint firstItem="3G8-CM-b2W" firstAttribute="centerX" secondItem="cHk-MR-zBr" secondAttribute="centerX" id="JM0-oS-9O2"/>
                             <constraint firstItem="cHk-MR-zBr" firstAttribute="top" secondItem="TF0-s0-Ian" secondAttribute="bottom" id="UNO-tc-WmK"/>
                             <constraint firstItem="cHk-MR-zBr" firstAttribute="centerX" secondItem="Bmp-2L-48y" secondAttribute="centerX" id="Xek-mt-HZn"/>
                             <constraint firstItem="QdD-Sp-eb3" firstAttribute="leading" secondItem="Bmp-2L-48y" secondAttribute="leading" id="cbt-4G-u3c"/>
                             <constraint firstItem="3G8-CM-b2W" firstAttribute="top" secondItem="cHk-MR-zBr" secondAttribute="bottom" constant="5.5" id="n6M-Sp-UOW"/>
+                            <constraint firstItem="87M-Vr-6N9" firstAttribute="leading" secondItem="Bmp-2L-48y" secondAttribute="leading" constant="20" id="poB-2L-U34"/>
                             <constraint firstItem="vo7-s0-Op4" firstAttribute="top" secondItem="QdD-Sp-eb3" secondAttribute="bottom" id="zOW-pJ-7bz"/>
                         </constraints>
                     </view>
@@ -656,7 +702,64 @@
                     <view key="view" contentMode="scaleToFill" id="y4K-7R-Vov">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NON COFFEE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1T-Vd-JeX">
+                                <rect key="frame" x="207" y="20" width="186.5" height="41.5"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="45"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w9n-2R-5mj">
+                                <rect key="frame" x="0.0" y="96.5" width="600" height="503.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="cis-Vz-e3g" customClass="NonCoffeeTableViewCell" customModule="TheCoffeeShop" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cis-Vz-e3g" id="0lh-p5-SpX">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWu-dL-3Cz">
+                                                    <rect key="frame" x="15" y="8" width="42" height="23"/>
+                                                    <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IeM-NA-VnD">
+                                                    <rect key="frame" x="25" y="37" width="33.5" height="18.5"/>
+                                                    <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="20"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="IeM-NA-VnD" firstAttribute="leading" secondItem="0lh-p5-SpX" secondAttribute="leading" constant="25" id="Bh3-s1-YGR"/>
+                                                <constraint firstItem="yWu-dL-3Cz" firstAttribute="top" secondItem="0lh-p5-SpX" secondAttribute="top" constant="8" id="IeP-Fd-nyp"/>
+                                                <constraint firstItem="IeM-NA-VnD" firstAttribute="top" secondItem="yWu-dL-3Cz" secondAttribute="bottom" constant="6" id="eBq-5c-tH3"/>
+                                                <constraint firstItem="yWu-dL-3Cz" firstAttribute="leading" secondItem="0lh-p5-SpX" secondAttribute="leading" constant="15" id="kaR-G7-gFf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="PUi-sK-qDi" id="efw-cy-dMc"/>
+                                    <outlet property="delegate" destination="PUi-sK-qDi" id="faJ-rB-LvV"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p1T-Vd-JeX" firstAttribute="centerX" secondItem="y4K-7R-Vov" secondAttribute="centerX" id="1CL-eQ-F9V"/>
+                            <constraint firstItem="ZpD-vt-og1" firstAttribute="top" secondItem="w9n-2R-5mj" secondAttribute="bottom" id="Jcv-bd-p2U"/>
+                            <constraint firstItem="p1T-Vd-JeX" firstAttribute="top" secondItem="0ZA-6k-4qK" secondAttribute="bottom" id="jCA-hU-aDa"/>
+                            <constraint firstItem="w9n-2R-5mj" firstAttribute="leading" secondItem="y4K-7R-Vov" secondAttribute="leading" id="jzW-3p-vsN"/>
+                            <constraint firstItem="w9n-2R-5mj" firstAttribute="top" secondItem="p1T-Vd-JeX" secondAttribute="bottom" constant="35" id="pc9-MC-yWi"/>
+                            <constraint firstAttribute="trailing" secondItem="w9n-2R-5mj" secondAttribute="trailing" id="qtz-7h-rwV"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7T8-Rq-iRI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1197,6 +1300,7 @@
         <image name="espresso" width="128" height="128"/>
         <image name="heart" width="128" height="128"/>
         <image name="history" width="128" height="128"/>
+        <image name="home" width="42" height="42"/>
         <image name="hours" width="128" height="128"/>
         <image name="juice" width="128" height="128"/>
         <image name="latte" width="128" height="128"/>
