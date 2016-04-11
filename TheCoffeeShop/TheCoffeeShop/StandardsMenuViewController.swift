@@ -10,7 +10,7 @@ import UIKit
 
 class StandardsMenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var drinksArray = [standardDrink]()
+    var drinksArray = [StandardDrink]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,19 +20,19 @@ class StandardsMenuViewController: UIViewController, UITableViewDelegate, UITabl
     func seedArray() {
         
         self.drinksArray = [
-            standardDrink(name: "HOUSE COFFEE", description: "ROASTS CHANGE DAILY"),
-            standardDrink(name: "ICED COFFEE", description: "COLD BREWED"),
-            standardDrink(name: "AMERICANO", description: "ESPRESSO SHOTS, WATER, HOT OR ON THE ROCKS"),
-            standardDrink(name: "LATTE", description: "STEAMED MILK, ESPRESSO SHOTS"),
-            standardDrink(name: "CAPPUCINO", description: "WET OR DRY MILK FOAM, ESPRESSO SHOTS"),
-            standardDrink(name: "MOCHA", description: "DARK, TAN, WHITE"),
-            standardDrink(name: "ONE UP", description: "ONE ESPRESSO SHOT, ONE MARKED ESPRESSO SHOT"),
-            standardDrink(name: "BREVE", description: "STEAMED HALF AND HALF, ESPRESSO SHOTS"),
-            standardDrink(name: "CAFE AU LAIT", description: "STEAMED MILK, DRIP COFFEE"),
-            standardDrink(name: "DOUBLE SHOT", description: "TWO SHOTS OF ESPRESSO"),
-            standardDrink(name: "BABY-CANO", description: "NAKED TRIPLE SHOT, STEAMED HALF AND HALF"),
-            standardDrink(name: "ESPRESSO MACCHIATO", description: "ESPRESSO SHOTS, A DOLLOP OF MILK FOAM"),
-            standardDrink(name: "ESPRESSO CON PANNA", description: "ESPRESSO SHOTS, A DOLLOP OF WHIPPED CREAM")
+            StandardDrink(name: "HOUSE COFFEE", description: "ROASTS CHANGE DAILY"),
+            StandardDrink(name: "ICED COFFEE", description: "COLD BREWED"),
+            StandardDrink(name: "AMERICANO", description: "ESPRESSO SHOTS, WATER, HOT OR ON THE ROCKS"),
+            StandardDrink(name: "LATTE", description: "STEAMED MILK, ESPRESSO SHOTS"),
+            StandardDrink(name: "CAPPUCINO", description: "WET OR DRY MILK FOAM, ESPRESSO SHOTS"),
+            StandardDrink(name: "MOCHA", description: "DARK, TAN, WHITE"),
+            StandardDrink(name: "ONE UP", description: "ONE ESPRESSO SHOT, ONE MARKED ESPRESSO SHOT"),
+            StandardDrink(name: "BREVE", description: "STEAMED HALF AND HALF, ESPRESSO SHOTS"),
+            StandardDrink(name: "CAFE AU LAIT", description: "STEAMED MILK, DRIP COFFEE"),
+            StandardDrink(name: "DOUBLE SHOT", description: "TWO SHOTS OF ESPRESSO"),
+            StandardDrink(name: "BABY-CANO", description: "NAKED TRIPLE SHOT, STEAMED HALF AND HALF"),
+            StandardDrink(name: "ESPRESSO MACCHIATO", description: "ESPRESSO SHOTS, A DOLLOP OF MILK FOAM"),
+            StandardDrink(name: "ESPRESSO CON PANNA", description: "ESPRESSO SHOTS, A DOLLOP OF WHIPPED CREAM")
         ]
     }
     

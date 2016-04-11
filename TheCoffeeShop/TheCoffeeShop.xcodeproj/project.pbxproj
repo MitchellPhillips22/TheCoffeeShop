@@ -11,6 +11,8 @@
 		1BDEFB6E1CBC025F00167920 /* JuiceDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDEFB6D1CBC025F00167920 /* JuiceDrink.swift */; };
 		1BDEFB701CBC02C800167920 /* NonCoffeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDEFB6F1CBC02C800167920 /* NonCoffeeTableViewCell.swift */; };
 		1BDEFB721CBC02D200167920 /* JuiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDEFB711CBC02D200167920 /* JuiceTableViewCell.swift */; };
+		1BDEFB741CBC185100167920 /* TimeSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDEFB731CBC185100167920 /* TimeSlot.swift */; };
+		1BDEFB761CBC454500167920 /* OpenMicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDEFB751CBC454500167920 /* OpenMicTableViewCell.swift */; };
 		1BE92E351CB49A27009284A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E341CB49A27009284A0 /* AppDelegate.swift */; };
 		1BE92E371CB49A27009284A0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E361CB49A27009284A0 /* HomeViewController.swift */; };
 		1BE92E3A1CB49A27009284A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE92E381CB49A27009284A0 /* Main.storyboard */; };
@@ -41,6 +43,8 @@
 		1BDEFB6D1CBC025F00167920 /* JuiceDrink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuiceDrink.swift; sourceTree = "<group>"; };
 		1BDEFB6F1CBC02C800167920 /* NonCoffeeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonCoffeeTableViewCell.swift; sourceTree = "<group>"; };
 		1BDEFB711CBC02D200167920 /* JuiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuiceTableViewCell.swift; sourceTree = "<group>"; };
+		1BDEFB731CBC185100167920 /* TimeSlot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSlot.swift; sourceTree = "<group>"; };
+		1BDEFB751CBC454500167920 /* OpenMicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenMicTableViewCell.swift; sourceTree = "<group>"; };
 		1BE92E311CB49A27009284A0 /* TheCoffeeShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheCoffeeShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE92E341CB49A27009284A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BE92E361CB49A27009284A0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +144,7 @@
 				1BE92E681CB859CF009284A0 /* StandardDrink.swift */,
 				1BDEFB6B1CBC01FB00167920 /* NonCoffeeDrink.swift */,
 				1BDEFB6D1CBC025F00167920 /* JuiceDrink.swift */,
+				1BDEFB731CBC185100167920 /* TimeSlot.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 				1BE92E661CB859B5009284A0 /* StandardsTableViewCell.swift */,
 				1BDEFB6F1CBC02C800167920 /* NonCoffeeTableViewCell.swift */,
 				1BDEFB711CBC02D200167920 /* JuiceTableViewCell.swift */,
+				1BDEFB751CBC454500167920 /* OpenMicTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -308,6 +314,7 @@
 				1BE92E4D1CB4A002009284A0 /* SignaturesMenuViewController.swift in Sources */,
 				1BE92E4B1CB49FE8009284A0 /* MenuHomeViewController.swift in Sources */,
 				1BE92E491CB49F9D009284A0 /* AboutViewController.swift in Sources */,
+				1BDEFB741CBC185100167920 /* TimeSlot.swift in Sources */,
 				1BE92E591CB4A155009284A0 /* FoodMenuViewController.swift in Sources */,
 				1BDEFB6C1CBC01FB00167920 /* NonCoffeeDrink.swift in Sources */,
 				1BE92E5F1CB5C40C009284A0 /* EventsHomeViewController.swift in Sources */,
@@ -315,6 +322,7 @@
 				1BE92E571CB4A0D7009284A0 /* OpenMicTableViewController.swift in Sources */,
 				1BE92E4F1CB4A019009284A0 /* StandardsMenuViewController.swift in Sources */,
 				1BE92E691CB859CF009284A0 /* StandardDrink.swift in Sources */,
+				1BDEFB761CBC454500167920 /* OpenMicTableViewCell.swift in Sources */,
 				1BE92E671CB859B5009284A0 /* StandardsTableViewCell.swift in Sources */,
 				1BE92E351CB49A27009284A0 /* AppDelegate.swift in Sources */,
 			);

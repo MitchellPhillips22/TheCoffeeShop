@@ -1,5 +1,5 @@
 //
-//  NonCoffeeTableViewCell.swift
+//  OpenMicTableViewCell.swift
 //  TheCoffeeShop
 //
 //  Created by Mitchell Phillips on 4/11/16.
@@ -8,12 +8,8 @@
 
 import UIKit
 
-class NonCoffeeTableViewCell: UITableViewCell {
+class OpenMicTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var drinkNameLabel: UILabel!
-    
-    @IBOutlet weak var drinkDescriptionLabel: UILabel!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

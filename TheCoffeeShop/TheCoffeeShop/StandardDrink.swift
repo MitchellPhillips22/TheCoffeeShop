@@ -8,7 +8,7 @@
 
 import Foundation
 
-class standardDrink {
+class StandardDrink {
     
     var name: String
     var description: String
