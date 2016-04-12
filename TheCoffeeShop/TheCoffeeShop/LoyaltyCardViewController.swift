@@ -149,7 +149,7 @@ class LoyaltyCardViewController: UIViewController {
         
         let alertController = UIAlertController(title: "Edit", message: "Enter code", preferredStyle: .Alert)
         
-        let verifyAction = UIAlertAction(title: "Edit", style: .Default) {
+        let verifyAction = UIAlertAction(title: "OK", style: .Default) {
             (verifyAction) -> Void in
             
             let textField = alertController.textFields?.first
