@@ -30,7 +30,7 @@ class NonCoffeeeMenuViewController: UIViewController, UITableViewDataSource, UIT
             NonCoffeeDrink(name: "TEA", description: "VARIOUS LOOSE LEAF TEAS, HOT or ON THE ROCKS"),
             NonCoffeeDrink(name: "ITALIAN SODA", description: "CHOICE OF FLAVORS, SODA WATER; CREAM AND WHIPPED CREAM OPTIONAL"),
             NonCoffeeDrink(name: "LEMONADE", description: "FRESH SQUEEZED LEMONS, CHERRY, LIME, STRAWBERRY, or RASPBERRY"),
-            NonCoffeeDrink(name: "SMOOTHIES", description: "STRAWBERRY, STRAWBERRY BANANA, RASPBERRY, WILD BERRY, PEACH, MANGO, PINA COLADA"),
+            NonCoffeeDrink(name: "SMOOTHIES", description: "STRAWBERRY, STRAWBERRY BANANA, RASPBERRY, WILD BERRY, PEACH, MANGO, PIÑA COLADA"),
             NonCoffeeDrink(name: "GREEN TEA LATTE", description: "MATCHA POWDER, WHITE CHOCOLATE, VANILLA"),
             NonCoffeeDrink(name: "KIDS CHOCOLATE OR MONKEY MILK", description: "CHOCOLATE MILK, BANANA OPTIONAL, WHIPPED CREAM")
             

@@ -46,6 +46,9 @@
             <string>SignPainter-HouseScript</string>
             <string>SignPainter-HouseScript</string>
             <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -826,12 +829,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EaE-Pl-UXG">
-                                <rect key="frame" x="0.0" y="91" width="600" height="508.5"/>
+                                <rect key="frame" x="0.0" y="81" width="600" height="414"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="juiceCell" id="CNL-Gg-CbE" customClass="JuiceTableViewCell" customModule="TheCoffeeShop" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="juiceCell" id="CNL-Gg-CbE" customClass="JuiceTableViewCell" customModule="TheCoffeeShop" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CNL-Gg-CbE" id="Z8y-eQ-Ite">
@@ -844,8 +847,8 @@
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7TE-B4-uwc">
-                                                    <rect key="frame" x="25" y="37" width="33.5" height="18.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7TE-B4-uwc">
+                                                    <rect key="frame" x="25" y="37" width="555" height="18.5"/>
                                                     <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="20"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -855,6 +858,7 @@
                                                 <constraint firstItem="7TE-B4-uwc" firstAttribute="top" secondItem="5Tn-2B-jZr" secondAttribute="bottom" constant="6" id="2gf-Rj-Jm7"/>
                                                 <constraint firstItem="7TE-B4-uwc" firstAttribute="leading" secondItem="Z8y-eQ-Ite" secondAttribute="leading" constant="25" id="382-hW-0VY"/>
                                                 <constraint firstItem="5Tn-2B-jZr" firstAttribute="leading" secondItem="Z8y-eQ-Ite" secondAttribute="leading" constant="15" id="5GT-pF-Z3e"/>
+                                                <constraint firstAttribute="trailing" secondItem="7TE-B4-uwc" secondAttribute="trailing" constant="20" id="9A3-c7-Gto"/>
                                                 <constraint firstItem="5Tn-2B-jZr" firstAttribute="top" secondItem="Z8y-eQ-Ite" secondAttribute="top" constant="8" id="bvE-fn-puq"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -865,16 +869,59 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="2lJ-JR-SPP" id="cHT-A9-0y9"/>
+                                    <outlet property="delegate" destination="2lJ-JR-SPP" id="DhE-PI-hdq"/>
+                                </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0m-iv-zUd">
+                                <rect key="frame" x="8" y="8" width="35" height="31"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="20"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goHome:" destination="2lJ-JR-SPP" eventType="touchUpInside" id="d3t-US-hzJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREATE YOUR OWN!  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fir-cw-lYQ">
+                                <rect key="frame" x="15" y="504.5" width="179" height="23"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeB-hd-LO1">
+                                <rect key="frame" x="25" y="533.5" width="555" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="L4o-LV-400"/>
+                                    <constraint firstAttribute="height" constant="60" id="hMZ-OU-CAB"/>
+                                </constraints>
+                                <string key="text">Pick from: ORANGE, APPLE, LEMON, GRAPEFRUIT, BEET, CELERY, CARROT, PINEAPPLE, CILANTRO, CUCUMBER, KALE, JALEPEÑO, SPINACH, GINGER, PEPPERS, TOMATO</string>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="L4o-LV-400"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="EaE-Pl-UXG" secondAttribute="trailing" id="4vT-TO-dmP"/>
+                            <constraint firstItem="xeB-hd-LO1" firstAttribute="top" secondItem="fir-cw-lYQ" secondAttribute="bottom" constant="6" id="77z-hG-M3o"/>
+                            <constraint firstAttribute="trailing" secondItem="xeB-hd-LO1" secondAttribute="trailing" constant="20" id="DIZ-BJ-2bL"/>
+                            <constraint firstItem="d0m-iv-zUd" firstAttribute="top" secondItem="3Xn-v6-Wxp" secondAttribute="top" constant="8" id="GvF-Jn-XLl"/>
                             <constraint firstItem="fOx-We-2dy" firstAttribute="top" secondItem="h25-RJ-fhK" secondAttribute="bottom" id="K6N-70-RCV"/>
-                            <constraint firstItem="EaE-Pl-UXG" firstAttribute="top" secondItem="fOx-We-2dy" secondAttribute="bottom" constant="30" id="ajH-jZ-gim"/>
+                            <constraint firstItem="xeB-hd-LO1" firstAttribute="leading" secondItem="3Xn-v6-Wxp" secondAttribute="leading" constant="25" id="OJj-Hh-cRj"/>
+                            <constraint firstItem="EaE-Pl-UXG" firstAttribute="top" secondItem="fOx-We-2dy" secondAttribute="bottom" constant="20" id="ajH-jZ-gim"/>
+                            <constraint firstItem="fir-cw-lYQ" firstAttribute="top" secondItem="EaE-Pl-UXG" secondAttribute="bottom" constant="10" id="bTv-7a-4g9"/>
                             <constraint firstItem="fOx-We-2dy" firstAttribute="centerX" secondItem="3Xn-v6-Wxp" secondAttribute="centerX" id="eM8-Yf-JwK"/>
+                            <constraint firstItem="fir-cw-lYQ" firstAttribute="leading" secondItem="3Xn-v6-Wxp" secondAttribute="leading" constant="15" id="jsg-90-A1R"/>
                             <constraint firstItem="EaE-Pl-UXG" firstAttribute="leading" secondItem="3Xn-v6-Wxp" secondAttribute="leading" id="kO7-fg-FmM"/>
-                            <constraint firstItem="L8h-Mq-JjO" firstAttribute="top" secondItem="EaE-Pl-UXG" secondAttribute="bottom" id="rnd-G4-0H2"/>
+                            <constraint firstItem="L8h-Mq-JjO" firstAttribute="top" secondItem="EaE-Pl-UXG" secondAttribute="bottom" constant="105" id="rnd-G4-0H2"/>
+                            <constraint firstItem="d0m-iv-zUd" firstAttribute="leading" secondItem="3Xn-v6-Wxp" secondAttribute="leading" constant="8" id="syR-ZD-BJh"/>
                         </constraints>
                     </view>
                 </viewController>

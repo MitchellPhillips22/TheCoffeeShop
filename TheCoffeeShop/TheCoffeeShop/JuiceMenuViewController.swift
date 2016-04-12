@@ -12,6 +12,10 @@ class JuiceMenuViewController: UIViewController, UITableViewDataSource, UITableV
 
     var drinksArray = [JuiceDrink]()
     
+    @IBAction func goHome(sender: UIButton) {
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         seedArray()
@@ -40,15 +44,14 @@ class JuiceMenuViewController: UIViewController, UITableViewDataSource, UITableV
     
     func seedArray() {
         self.drinksArray = [
-            JuiceDrink(name: "THE ORIGINAL", description: "APPLE, ORANGE, CARROT"),
-            JuiceDrink(name: "SOLAR FLARE", description: "PINEAPPLE, CUCUMBER, SPINACH, ORANGE, APPLE"),
-            JuiceDrink(name: "BEET DOWN", description: "BEET, APPLE, CARROT, LEMON, SPINACH"),
-            JuiceDrink(name: "TRAIN WRECK", description: "CARROT, GRAPEFRUIT, BEET, SPINACH, KALE, PINEAPPLE, ORANGE, LEMON"),
-            JuiceDrink(name: "EARTH BENDER", description: "SPINACH, CELERY, CUCUMBER, APPLE, BEET, CILANTRO"),
-            JuiceDrink(name: "ROOTS N' FRUITS", description: "LEMON, APPLE, ORANGE, GINGER, BEET, CARROT"),
-            JuiceDrink(name: "SUNDAY MORNING", description: "ORANGE, APPLE, PINEAPPLE, CARROT, CUCUMBER, GINGER, LEMON"),
-            JuiceDrink(name: "MERRIL'S MAGIC", description: "GINGER, CARROT, SPINACH, CUCUMBER, ORANGE, APPLE, PINEAPPLE"),
-            JuiceDrink(name: "CREATE YOUR OWN", description: "Pick from: ORANGE, APPLE, LEMON, GRAPEFRUIT, BEET, CELERY, CARROT, PINEAPPLE, CILANTRO, CUCUMBER, KALE, JALEPEÑO, SPINACH, GINGER, PEPPERS, TOMATO")
+            JuiceDrink(name: "THE ORIGINAL  ", description: "APPLE, ORANGE, CARROT"),
+            JuiceDrink(name: "SOLAR FLARE  ", description: "PINEAPPLE, CUCUMBER, SPINACH, ORANGE, APPLE"),
+            JuiceDrink(name: "BEET DOWN  ", description: "BEET, APPLE, CARROT, LEMON, SPINACH"),
+            JuiceDrink(name: "TRAIN WRECK  ", description: "CARROT, GRAPEFRUIT, BEET, SPINACH, KALE, PINEAPPLE, ORANGE, LEMON"),
+            JuiceDrink(name: "EARTH BENDER  ", description: "SPINACH, CELERY, CUCUMBER, APPLE, BEET, CILANTRO"),
+            JuiceDrink(name: "ROOTS N' FRUITS  ", description: "LEMON, APPLE, ORANGE, GINGER, BEET, CARROT"),
+            JuiceDrink(name: "SUNDAY MORNING  ", description: "ORANGE, APPLE, PINEAPPLE, CARROT, CUCUMBER, GINGER, LEMON"),
+            JuiceDrink(name: "MERRIL'S MAGIC  ", description: "GINGER, CARROT, SPINACH, CUCUMBER, ORANGE, APPLE, PINEAPPLE")
         ]
     }
 
