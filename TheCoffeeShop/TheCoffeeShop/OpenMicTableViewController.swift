@@ -14,7 +14,7 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
     var ref = Firebase(url: "https://the-coffee-shop.firebaseio.com")
     var timeSlotRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/timeslot")
     
-    var arrayOfTimeSlots = [TimeSlot]()
+    var arrayOfTimeSlots = [Event]()
     
     var dateFormatter: NSDateFormatter = {
         var formatter = NSDateFormatter()
@@ -52,7 +52,7 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
     //MARK: - Firebase set up
     func seedTimeSlot() {
         
-        let t = TimeSlot()
+        let t = Event()
         
         t.name = ""
         t.startTime = NSDate()
@@ -77,7 +77,7 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
                     if let dict = snap.value as? Dictionary<String, AnyObject> {
                         
                         let key = snap.key
-                        let timeSlot = TimeSlot(key: key, dict: dict)
+                        let timeSlot = Event(key: key, dict: dict)
                         self.arrayOfTimeSlots.insert(timeSlot, atIndex: 0)
                     }
 
@@ -85,9 +85,9 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
             }
         })
     }
-    func createTimeSlot(startDateString: String, endDateString: String, name: String) -> TimeSlot {
+    func createTimeSlot(startDateString: String, endDateString: String, name: String) -> Event {
         
-        let slot = TimeSlot()
+        let slot = Event()
         
         if let theDate = dateFormatter.dateFromString(startDateString) {
             slot.startTime = theDate

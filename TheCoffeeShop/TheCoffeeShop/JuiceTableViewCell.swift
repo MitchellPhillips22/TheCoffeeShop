@@ -10,6 +10,10 @@ import UIKit
 
 class JuiceTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var drinkNameLabel: UILabel!
+    
+    @IBOutlet weak var drinkDescriptionLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

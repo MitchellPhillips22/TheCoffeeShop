@@ -9,10 +9,11 @@
 import Foundation
 import Firebase
 
-class TimeSlot {
+class Event {
     
     var timeSlotRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/timeslot")
     
+    var eventDate = NSDate()
     var key = ""
     var startTime = NSDate()
     var endTime = NSDate()
@@ -26,6 +27,9 @@ class TimeSlot {
         
         self.key = key
         
+        if let eventDate = dict["eventDate"] as? NSDate {
+            self.eventDate = eventDate
+        }
         if let name = dict["name"] as? String {
             self.name = name
         }
@@ -43,6 +47,7 @@ class TimeSlot {
     func save() {
         
         let dict: [String: AnyObject] = [
+            "eventDate": self.eventDate,
             "name": self.name,
             "endTime": self.endTime,
             "startTime": self.startTime

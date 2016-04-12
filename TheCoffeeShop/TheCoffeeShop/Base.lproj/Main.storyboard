@@ -43,6 +43,9 @@
             <string>SignPainter-HouseScript</string>
             <string>SignPainter-HouseScript</string>
             <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -815,7 +818,64 @@
                     <view key="view" contentMode="scaleToFill" id="3Xn-v6-Wxp">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JUICES  " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOx-We-2dy">
+                                <rect key="frame" x="237" y="20" width="125.5" height="41.5"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="45"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EaE-Pl-UXG">
+                                <rect key="frame" x="0.0" y="91" width="600" height="508.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="juiceCell" id="CNL-Gg-CbE" customClass="JuiceTableViewCell" customModule="TheCoffeeShop" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CNL-Gg-CbE" id="Z8y-eQ-Ite">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Tn-2B-jZr">
+                                                    <rect key="frame" x="15" y="8" width="42" height="23"/>
+                                                    <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7TE-B4-uwc">
+                                                    <rect key="frame" x="25" y="37" width="33.5" height="18.5"/>
+                                                    <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="20"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7TE-B4-uwc" firstAttribute="top" secondItem="5Tn-2B-jZr" secondAttribute="bottom" constant="6" id="2gf-Rj-Jm7"/>
+                                                <constraint firstItem="7TE-B4-uwc" firstAttribute="leading" secondItem="Z8y-eQ-Ite" secondAttribute="leading" constant="25" id="382-hW-0VY"/>
+                                                <constraint firstItem="5Tn-2B-jZr" firstAttribute="leading" secondItem="Z8y-eQ-Ite" secondAttribute="leading" constant="15" id="5GT-pF-Z3e"/>
+                                                <constraint firstItem="5Tn-2B-jZr" firstAttribute="top" secondItem="Z8y-eQ-Ite" secondAttribute="top" constant="8" id="bvE-fn-puq"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="drinkDescriptionLabel" destination="7TE-B4-uwc" id="Dc2-Gr-PYn"/>
+                                            <outlet property="drinkNameLabel" destination="5Tn-2B-jZr" id="Dwh-me-ppc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="EaE-Pl-UXG" secondAttribute="trailing" id="4vT-TO-dmP"/>
+                            <constraint firstItem="fOx-We-2dy" firstAttribute="top" secondItem="h25-RJ-fhK" secondAttribute="bottom" id="K6N-70-RCV"/>
+                            <constraint firstItem="EaE-Pl-UXG" firstAttribute="top" secondItem="fOx-We-2dy" secondAttribute="bottom" constant="30" id="ajH-jZ-gim"/>
+                            <constraint firstItem="fOx-We-2dy" firstAttribute="centerX" secondItem="3Xn-v6-Wxp" secondAttribute="centerX" id="eM8-Yf-JwK"/>
+                            <constraint firstItem="EaE-Pl-UXG" firstAttribute="leading" secondItem="3Xn-v6-Wxp" secondAttribute="leading" id="kO7-fg-FmM"/>
+                            <constraint firstItem="L8h-Mq-JjO" firstAttribute="top" secondItem="EaE-Pl-UXG" secondAttribute="bottom" id="rnd-G4-0H2"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Vt-LH-Arz" userLabel="First Responder" sceneMemberID="firstResponder"/>
