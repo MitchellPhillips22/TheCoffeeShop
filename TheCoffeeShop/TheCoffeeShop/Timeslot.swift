@@ -15,6 +15,7 @@ class Timeslot {
     
     var key: String = ""
     var artist: String = ""
+    var time: String = ""
     var eventKey: String = ""
     var ref: Firebase?
     
@@ -31,6 +32,9 @@ class Timeslot {
         if let eventKey = dict["eventKey"] as? String {
             self.eventKey = eventKey
         }
+        if let time = dict["time"] as? String {
+            self.time = time 
+        }
         
         self.timeslotRef = timeslotRef.childByAppendingPath(self.key)
     }
@@ -39,6 +43,7 @@ class Timeslot {
         
         let dict: [String: AnyObject] = [
             "artist": self.artist,
+            "time": self.time, 
             "eventKey": self.eventKey
         ]
         let firebaseTimeSlot = self.timeslotRef.childByAutoId()

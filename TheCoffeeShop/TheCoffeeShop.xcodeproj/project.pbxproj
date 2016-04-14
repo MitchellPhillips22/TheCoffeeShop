@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1B7F3F431CBED48900E477C3 /* Timeslot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7F3F421CBED48900E477C3 /* Timeslot.swift */; };
 		1B7F3F451CBEEFD900E477C3 /* SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7F3F441CBEEFD900E477C3 /* SwiftDate.swift */; };
+		1BBFE0201CC019860031F75C /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBFE01F1CC019860031F75C /* EventsTableViewCell.swift */; };
+		1BBFE0221CC01B0C0031F75C /* OpenMicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBFE0211CC01B0C0031F75C /* OpenMicTableViewCell.swift */; };
 		1BDEFB6C1CBC01FB00167920 /* NonCoffeeDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDEFB6B1CBC01FB00167920 /* NonCoffeeDrink.swift */; };
 		1BDEFB6E1CBC025F00167920 /* JuiceDrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDEFB6D1CBC025F00167920 /* JuiceDrink.swift */; };
 		1BDEFB701CBC02C800167920 /* NonCoffeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDEFB6F1CBC02C800167920 /* NonCoffeeTableViewCell.swift */; };
@@ -26,8 +28,8 @@
 		1BE92E4F1CB4A019009284A0 /* StandardsMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E4E1CB4A019009284A0 /* StandardsMenuViewController.swift */; };
 		1BE92E511CB4A027009284A0 /* NonCoffeeeMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E501CB4A027009284A0 /* NonCoffeeeMenuViewController.swift */; };
 		1BE92E531CB4A035009284A0 /* JuiceMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E521CB4A035009284A0 /* JuiceMenuViewController.swift */; };
-		1BE92E551CB4A0CA009284A0 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E541CB4A0CA009284A0 /* CalendarViewController.swift */; };
-		1BE92E571CB4A0D7009284A0 /* OpenMicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E561CB4A0D7009284A0 /* OpenMicViewController.swift */; };
+		1BE92E551CB4A0CA009284A0 /* UpcomingEventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E541CB4A0CA009284A0 /* UpcomingEventsTableViewController.swift */; };
+		1BE92E571CB4A0D7009284A0 /* OpenMicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E561CB4A0D7009284A0 /* OpenMicTableViewController.swift */; };
 		1BE92E591CB4A155009284A0 /* FoodMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E581CB4A155009284A0 /* FoodMenuViewController.swift */; };
 		1BE92E5F1CB5C40C009284A0 /* EventsHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E5E1CB5C40C009284A0 /* EventsHomeViewController.swift */; };
 		1BE92E611CB81188009284A0 /* SignPainter-HouseScript.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE92E601CB81188009284A0 /* SignPainter-HouseScript.ttf */; };
@@ -42,6 +44,8 @@
 		073D7B6C3DC018D3C21F1F1F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		1B7F3F421CBED48900E477C3 /* Timeslot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeslot.swift; sourceTree = "<group>"; };
 		1B7F3F441CBEEFD900E477C3 /* SwiftDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDate.swift; sourceTree = "<group>"; };
+		1BBFE01F1CC019860031F75C /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
+		1BBFE0211CC01B0C0031F75C /* OpenMicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenMicTableViewCell.swift; sourceTree = "<group>"; };
 		1BDEFB6B1CBC01FB00167920 /* NonCoffeeDrink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonCoffeeDrink.swift; sourceTree = "<group>"; };
 		1BDEFB6D1CBC025F00167920 /* JuiceDrink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuiceDrink.swift; sourceTree = "<group>"; };
 		1BDEFB6F1CBC02C800167920 /* NonCoffeeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonCoffeeTableViewCell.swift; sourceTree = "<group>"; };
@@ -61,8 +65,8 @@
 		1BE92E4E1CB4A019009284A0 /* StandardsMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardsMenuViewController.swift; sourceTree = "<group>"; };
 		1BE92E501CB4A027009284A0 /* NonCoffeeeMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonCoffeeeMenuViewController.swift; sourceTree = "<group>"; };
 		1BE92E521CB4A035009284A0 /* JuiceMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuiceMenuViewController.swift; sourceTree = "<group>"; };
-		1BE92E541CB4A0CA009284A0 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
-		1BE92E561CB4A0D7009284A0 /* OpenMicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenMicViewController.swift; sourceTree = "<group>"; };
+		1BE92E541CB4A0CA009284A0 /* UpcomingEventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingEventsTableViewController.swift; sourceTree = "<group>"; };
+		1BE92E561CB4A0D7009284A0 /* OpenMicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenMicTableViewController.swift; sourceTree = "<group>"; };
 		1BE92E581CB4A155009284A0 /* FoodMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodMenuViewController.swift; sourceTree = "<group>"; };
 		1BE92E5E1CB5C40C009284A0 /* EventsHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsHomeViewController.swift; sourceTree = "<group>"; };
 		1BE92E601CB81188009284A0 /* SignPainter-HouseScript.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignPainter-HouseScript.ttf"; sourceTree = "<group>"; };
@@ -133,8 +137,8 @@
 				1BE92E521CB4A035009284A0 /* JuiceMenuViewController.swift */,
 				1BE92E581CB4A155009284A0 /* FoodMenuViewController.swift */,
 				1BE92E5E1CB5C40C009284A0 /* EventsHomeViewController.swift */,
-				1BE92E541CB4A0CA009284A0 /* CalendarViewController.swift */,
-				1BE92E561CB4A0D7009284A0 /* OpenMicViewController.swift */,
+				1BE92E541CB4A0CA009284A0 /* UpcomingEventsTableViewController.swift */,
+				1BE92E561CB4A0D7009284A0 /* OpenMicTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -160,6 +164,8 @@
 				1BE92E661CB859B5009284A0 /* StandardsTableViewCell.swift */,
 				1BDEFB6F1CBC02C800167920 /* NonCoffeeTableViewCell.swift */,
 				1BDEFB711CBC02D200167920 /* JuiceTableViewCell.swift */,
+				1BBFE01F1CC019860031F75C /* EventsTableViewCell.swift */,
+				1BBFE0211CC01B0C0031F75C /* OpenMicTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -308,10 +314,11 @@
 				1BE92E631CB84528009284A0 /* SignatureTableViewCell.swift in Sources */,
 				1BDEFB721CBC02D200167920 /* JuiceTableViewCell.swift in Sources */,
 				1BDEFB701CBC02C800167920 /* NonCoffeeTableViewCell.swift in Sources */,
-				1BE92E551CB4A0CA009284A0 /* CalendarViewController.swift in Sources */,
+				1BE92E551CB4A0CA009284A0 /* UpcomingEventsTableViewController.swift in Sources */,
 				1BE92E371CB49A27009284A0 /* HomeViewController.swift in Sources */,
 				1BE92E471CB49EAD009284A0 /* LoyaltyCardViewController.swift in Sources */,
 				1B7F3F451CBEEFD900E477C3 /* SwiftDate.swift in Sources */,
+				1BBFE0201CC019860031F75C /* EventsTableViewCell.swift in Sources */,
 				1BDEFB6E1CBC025F00167920 /* JuiceDrink.swift in Sources */,
 				1BE92E651CB85077009284A0 /* SignatureLatte.swift in Sources */,
 				1BE92E531CB4A035009284A0 /* JuiceMenuViewController.swift in Sources */,
@@ -319,11 +326,12 @@
 				1BE92E4B1CB49FE8009284A0 /* MenuHomeViewController.swift in Sources */,
 				1BE92E491CB49F9D009284A0 /* AboutViewController.swift in Sources */,
 				1BDEFB741CBC185100167920 /* Event.swift in Sources */,
+				1BBFE0221CC01B0C0031F75C /* OpenMicTableViewCell.swift in Sources */,
 				1BE92E591CB4A155009284A0 /* FoodMenuViewController.swift in Sources */,
 				1BDEFB6C1CBC01FB00167920 /* NonCoffeeDrink.swift in Sources */,
 				1BE92E5F1CB5C40C009284A0 /* EventsHomeViewController.swift in Sources */,
 				1BE92E511CB4A027009284A0 /* NonCoffeeeMenuViewController.swift in Sources */,
-				1BE92E571CB4A0D7009284A0 /* OpenMicViewController.swift in Sources */,
+				1BE92E571CB4A0D7009284A0 /* OpenMicTableViewController.swift in Sources */,
 				1B7F3F431CBED48900E477C3 /* Timeslot.swift in Sources */,
 				1BE92E4F1CB4A019009284A0 /* StandardsMenuViewController.swift in Sources */,
 				1BE92E691CB859CF009284A0 /* StandardDrink.swift in Sources */,

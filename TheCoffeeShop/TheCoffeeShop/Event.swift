@@ -18,6 +18,7 @@ class Event {
     var startDate = NSDate()
     var endDate = NSDate()
     var name = ""
+    var ref: Firebase?
     
     init() {
         

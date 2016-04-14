@@ -9,12 +9,15 @@
 import UIKit
 import Firebase
 
-class OpenMicViewController: UIViewController {
+class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var ref = Firebase(url: "https://the-coffee-shop.firebaseio.com")
     var timeSlotRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/timeslot")
     
     var arrayOfTimeSlots = [Timeslot]()
+    var arrayOfTimes = ["9:00-9:15","9:15-9:30","9:30-9:45","9:45-10:00","10:00-10:15","10:15-10:30","10:30-10:45","10:45-11:00","11:00-11:15","11:15-11:30","11:30-11:45","11:45-12:00"]
+
+    @IBOutlet weak var tableView: UITableView!
     
     var dateFormatter: NSDateFormatter = {
         var formatter = NSDateFormatter()
@@ -27,27 +30,31 @@ class OpenMicViewController: UIViewController {
         self.navigationController?.popToRootViewControllerAnimated(true)
     }
     
-    @IBOutlet var timeslotButtonCollection: Array<UIButton>?
-    
-    @IBAction func timeslotTapped(sender: UIButton) {
-        showAlert(sender)
-    }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        seedTimeSlot()
-        addObserver()
         
-         loadArtistNames()
-//        let button = UIButton()
-//        let timeslot = Timeslot()
-//        let b = timeslotButtonCollection![button.tag]
-//        b.setTitle(timeslot.artist, forState: .Normal)
-//        timeslot.ref?.updateChildValues(["artist": timeslot.artist])
+        print(arrayOfTimeSlots.count)
+        observeTimeSlots()
+        
+        print(arrayOfTimeSlots.count)
+ //       seedTimeSlots()
+        print(arrayOfTimeSlots.count)
+
     }
-    
-    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return arrayOfTimeSlots.count
+    }
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let t = arrayOfTimeSlots[indexPath.row]
+        let cell = tableView.dequeueReusableCellWithIdentifier("TimeCell", forIndexPath: indexPath) as! OpenMicTableViewCell
+        cell.timeLabel.text = t.time
+        cell.artistLabel.text = t.artist
+        return cell
+    }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let t = arrayOfTimeSlots[indexPath.row]
+        self.showAlert(t)
+    }
     
     //MARK: - Force portrait orientation
     override func viewDidAppear(animated: Bool) {
@@ -70,32 +77,15 @@ class OpenMicViewController: UIViewController {
         return .Portrait
     }
     //MARK: - Alert set up
-    func loadArtistNames() {
-        
-        
-        for timeslot in arrayOfTimeSlots {
-            if !arrayOfStrings.contains(timeslot.artist) {
-            print("loadArtistNames() called")
-            self.arrayOfStrings.append(timeslot.artist)
-            print("artist from arrayOfTimeslots \(timeslot.artist)")
-            }
-        }
-        for (index, artist) in arrayOfStrings.enumerate() {
-            let button = self.timeslotButtonCollection![index]
-            button.setTitle(artist, forState: .Normal)
-            print("artist from arrayOfStrings \(artist)")
-        }
-        
-    }
-    func showAlert(button: UIButton) {
+
+    func showAlert(timeslot: Timeslot) {
         let alertController = UIAlertController(title: "Add artist", message: "Type artist name", preferredStyle: .Alert)
         let addAction = UIAlertAction(title: "Add", style: .Default) {
             (addAction) -> Void in
             if let textField = alertController.textFields?.first {
-                let timeslot = self.arrayOfTimeSlots[Int(button.tag)]
-                print(self.arrayOfTimeSlots[3])
-                button.setTitle(textField.text, forState: .Normal)
-                timeslot.ref?.updateChildValues(["artist": textField.text!])
+                if let artistName = textField.text {
+                    timeslot.ref?.updateChildValues(["artist": artistName])
+                }
                 
                 
             }
@@ -111,22 +101,29 @@ class OpenMicViewController: UIViewController {
         presentViewController(alertController, animated: true, completion: nil)
     }
     
-    //MARK: - Firebase set up
-    func seedTimeSlot() {
-        
-        if self.arrayOfTimeSlots.count < 12 {
-            
-            for button in timeslotButtonCollection! {
-                let t = Timeslot()
-                let artist = button.titleLabel?.text
-                t.artist = artist!
-                t.save()
-            }
-        }
-        
-    }
     
-    func addObserver() {
+    //MARK: - Firebase set up
+    func seedTimeSlots() {
+        
+        
+        //Check if the current event has seeded time slots
+    
+            
+            //If the start date of event is before the end date
+            for time in arrayOfTimes {
+                
+                let slot = Timeslot()
+                slot.time = time
+                slot.artist = "Click here to reserve this slot"
+                slot.save()
+                
+                
+            }
+        
+        
+        //Creates and saves new time slots for every 15 minutes of event duration
+    }
+    func observeTimeSlots() {
         
         self.timeSlotRef.observeEventType(.Value, withBlock: { snapshot in
             
@@ -140,23 +137,23 @@ class OpenMicViewController: UIViewController {
                     
                     if let dict = snap.value as? Dictionary<String, AnyObject> {
                         
-                        if self.arrayOfTimeSlots.count > 11 {
-
+                        
                         let key = snap.key
                         let timeSlot = Timeslot(key: key, dict: dict)
                         timeSlot.ref = Firebase(url: "\(self.timeSlotRef)/\(key)")
                         self.arrayOfTimeSlots.append(timeSlot)
+                        
                         print(self.arrayOfTimeSlots.count)
-                        print(timeSlot.ref)
-                                                    self.loadArtistNames()
-                        }
+
+                        self.tableView.reloadData()
                     }
                     
                 }
             }
+            
         })
         
-       
+        
     }
     
     
