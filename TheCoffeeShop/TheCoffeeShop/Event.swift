@@ -11,12 +11,12 @@ import Firebase
 
 class Event {
     
-    var timeSlotRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/timeslot")
+    var eventRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/event")
     
     var eventDate = NSDate()
     var key = ""
-    var startTime = NSDate()
-    var endTime = NSDate()
+    var startDate = NSDate()
+    var endDate = NSDate()
     var name = ""
     
     init() {
@@ -34,13 +34,13 @@ class Event {
             self.name = name
         }
         if let startTime = dict["startTime"] as? NSDate {
-            self.startTime = startTime
+            self.startDate = startTime
         }
         if let endTime = dict["endTime"] as? NSDate {
-            self.endTime = endTime
+            self.endDate = endTime
         }
         
-         self.timeSlotRef = self.timeSlotRef.childByAppendingPath(self.key)
+         self.eventRef = self.eventRef.childByAppendingPath(self.key)
         
     }
     
@@ -49,10 +49,10 @@ class Event {
         let dict: [String: AnyObject] = [
             "eventDate": self.eventDate,
             "name": self.name,
-            "endTime": self.endTime,
-            "startTime": self.startTime
+            "endTime": self.endDate,
+            "startTime": self.startDate
         ]
-        let firebaseTimeSlot = self.timeSlotRef.childByAutoId()
-        firebaseTimeSlot.setValue(dict)
+        let firebaseEvent = self.eventRef.childByAutoId()
+        firebaseEvent.setValue(dict)
     }
 }
