@@ -36,8 +36,9 @@ class OpenMicViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        seedTimeSlot()
         addObserver()
+        
          loadArtistNames()
 //        let button = UIButton()
 //        let timeslot = Timeslot()
@@ -71,10 +72,13 @@ class OpenMicViewController: UIViewController {
     //MARK: - Alert set up
     func loadArtistNames() {
         
+        
         for timeslot in arrayOfTimeSlots {
+            if !arrayOfStrings.contains(timeslot.artist) {
             print("loadArtistNames() called")
             self.arrayOfStrings.append(timeslot.artist)
             print("artist from arrayOfTimeslots \(timeslot.artist)")
+            }
         }
         for (index, artist) in arrayOfStrings.enumerate() {
             let button = self.timeslotButtonCollection![index]
@@ -136,14 +140,15 @@ class OpenMicViewController: UIViewController {
                     
                     if let dict = snap.value as? Dictionary<String, AnyObject> {
                         
+                        if self.arrayOfTimeSlots.count > 11 {
+
                         let key = snap.key
                         let timeSlot = Timeslot(key: key, dict: dict)
                         timeSlot.ref = Firebase(url: "\(self.timeSlotRef)/\(key)")
                         self.arrayOfTimeSlots.append(timeSlot)
                         print(self.arrayOfTimeSlots.count)
                         print(timeSlot.ref)
-                        if self.arrayOfTimeSlots.count > 11 {
-                            self.loadArtistNames()
+                                                    self.loadArtistNames()
                         }
                     }
                     
