@@ -13,10 +13,11 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
     
     var ref = Firebase(url: "https://the-coffee-shop.firebaseio.com")
     var timeSlotRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/timeslot")
-    
+    var openMicRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/openmic")
+    var observerHasRun = false
     var arrayOfTimeSlots = [Timeslot]()
     var arrayOfTimes = ["9:00-9:15","9:15-9:30","9:30-9:45","9:45-10:00","10:00-10:15","10:15-10:30","10:30-10:45","10:45-11:00","11:00-11:15","11:15-11:30","11:30-11:45","11:45-12:00"]
-
+    var openMic = OpenMic()
     @IBOutlet weak var tableView: UITableView!
     
     var dateFormatter: NSDateFormatter = {
@@ -32,12 +33,12 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+//        loadDefaults()  
         print(arrayOfTimeSlots.count)
         observeTimeSlots()
         
         print(arrayOfTimeSlots.count)
- //       seedTimeSlots()
+        seedTimeSlots()
         print(arrayOfTimeSlots.count)
 
     }
@@ -101,25 +102,23 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
         presentViewController(alertController, animated: true, completion: nil)
     }
     
-    
     //MARK: - Firebase set up
     func seedTimeSlots() {
         
         
         //Check if the current event has seeded time slots
-    
-            
-            //If the start date of event is before the end date
+        if openMic.hasPopulated == false {
+        //If the start date of event is before the end date
             for time in arrayOfTimes {
                 
                 let slot = Timeslot()
                 slot.time = time
                 slot.artist = "Click here to reserve this slot"
                 slot.save()
-                
-                
+                openMic.ref?.updateChildValues(["hasPopulated": true])
             }
-        
+            
+        }
         
         //Creates and saves new time slots for every 15 minutes of event duration
     }
@@ -144,7 +143,8 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
                         self.arrayOfTimeSlots.append(timeSlot)
                         
                         print(self.arrayOfTimeSlots.count)
-
+                        self.observerHasRun = true
+//                        self.saveDefaults()
                         self.tableView.reloadData()
                     }
                     
@@ -155,6 +155,22 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
         
         
     }
+//    func saveDefaults() {
+//        print("saved")
+//        let defaults = NSUserDefaults.standardUserDefaults()
+//        defaults.setBool(observerHasRun, forKey: "observerHasRun")
+//        defaults.synchronize()
+//        
+//    }
+//    
+//    func loadDefaults() {
+//        let defaults = NSUserDefaults.standardUserDefaults()
+//        let value = defaults.boolForKey("observerHasRun")
+//        self.observerHasRun = value
+//        print(self.observerHasRun)
+//  
+//    }
+
     
     
 }

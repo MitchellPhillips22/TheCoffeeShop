@@ -282,7 +282,7 @@
                                 <rect key="frame" x="236" y="333" width="128" height="128"/>
                                 <state key="normal" image="mic"/>
                                 <connections>
-                                    <segue destination="09d-Ch-woh" kind="show" id="Fve-Xc-T8U"/>
+                                    <segue destination="09d-Ch-woh" kind="show" identifier="showOpenMicSegue" id="Fve-Xc-T8U"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbB-zv-gaH">
