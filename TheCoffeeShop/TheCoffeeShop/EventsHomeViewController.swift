@@ -21,16 +21,10 @@ class EventsHomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        seedOpenMicBool()
+     
         observeOpenMic()
     }
-    func seedOpenMicBool() {
-        if openMic.hasPopulated == false {
-        let o = openMic
-        o.hasPopulated = false
-        o.save()
-        }
-    }
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showOpenMicSegue" {
             let controller = segue.destinationViewController as! OpenMicTableViewController

@@ -29,6 +29,8 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
     
     @IBAction func goHome(sender: UIButton) {
         self.navigationController?.popToRootViewControllerAnimated(true)
+//        openMic.ref?.updateChildValues(["hasPopulated": true])
+        
     }
     
     override func viewDidLoad() {
@@ -38,7 +40,9 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
         observeTimeSlots()
         
         print(arrayOfTimeSlots.count)
-        seedTimeSlots()
+        if openMic.hasPopulated == false {
+            seedTimeSlots()
+        }
         print(arrayOfTimeSlots.count)
 
     }
@@ -109,14 +113,19 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
         //Check if the current event has seeded time slots
         if openMic.hasPopulated == false {
         //If the start date of event is before the end date
+            let o = openMic
+            o.hasPopulated = true
+            o.save()
             for time in arrayOfTimes {
                 
                 let slot = Timeslot()
                 slot.time = time
                 slot.artist = "Click here to reserve this slot"
                 slot.save()
-                openMic.ref?.updateChildValues(["hasPopulated": true])
+
+                
             }
+            o.ref?.updateChildValues(["hasPopulated": true])
             
         }
         
@@ -143,7 +152,8 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
                         self.arrayOfTimeSlots.append(timeSlot)
                         
                         print(self.arrayOfTimeSlots.count)
-                        self.observerHasRun = true
+//                        self.openMic.hasPopulated = true
+//                        self.openMic.ref?.updateChildValues(["hasPopulated": true])
 //                        self.saveDefaults()
                         self.tableView.reloadData()
                     }
