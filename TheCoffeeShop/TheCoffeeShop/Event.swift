@@ -13,10 +13,8 @@ class Event {
     
     var eventRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/event")
     
-    var eventDate = NSDate()
+    var eventDescription = ""
     var key = ""
-    var startDate = NSDate()
-    var endDate = NSDate()
     var name = ""
     var ref: Firebase?
     
@@ -28,19 +26,12 @@ class Event {
         
         self.key = key
         
-        if let eventDate = dict["eventDate"] as? NSDate {
-            self.eventDate = eventDate
+        if let eventDescription = dict["eventDescription"] as? String {
+            self.eventDescription = eventDescription
         }
         if let name = dict["name"] as? String {
             self.name = name
         }
-        if let startTime = dict["startTime"] as? NSDate {
-            self.startDate = startTime
-        }
-        if let endTime = dict["endTime"] as? NSDate {
-            self.endDate = endTime
-        }
-        
          self.eventRef = self.eventRef.childByAppendingPath(self.key)
         
     }
@@ -48,10 +39,8 @@ class Event {
     func save() {
         
         let dict: [String: AnyObject] = [
-            "eventDate": self.eventDate,
-            "name": self.name,
-            "endTime": self.endDate,
-            "startTime": self.startDate
+            "eventDescription": eventDescription,
+            "name": self.name
         ]
         let firebaseEvent = self.eventRef.childByAutoId()
         firebaseEvent.setValue(dict)

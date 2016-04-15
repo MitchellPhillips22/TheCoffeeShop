@@ -10,6 +10,10 @@ import UIKit
 
 class MenuHomeViewController: UIViewController {
 
+    @IBAction func unwindFromNonCoffee (segue: UIStoryboardSegue) {
+        print("unwind here")
+    }
+    
     @IBAction func goHome(sender: UIButton) {
         self.navigationController?.popToRootViewControllerAnimated(true)
     }

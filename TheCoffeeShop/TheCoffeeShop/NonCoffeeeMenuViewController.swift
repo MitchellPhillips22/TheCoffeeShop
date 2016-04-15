@@ -12,12 +12,15 @@ class NonCoffeeeMenuViewController: UIViewController, UITableViewDataSource, UIT
 
     var drinksArray = [NonCoffeeDrink]()
     
+ 
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         seedArray()
         // Do any additional setup after loading the view.
     }
+
 
     //MARK: - Set up drinks array
     
@@ -51,6 +54,9 @@ class NonCoffeeeMenuViewController: UIViewController, UITableViewDataSource, UIT
         return cell 
     }
     
+    @IBAction func goBackTapped(sender: UIButton) {
+        performSegueWithIdentifier("undwindFromNonCoffee", sender: self)
+    }
     
     //MARK: - Force Portrait orientation
 
@@ -65,6 +71,8 @@ class NonCoffeeeMenuViewController: UIViewController, UITableViewDataSource, UIT
         }
         return false
     }
+    
+    
     
     override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
         return .Portrait

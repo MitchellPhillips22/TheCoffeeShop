@@ -16,6 +16,8 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
     
     var arrayOfEvents = [Event]()
     
+    var isAdmin: Bool = false 
+    
     var dateFormatter: NSDateFormatter = {
         var formatter = NSDateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm"
@@ -33,10 +35,13 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
         showAlert(newEvent)
     }
     
+    @IBAction func adminTapped(sender: UIButton) {
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        observeEvents()
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -63,7 +68,10 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
         let cell = tableView.dequeueReusableCellWithIdentifier("EventCell", forIndexPath: indexPath) as! EventsTableViewCell
         let event = arrayOfEvents[indexPath.row]
         cell.eventNameLabel.text = event.name
-        cell.eventDateLabel.text = dateFormatter.stringFromDate(event.eventDate)
+        cell.eventDateLabel.text = event.eventDescription
+        print(event.name)
+        
+//        cell.eventDateLabel.text = dateFormatter.stringFromDate(event.eventDate)
         return cell
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -75,22 +83,25 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
         let addAction = UIAlertAction(title: "Add", style: .Default) {
             (addAction) -> Void in
             if let textField = alertController.textFields?.first,
-                dateTextField = alertController.textFields?.last {
+                descriptionTextField = alertController.textFields?.last {
                 if let eventName = textField.text,
-                    let eventDate = self.dateFormatter.dateFromString(dateTextField.text!) {
+                    let eventDescription = descriptionTextField.text {
                     let e = Event()
                     e.name = eventName
-                    e.eventDate = eventDate
+                    e.eventDescription = eventDescription
+                    e.save()
+//                    e.ref?.updateChildValues(["name": eventName, "eventDate": eventDate])
+                    print(e.name)
                     
                 }
-                
-                
             }
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .Default) {
             (cancelAction) -> Void in
         }
         alertController.addTextFieldWithConfigurationHandler { (textField) -> Void in
+        }
+        alertController.addTextFieldWithConfigurationHandler { (dateTextField) -> Void in
         }
         alertController.addAction(cancelAction)
         alertController.addAction(addAction)
@@ -129,7 +140,4 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
             
         })
     }
-    
-    
-    
 }
