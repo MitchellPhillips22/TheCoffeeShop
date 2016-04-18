@@ -923,12 +923,11 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIX-Ux-Xgg">
-                                <rect key="frame" x="281" y="563" width="36" height="29"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIX-Ux-Xgg">
+                                <rect key="frame" x="282" y="563" width="36" height="29"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="18"/>
                                 <state key="normal" title="BACK "/>
                                 <connections>
-                                    <action selector="goBack:" destination="wKK-ls-krB" eventType="touchUpInside" id="VJw-hu-Q86"/>
                                     <segue destination="nnV-xY-p3F" kind="unwind" unwindAction="unwindFromStandards:" id="c5A-6C-K6c"/>
                                 </connections>
                             </button>
@@ -1032,7 +1031,6 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="goBack:" destination="abD-m4-5Vf" eventType="touchUpInside" id="ma4-p8-1gT"/>
                                     <segue destination="2bi-W8-tsI" kind="unwind" unwindAction="unwindFromSignatures:" id="8tP-gD-Rhn"/>
                                 </connections>
                             </button>
@@ -1225,7 +1223,6 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="goBack:" destination="2lJ-JR-SPP" eventType="touchUpInside" id="Wxb-S4-kkM"/>
                                     <segue destination="Pgw-ZV-12O" kind="unwind" unwindAction="unwindFromJuice:" id="YMW-xx-jBw"/>
                                 </connections>
                             </button>

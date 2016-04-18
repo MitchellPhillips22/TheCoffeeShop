@@ -54,10 +54,6 @@ class NonCoffeeeMenuViewController: UIViewController, UITableViewDataSource, UIT
         return cell 
     }
     
-    @IBAction func goBackTapped(sender: UIButton) {
-        performSegueWithIdentifier("undwindFromNonCoffee", sender: self)
-    }
-    
     //MARK: - Force Portrait orientation
 
     override func viewDidAppear(animated: Bool) {

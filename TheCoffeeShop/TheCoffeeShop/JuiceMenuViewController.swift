@@ -12,10 +12,6 @@ class JuiceMenuViewController: UIViewController, UITableViewDataSource, UITableV
 
     var drinksArray = [JuiceDrink]()
     
-    @IBAction func goBack(sender: UIButton) {
-        performSegueWithIdentifier("undwindFromNonJuice", sender: self)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         seedArray()

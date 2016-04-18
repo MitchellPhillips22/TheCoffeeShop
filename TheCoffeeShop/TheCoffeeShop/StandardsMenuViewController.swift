@@ -36,11 +36,6 @@ class StandardsMenuViewController: UIViewController, UITableViewDelegate, UITabl
         ]
     }
     
-    @IBAction func goBack(sender: UIButton) {
-        performSegueWithIdentifier("undwindFromStandards", sender: self)
-
-    }
-    
     //MARK: - Table View set up
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

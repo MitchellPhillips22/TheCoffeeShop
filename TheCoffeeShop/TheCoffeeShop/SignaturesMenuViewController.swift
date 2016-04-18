@@ -18,9 +18,6 @@ class SignaturesMenuViewController: UIViewController, UITableViewDelegate, UITab
         
         seedArray()
     }
-    @IBAction func goBack(sender: UIButton) {
-        performSegueWithIdentifier("undwindFromSignatures", sender: self)
-    }
     
     func seedArray() {
         
