@@ -18,8 +18,8 @@ class SignaturesMenuViewController: UIViewController, UITableViewDelegate, UITab
         
         seedArray()
     }
-    @IBAction func goHome(sender: UIButton) {
-        self.navigationController?.popToRootViewControllerAnimated(true)
+    @IBAction func goBack(sender: UIButton) {
+        performSegueWithIdentifier("undwindFromSignatures", sender: self)
     }
     
     func seedArray() {

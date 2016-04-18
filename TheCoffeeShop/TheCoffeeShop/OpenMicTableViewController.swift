@@ -102,6 +102,8 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
                 self.timeSlotRef.removeValue()
                 self.seedTimeSlots()
                 self.isAuthorized = true
+                self.tableView.beginUpdates()
+                self.tableView.endUpdates() 
                          
             } else {
                 // fails authorization

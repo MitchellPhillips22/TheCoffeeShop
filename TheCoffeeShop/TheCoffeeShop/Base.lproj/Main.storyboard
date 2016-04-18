@@ -93,6 +93,9 @@
                                 <state key="normal" title="Loyalty">
                                     <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </state>
+                                <connections>
+                                    <segue destination="jeA-0f-who" kind="show" id="VGi-DI-fFW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fm7-ki-TAZ">
                                 <rect key="frame" x="72" y="315" width="44" height="35"/>
@@ -100,6 +103,9 @@
                                 <state key="normal" title="About">
                                     <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </state>
+                                <connections>
+                                    <segue destination="OEN-Hq-Iqe" kind="show" id="lpC-jG-MAx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TzW-K9-H8u">
                                 <rect key="frame" x="69" y="538" width="50" height="35"/>
@@ -107,6 +113,9 @@
                                 <state key="normal" title="Menus">
                                     <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </state>
+                                <connections>
+                                    <segue destination="5H5-mB-2aW" kind="show" id="EZf-6E-QNj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VtP-Gt-2X9">
                                 <rect key="frame" x="482" y="538" width="48" height="35"/>
@@ -114,6 +123,9 @@
                                 <state key="normal" title="Events">
                                     <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Fvb-IN-hsm" kind="show" id="Mrx-jT-X2h"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo white black back copy" translatesAutoresizingMaskIntoConstraints="NO" id="pYX-fM-qpX">
                                 <rect key="frame" x="180" y="32" width="240" height="128"/>
@@ -347,6 +359,9 @@
                                 <state key="normal" title="Location">
                                     <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </state>
+                                <connections>
+                                    <segue destination="4fn-Fh-whu" kind="show" id="gAb-me-n4H"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaH-Bn-J2B">
                                 <rect key="frame" x="482" y="471" width="47" height="35"/>
@@ -354,6 +369,9 @@
                                 <state key="normal" title="Hours">
                                     <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </state>
+                                <connections>
+                                    <segue destination="2dE-IF-wfs" kind="show" id="rpE-pf-CUR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JW2-pd-lpF">
                                 <rect key="frame" x="30" y="120" width="128" height="128"/>
@@ -483,7 +501,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zgb-IL-H2u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2429" y="316"/>
+            <point key="canvasLocation" x="2523" y="305"/>
         </scene>
         <!--Open Mic Table View Controller-->
         <scene sceneID="REN-sh-8tP">
@@ -558,7 +576,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5Z-T6-MoK">
-                                <rect key="frame" x="8" y="28" width="73" height="30"/>
+                                <rect key="frame" x="517" y="39" width="73" height="30"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="19"/>
                                 <state key="normal" title="Admin Mode">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -573,12 +591,12 @@
                             <constraint firstItem="zH5-as-iat" firstAttribute="top" secondItem="oSL-gF-g4F" secondAttribute="bottom" id="17f-GK-MyV"/>
                             <constraint firstItem="zH5-as-iat" firstAttribute="top" secondItem="v79-98-lZM" secondAttribute="bottom" constant="10" id="4Wb-mg-ZuE"/>
                             <constraint firstItem="oSL-gF-g4F" firstAttribute="centerX" secondItem="AHN-Dc-PXl" secondAttribute="centerX" id="8wk-LG-1h0"/>
+                            <constraint firstItem="v79-98-lZM" firstAttribute="top" secondItem="y5Z-T6-MoK" secondAttribute="bottom" constant="3" id="9y2-gV-D8h"/>
                             <constraint firstItem="TF8-Ks-dej" firstAttribute="top" secondItem="6yz-Ou-Yva" secondAttribute="bottom" id="Aj9-OW-Ki3"/>
-                            <constraint firstItem="y5Z-T6-MoK" firstAttribute="leading" secondItem="AHN-Dc-PXl" secondAttribute="leading" constant="8" id="PJ7-nx-jF9"/>
                             <constraint firstItem="v79-98-lZM" firstAttribute="leading" secondItem="AHN-Dc-PXl" secondAttribute="leading" id="PUC-fc-Je5"/>
-                            <constraint firstItem="y5Z-T6-MoK" firstAttribute="top" secondItem="6yz-Ou-Yva" secondAttribute="bottom" constant="8" id="WT6-Wk-A1p"/>
                             <constraint firstItem="v79-98-lZM" firstAttribute="top" secondItem="TF8-Ks-dej" secondAttribute="bottom" constant="20" id="XqJ-AA-19A"/>
                             <constraint firstItem="TF8-Ks-dej" firstAttribute="centerX" secondItem="AHN-Dc-PXl" secondAttribute="centerX" id="bY5-eV-3H3"/>
+                            <constraint firstAttribute="trailing" secondItem="y5Z-T6-MoK" secondAttribute="trailing" constant="10" id="lO4-Np-uqE"/>
                             <constraint firstAttribute="trailing" secondItem="v79-98-lZM" secondAttribute="trailing" id="nIv-tt-dJJ"/>
                             <constraint firstItem="oSL-gF-g4F" firstAttribute="top" secondItem="v79-98-lZM" secondAttribute="bottom" constant="5" id="rb2-2F-fCL"/>
                         </constraints>
@@ -595,7 +613,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WcI-b6-S0w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2123" y="1095"/>
+            <point key="canvasLocation" x="2271" y="974"/>
         </scene>
         <!--Upcoming Events Table View Controller-->
         <scene sceneID="1Vf-ev-CQA">
@@ -748,6 +766,9 @@
                                 <state key="normal" title="Signature Lattes">
                                     <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </state>
+                                <connections>
+                                    <segue destination="abD-m4-5Vf" kind="show" id="2tQ-9Z-kfV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5O-Ob-PxO">
                                 <rect key="frame" x="440" y="258" width="132" height="35"/>
@@ -755,6 +776,9 @@
                                 <state key="normal" title="Standard Drinks">
                                     <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </state>
+                                <connections>
+                                    <segue destination="wKK-ls-krB" kind="show" id="il3-rR-bRM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzp-p7-Mjc">
                                 <rect key="frame" x="30" y="333" width="128" height="128"/>
@@ -769,6 +793,9 @@
                                 <state key="normal" title="Non-Coffee">
                                     <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </state>
+                                <connections>
+                                    <segue destination="PUi-sK-qDi" kind="show" id="p2p-PN-qic"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUA-Oc-AH2">
                                 <rect key="frame" x="481" y="471" width="50" height="35"/>
@@ -776,6 +803,9 @@
                                 <state key="normal" title="Juices">
                                     <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </state>
+                                <connections>
+                                    <segue destination="2lJ-JR-SPP" kind="show" id="mt0-zR-oeo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOa-B0-77B">
                                 <rect key="frame" x="278.5" y="550" width="43" height="35"/>
@@ -854,7 +884,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xq-zH-TLv">
-                                                    <rect key="frame" x="15" y="8" width="42" height="23"/>
+                                                    <rect key="frame" x="15" y="8" width="570" height="23"/>
                                                     <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -871,6 +901,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="ssf-CE-Mah" secondAttribute="trailing" constant="15" id="9LX-Oq-fWz"/>
                                                 <constraint firstItem="7Xq-zH-TLv" firstAttribute="top" secondItem="rJ1-7q-sUq" secondAttribute="top" constant="8" id="LGy-Dp-7c9"/>
                                                 <constraint firstItem="ssf-CE-Mah" firstAttribute="leading" secondItem="rJ1-7q-sUq" secondAttribute="leading" constant="25" id="MbG-tK-Ngn"/>
+                                                <constraint firstAttribute="trailing" secondItem="7Xq-zH-TLv" secondAttribute="trailing" constant="15" id="RmC-Xf-xO0"/>
                                                 <constraint firstItem="7Xq-zH-TLv" firstAttribute="leading" secondItem="rJ1-7q-sUq" secondAttribute="leading" constant="15" id="m2K-Jq-92K"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -892,12 +923,13 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIX-Ux-Xgg">
-                                <rect key="frame" x="284" y="563" width="31" height="29"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIX-Ux-Xgg">
+                                <rect key="frame" x="281" y="563" width="36" height="29"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="18"/>
-                                <state key="normal" title="Home"/>
+                                <state key="normal" title="BACK "/>
                                 <connections>
-                                    <action selector="goHome:" destination="wKK-ls-krB" eventType="touchUpInside" id="nOh-9S-Zfz"/>
+                                    <action selector="goBack:" destination="wKK-ls-krB" eventType="touchUpInside" id="VJw-hu-Q86"/>
+                                    <segue destination="nnV-xY-p3F" kind="unwind" unwindAction="unwindFromStandards:" id="c5A-6C-K6c"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -919,8 +951,9 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FhF-uR-g4U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="nnV-xY-p3F" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="426" y="1707"/>
+            <point key="canvasLocation" x="1922" y="1643"/>
         </scene>
         <!--Signatures Menu View Controller-->
         <scene sceneID="XDU-id-ubK">
@@ -940,16 +973,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87M-Vr-6N9">
-                                <rect key="frame" x="20" y="20" width="35" height="31"/>
-                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="20"/>
-                                <state key="normal" title="Home">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="goHome:" destination="abD-m4-5Vf" eventType="touchUpInside" id="5TS-bz-yQ6"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QdD-Sp-eb3">
                                 <rect key="frame" x="0.0" y="96" width="600" height="503.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -963,7 +986,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRG-sK-cbJ">
-                                                    <rect key="frame" x="15" y="8" width="42" height="23"/>
+                                                    <rect key="frame" x="15" y="8" width="570" height="23"/>
                                                     <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
                                                     <color key="textColor" red="0.92841774225234985" green="0.81764370203018188" blue="0.66177988052368164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -979,6 +1002,7 @@
                                                 <constraint firstItem="DRG-sK-cbJ" firstAttribute="top" secondItem="p1a-zG-uSw" secondAttribute="top" constant="8" id="3nd-4i-BfV"/>
                                                 <constraint firstAttribute="trailing" secondItem="uKc-wE-uhJ" secondAttribute="trailing" constant="15" id="Bsx-Ye-xdm"/>
                                                 <constraint firstItem="DRG-sK-cbJ" firstAttribute="leading" secondItem="p1a-zG-uSw" secondAttribute="leading" constant="15" id="EnA-av-AI4"/>
+                                                <constraint firstAttribute="trailing" secondItem="DRG-sK-cbJ" secondAttribute="trailing" constant="15" id="HMN-jq-nTa"/>
                                                 <constraint firstItem="uKc-wE-uhJ" firstAttribute="top" secondItem="DRG-sK-cbJ" secondAttribute="bottom" constant="6" id="wwH-dK-5sA"/>
                                                 <constraint firstItem="uKc-wE-uhJ" firstAttribute="leading" secondItem="p1a-zG-uSw" secondAttribute="leading" constant="25" id="zOI-sn-sFq"/>
                                             </constraints>
@@ -1001,6 +1025,17 @@
                                 <color key="textColor" red="0.92841774225234985" green="0.81764370203018188" blue="0.66177988052368164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87M-Vr-6N9">
+                                <rect key="frame" x="5" y="20" width="40" height="31"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="20"/>
+                                <state key="normal" title="BACK ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBack:" destination="abD-m4-5Vf" eventType="touchUpInside" id="ma4-p8-1gT"/>
+                                    <segue destination="2bi-W8-tsI" kind="unwind" unwindAction="unwindFromSignatures:" id="8tP-gD-Rhn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1014,14 +1049,15 @@
                             <constraint firstItem="cHk-MR-zBr" firstAttribute="centerX" secondItem="Bmp-2L-48y" secondAttribute="centerX" id="Xek-mt-HZn"/>
                             <constraint firstItem="QdD-Sp-eb3" firstAttribute="leading" secondItem="Bmp-2L-48y" secondAttribute="leading" id="cbt-4G-u3c"/>
                             <constraint firstItem="3G8-CM-b2W" firstAttribute="top" secondItem="cHk-MR-zBr" secondAttribute="bottom" constant="5.5" id="n6M-Sp-UOW"/>
-                            <constraint firstItem="87M-Vr-6N9" firstAttribute="leading" secondItem="Bmp-2L-48y" secondAttribute="leading" constant="20" id="poB-2L-U34"/>
+                            <constraint firstItem="87M-Vr-6N9" firstAttribute="leading" secondItem="Bmp-2L-48y" secondAttribute="leading" constant="5" id="poB-2L-U34"/>
                             <constraint firstItem="vo7-s0-Op4" firstAttribute="top" secondItem="QdD-Sp-eb3" secondAttribute="bottom" id="zOW-pJ-7bz"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2sq-z2-Gtf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="2bi-W8-tsI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2091" y="1817"/>
+            <point key="canvasLocation" x="635" y="1633"/>
         </scene>
         <!--Non Coffeee Menu View Controller-->
         <scene sceneID="HZl-yL-Qbu">
@@ -1055,13 +1091,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWu-dL-3Cz">
-                                                    <rect key="frame" x="15" y="8" width="42" height="23"/>
+                                                    <rect key="frame" x="15" y="8" width="570" height="23"/>
                                                     <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IeM-NA-VnD">
-                                                    <rect key="frame" x="25" y="37" width="33.5" height="18.5"/>
+                                                    <rect key="frame" x="25" y="37" width="560" height="18.5"/>
                                                     <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="20"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1070,6 +1106,8 @@
                                             <constraints>
                                                 <constraint firstItem="IeM-NA-VnD" firstAttribute="leading" secondItem="0lh-p5-SpX" secondAttribute="leading" constant="25" id="Bh3-s1-YGR"/>
                                                 <constraint firstItem="yWu-dL-3Cz" firstAttribute="top" secondItem="0lh-p5-SpX" secondAttribute="top" constant="8" id="IeP-Fd-nyp"/>
+                                                <constraint firstAttribute="trailing" secondItem="yWu-dL-3Cz" secondAttribute="trailing" constant="15" id="QrA-mk-FtK"/>
+                                                <constraint firstAttribute="trailing" secondItem="IeM-NA-VnD" secondAttribute="trailing" constant="15" id="WcN-sL-YLI"/>
                                                 <constraint firstItem="IeM-NA-VnD" firstAttribute="top" secondItem="yWu-dL-3Cz" secondAttribute="bottom" constant="6" id="eBq-5c-tH3"/>
                                                 <constraint firstItem="yWu-dL-3Cz" firstAttribute="leading" secondItem="0lh-p5-SpX" secondAttribute="leading" constant="15" id="kaR-G7-gFf"/>
                                             </constraints>
@@ -1087,9 +1125,9 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOi-hV-p2M">
-                                <rect key="frame" x="284" y="571" width="31" height="29"/>
+                                <rect key="frame" x="282.5" y="571" width="36" height="29"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="18"/>
-                                <state key="normal" title="Home">
+                                <state key="normal" title="BACK ">
                                     <color key="titleColor" red="0.92841774225234985" green="0.81764370203018188" blue="0.66177988052368164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -1113,7 +1151,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7T8-Rq-iRI" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="HiU-wd-tbf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="868" y="2354"/>
+            <point key="canvasLocation" x="1268" y="1674"/>
         </scene>
         <!--Juice Menu View Controller-->
         <scene sceneID="KxV-th-jFX">
@@ -1147,7 +1185,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Tn-2B-jZr">
-                                                    <rect key="frame" x="15" y="8" width="42" height="23"/>
+                                                    <rect key="frame" x="15" y="8" width="570" height="23"/>
                                                     <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1164,6 +1202,7 @@
                                                 <constraint firstItem="7TE-B4-uwc" firstAttribute="leading" secondItem="Z8y-eQ-Ite" secondAttribute="leading" constant="25" id="382-hW-0VY"/>
                                                 <constraint firstItem="5Tn-2B-jZr" firstAttribute="leading" secondItem="Z8y-eQ-Ite" secondAttribute="leading" constant="15" id="5GT-pF-Z3e"/>
                                                 <constraint firstAttribute="trailing" secondItem="7TE-B4-uwc" secondAttribute="trailing" constant="20" id="9A3-c7-Gto"/>
+                                                <constraint firstAttribute="trailing" secondItem="5Tn-2B-jZr" secondAttribute="trailing" constant="15" id="JNH-5T-Ym8"/>
                                                 <constraint firstItem="5Tn-2B-jZr" firstAttribute="top" secondItem="Z8y-eQ-Ite" secondAttribute="top" constant="8" id="bvE-fn-puq"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -1180,23 +1219,24 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0m-iv-zUd">
-                                <rect key="frame" x="8" y="8" width="35" height="31"/>
+                                <rect key="frame" x="8" y="8" width="40" height="31"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="20"/>
-                                <state key="normal" title="Home">
+                                <state key="normal" title="BACK ">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="goHome:" destination="2lJ-JR-SPP" eventType="touchUpInside" id="d3t-US-hzJ"/>
+                                    <action selector="goBack:" destination="2lJ-JR-SPP" eventType="touchUpInside" id="Wxb-S4-kkM"/>
+                                    <segue destination="Pgw-ZV-12O" kind="unwind" unwindAction="unwindFromJuice:" id="YMW-xx-jBw"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREATE YOUR OWN!  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fir-cw-lYQ">
-                                <rect key="frame" x="15" y="504.5" width="179" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CREATE YOUR OWN!  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fir-cw-lYQ">
+                                <rect key="frame" x="15" y="504" width="179" height="23"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeB-hd-LO1">
-                                <rect key="frame" x="25" y="533.5" width="555" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeB-hd-LO1">
+                                <rect key="frame" x="25" y="533" width="555" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="500" id="L4o-LV-400"/>
                                     <constraint firstAttribute="height" constant="60" id="hMZ-OU-CAB"/>
@@ -1231,8 +1271,9 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Vt-LH-Arz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Pgw-ZV-12O" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1259" y="1674"/>
+            <point key="canvasLocation" x="1739" y="2538"/>
         </scene>
         <!--Food Menu View Controller-->
         <scene sceneID="8C9-Ng-iAk">
@@ -1759,4 +1800,16 @@
         <image name="selectedStar" width="50" height="50"/>
         <image name="unselectedStar" width="50" height="50"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="pai-Cz-6YV"/>
+        <segue reference="lpC-jG-MAx"/>
+        <segue reference="cMF-g6-hbR"/>
+        <segue reference="EZf-6E-QNj"/>
+        <segue reference="Mrx-jT-X2h"/>
+        <segue reference="pXy-MC-fkn"/>
+        <segue reference="PGR-16-8BB"/>
+        <segue reference="p2p-PN-qic"/>
+        <segue reference="il3-rR-bRM"/>
+        <segue reference="x9F-t4-JNk"/>
+    </inferredMetricsTieBreakers>
 </document>

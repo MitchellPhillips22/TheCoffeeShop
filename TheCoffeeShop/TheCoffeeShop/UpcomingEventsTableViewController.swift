@@ -14,8 +14,8 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
     var ref = Firebase(url: "https://the-coffee-shop.firebaseio.com")
     var eventRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/event")
     var codeRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/code")
-
-    var code = AuthCode() 
+    
+    var code = AuthCode()
     var arrayOfEvents = [Event]()
     
     var isAdmin: Bool = false
@@ -50,7 +50,7 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
         addEventOutlet.hidden = true
-//        adminOutlet.hidden = true 
+        //        adminOutlet.hidden = true
         observeEvents()
         tapGestureRecognized()
     }
@@ -97,19 +97,20 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
         cell.eventDateLabel.text = event.eventDescription
         print(event.name)
         
-//        cell.eventDateLabel.text = dateFormatter.stringFromDate(event.eventDate)
+        //        cell.eventDateLabel.text = dateFormatter.stringFromDate(event.eventDate)
         return cell
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayOfEvents.count
     }
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        
-        
-        if editingStyle == .Delete {
+        if isAuthorized == true {
             
-            let event = self.arrayOfEvents[indexPath.row]
-            event.ref?.removeValue()
+            if editingStyle == .Delete {
+                
+                let event = self.arrayOfEvents[indexPath.row]
+                event.ref?.removeValue()
+            }
         }
     }
     //MARK: - Set up admin functions
@@ -127,7 +128,7 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
                 print("approved")
                 self.addEventOutlet.hidden = false
                 self.isAuthorized = true
-           
+                
             } else {
                 // fails authorization
                 print("wrong code")
@@ -145,8 +146,8 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
         
         presentViewController(alertController, animated: true, completion: nil)
     }
-
-
+    
+    
     //    MARK: - Set up alert
     func showAlert(event: Event) {
         let alertController = UIAlertController(title: "Add event", message: "Type event name then date", preferredStyle: .Alert)
@@ -160,7 +161,7 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
                     e.name = eventName
                     e.eventDescription = eventDescription
                     e.save()
-//                    e.ref?.updateChildValues(["name": eventName, "eventDate": eventDate])
+                    //                    e.ref?.updateChildValues(["name": eventName, "eventDate": eventDate])
                     print(e.name)
                     
                 }
@@ -178,7 +179,7 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
         
         presentViewController(alertController, animated: true, completion: nil)
     }
-
+    
     
     func observeEvents() {
         

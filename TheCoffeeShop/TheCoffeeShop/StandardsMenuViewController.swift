@@ -36,8 +36,8 @@ class StandardsMenuViewController: UIViewController, UITableViewDelegate, UITabl
         ]
     }
     
-    @IBAction func goHome(sender: UIButton) {
-        self.navigationController?.popToRootViewControllerAnimated(true)
+    @IBAction func goBack(sender: UIButton) {
+        performSegueWithIdentifier("undwindFromStandards", sender: self)
 
     }
     

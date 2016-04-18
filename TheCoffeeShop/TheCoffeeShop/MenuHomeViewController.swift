@@ -13,6 +13,15 @@ class MenuHomeViewController: UIViewController {
     @IBAction func unwindFromNonCoffee (segue: UIStoryboardSegue) {
         print("unwind here")
     }
+    @IBAction func unwindFromStandards (segue: UIStoryboardSegue) {
+        
+    }
+    @IBAction func unwindFromSignatures (segue: UIStoryboardSegue) {
+        
+    }
+    @IBAction func unwindFromJuice (segue: UIStoryboardSegue) {
+        
+    }
     
     @IBAction func goHome(sender: UIButton) {
         self.navigationController?.popToRootViewControllerAnimated(true)

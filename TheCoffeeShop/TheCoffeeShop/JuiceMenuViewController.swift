@@ -12,8 +12,8 @@ class JuiceMenuViewController: UIViewController, UITableViewDataSource, UITableV
 
     var drinksArray = [JuiceDrink]()
     
-    @IBAction func goHome(sender: UIButton) {
-        self.navigationController?.popToRootViewControllerAnimated(true)
+    @IBAction func goBack(sender: UIButton) {
+        performSegueWithIdentifier("undwindFromNonJuice", sender: self)
     }
     
     override func viewDidLoad() {
