@@ -6,6 +6,7 @@
 //  Copyright © 2016 Wasted Potential LLC. All rights reserved.
 //
 import UIKit
+import Firebase
 
 class LoyaltyCardViewController: UIViewController {
     
@@ -58,7 +59,7 @@ class LoyaltyCardViewController: UIViewController {
     
     @IBOutlet var coffeeButtonCollection: Array<UIButton>?
     
-    var verificationCode = "4444"
+    var authCode = AuthCode()
     
     var latteStamps = 0
     
@@ -66,10 +67,14 @@ class LoyaltyCardViewController: UIViewController {
     
     var isAuthorized: Bool = false
     
+    var codeRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/code")
+
+    
     //MARK: - View
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        observeAuthCode()
         loadDefaults()
         checkForRedeemable()
         updateUI()
@@ -153,9 +158,12 @@ class LoyaltyCardViewController: UIViewController {
             (verifyAction) -> Void in
             
             let textField = alertController.textFields?.first
+            let c = AuthCode()
             // test for verification
-            if textField!.text == self.verificationCode {
+            if textField!.text == c.code {
+                print(c.code)
                 print("approved")
+                self.observeAuthCode()
                 self.latteStamps = 0
                 self.coffeeStamps = 0
                 self.loadDefaults()
@@ -166,6 +174,8 @@ class LoyaltyCardViewController: UIViewController {
                 
             } else {
                 // fails authorization
+                print(c.code)
+                print("wrong code")
             }
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) {
@@ -227,4 +237,35 @@ class LoyaltyCardViewController: UIViewController {
         print("loaded stamps \(latteStamps)")
         
     }
+        func observeAuthCode() {
+    
+            self.codeRef.observeEventType(.Value, withBlock: { snapshot in
+    
+                print(snapshot.value)
+    
+                self.authCode.code = ""
+    
+                if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
+    
+                    for snap in snapshots {
+    
+                        if let dict = snap.value as? Dictionary<String, AnyObject> {
+    
+    
+                            let key = snap.key
+                            let c = AuthCode(key: key, dict: dict)
+                            c.ref = Firebase(url: "\(self.codeRef)/\(key)")
+                            
+    
+                            print(c.code)
+    
+    
+                        }
+    
+                    }
+                }
+                
+            })
+        }
+
 }

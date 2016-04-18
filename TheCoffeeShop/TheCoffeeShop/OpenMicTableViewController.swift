@@ -14,10 +14,13 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
     var ref = Firebase(url: "https://the-coffee-shop.firebaseio.com")
     var timeSlotRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/timeslot")
     var openMicRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/openmic")
+    var codeRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/code")
     var observerHasRun = false
     var arrayOfTimeSlots = [Timeslot]()
     var arrayOfTimes = ["9:00-9:15","9:15-9:30","9:30-9:45","9:45-10:00","10:00-10:15","10:15-10:30","10:30-10:45","10:45-11:00","11:00-11:15","11:15-11:30","11:30-11:45","11:45-12:00"]
     var openMic = OpenMic()
+    var code = AuthCode()
+    var isAuthorized = false
     @IBOutlet weak var tableView: UITableView!
     
     var dateFormatter: NSDateFormatter = {
@@ -26,6 +29,12 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
         return formatter
     }()
     var arrayOfStrings = [String]()
+    
+    @IBOutlet weak var adminOutlet: UIButton!
+    
+    @IBAction func adminTapped(sender: UIButton) {
+        showAlert()
+    }
     
     @IBAction func goHome(sender: UIButton) {
         self.navigationController?.popToRootViewControllerAnimated(true)
@@ -36,6 +45,7 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
 //        loadDefaults()  
+//        adminOutlet.hidden = true 
         print(arrayOfTimeSlots.count)
         observeTimeSlots()
         
@@ -46,6 +56,8 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
         print(arrayOfTimeSlots.count)
 
     }
+    
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayOfTimeSlots.count
     }
@@ -60,7 +72,56 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
         let t = arrayOfTimeSlots[indexPath.row]
         self.showAlert(t)
     }
-    
+//    func authorization() {
+//        if isAuthorized == true {
+//            func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+//       
+//                if editingStyle == .Delete {
+//            
+//                    let event = arrayOfTimeSlots[indexPath.row]
+//                    event.ref?.removeValue()
+//            
+//                }
+//            }
+//        }
+//    }
+    //MARK: - Set up admin function
+    func showAlert() {
+        
+        let alertController = UIAlertController(title: "Delete All", message: "Enter code", preferredStyle: .Alert)
+        
+        let verifyAction = UIAlertAction(title: "Delete", style: .Default) {
+            (verifyAction) -> Void in
+            
+            let textField = alertController.textFields?.first
+            let c = self.code
+            // test for verification
+            if textField!.text == c.code {
+                self.openMicRef.removeValue()
+                print("approved")
+                self.timeSlotRef.removeValue()
+                self.seedTimeSlots()
+                self.isAuthorized = true
+                         
+            } else {
+                // fails authorization
+                print("wrong code")
+            }
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) {
+            (alertAction) -> Void in
+            
+        }
+        alertController.addTextFieldWithConfigurationHandler { (textField) -> Void in
+            
+        }
+        alertController.addAction(verifyAction)
+        alertController.addAction(cancelAction)
+        
+        presentViewController(alertController, animated: true, completion: nil)
+    }
+
+
     //MARK: - Force portrait orientation
     override func viewDidAppear(animated: Bool) {
         let value = UIInterfaceOrientation.Portrait.rawValue
@@ -91,8 +152,6 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
                 if let artistName = textField.text {
                     timeslot.ref?.updateChildValues(["artist": artistName])
                 }
-                
-                
             }
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .Default) {
@@ -126,7 +185,7 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
                 
             }
             o.ref?.updateChildValues(["hasPopulated": true])
-            
+            self.tableView.reloadData()
         }
         
         //Creates and saves new time slots for every 15 minutes of event duration

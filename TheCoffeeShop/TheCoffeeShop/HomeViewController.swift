@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import Firebase
 
 class HomeViewController: UIViewController {
 
+    var codeRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/code")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+//       seedAuthCode()
     }
     override func viewDidAppear(animated: Bool) {
         let value = UIInterfaceOrientation.Portrait.rawValue
@@ -34,6 +37,12 @@ class HomeViewController: UIViewController {
         return .Portrait
     }
 
+    func seedAuthCode() {
+        let c = AuthCode()
+        
+        c.code = "12345"
+        c.save()
+    }
 
 }
 
