@@ -72,58 +72,46 @@
             <string>SignPainter-HouseScript</string>
             <string>SignPainter-HouseScript</string>
             <string>SignPainter-HouseScript</string>
-            <string>SignPainter-HouseScript</string>
-            <string>SignPainter-HouseScript</string>
         </mutableArray>
     </customFonts>
     <scenes>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="TheCoffeeShop" customModuleProvider="target" propertyAccessControl="localizable" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="TheCoffeeShop" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" propertyAccessControl="localizable">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sq-w3-l9D">
-                                <rect key="frame" x="477" y="315" width="58" height="35"/>
+                                <rect key="frame" x="464" y="315" width="83" height="35"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
-                                <state key="normal" title="Loyalty">
-                                    <color key="titleColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="LOYALTY  ">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="jeA-0f-who" kind="show" id="VGi-DI-fFW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fm7-ki-TAZ">
-                                <rect key="frame" x="72" y="315" width="44" height="35"/>
-                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
-                                <state key="normal" title="About">
-                                    <color key="titleColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="OEN-Hq-Iqe" kind="show" id="lpC-jG-MAx"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TzW-K9-H8u">
-                                <rect key="frame" x="69" y="538" width="50" height="35"/>
+                                <rect key="frame" x="62" y="538" width="63" height="35"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
-                                <state key="normal" title="Menus">
-                                    <color key="titleColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="MENUS ">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="5H5-mB-2aW" kind="show" id="EZf-6E-QNj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VtP-Gt-2X9">
-                                <rect key="frame" x="482" y="538" width="48" height="35"/>
+                                <rect key="frame" x="472.5" y="538" width="67" height="35"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
-                                <state key="normal" title="Events">
-                                    <color key="titleColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="EVENTS ">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="Fvb-IN-hsm" kind="show" id="Mrx-jT-X2h"/>
@@ -162,6 +150,16 @@
                                 <state key="normal" image="calendar"/>
                                 <connections>
                                     <segue destination="Fvb-IN-hsm" kind="show" id="B0d-sm-dZd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fm7-ki-TAZ" userLabel="ABOUT">
+                                <rect key="frame" x="62" y="315" width="63" height="35"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <state key="normal" title="ABOUT ">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="OEN-Hq-Iqe" kind="show" id="lpC-jG-MAx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -270,7 +268,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOURS " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCK-hb-i8M">
                                 <rect key="frame" x="241" y="30" width="117" height="41.5"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="45"/>
-                                <color key="textColor" red="0.92841774225234985" green="0.81764370203018188" blue="0.66177988052368164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="M6U-zd-cfU">
@@ -279,7 +277,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday-Thursday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJZ-mp-LsE">
                                         <rect key="frame" x="0.0" y="0.0" width="570" height="61.5"/>
                                         <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="35"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 a.m. - 10 p.m. " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ec7-P3-5Ld">
@@ -289,9 +287,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lt-wM-Drz">
-                                        <rect key="frame" x="0.0" y="123" width="570" height="61.5"/>
+                                        <rect key="frame" x="0.0" y="123.5" width="570" height="61.5"/>
                                         <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="35"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 a.m. - 12 a.m." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aV-8b-FhL">
@@ -303,7 +301,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saturday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Etw-vX-ALj">
                                         <rect key="frame" x="0.0" y="246" width="570" height="61.5"/>
                                         <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="35"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 a.m. - 10 p.m." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwY-ew-wIW">
@@ -315,7 +313,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QwT-fP-ymZ">
                                         <rect key="frame" x="0.0" y="370" width="570" height="61.5"/>
                                         <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="35"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8 a.m. - 5:30 p.m." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inH-b8-HjO">
@@ -367,57 +365,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNt-8k-V3n">
-                                <rect key="frame" x="60" y="258" width="67" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9Z-nr-Jw7">
+                                <rect key="frame" x="257" y="225" width="85" height="35"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
-                                <state key="normal" title="About us">
-                                    <color key="titleColor" red="0.92841774225234985" green="0.81764370203018188" blue="0.66177988052368164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9Z-nr-Jw7">
-                                <rect key="frame" x="62" y="471" width="64" height="35"/>
-                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
-                                <state key="normal" title="Location">
-                                    <color key="titleColor" red="0.92841774225234985" green="0.81764370203018188" blue="0.66177988052368164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="LOCATION">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="4fn-Fh-whu" kind="show" id="gAb-me-n4H"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaH-Bn-J2B">
-                                <rect key="frame" x="482" y="471" width="47" height="35"/>
-                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
-                                <state key="normal" title="Hours">
-                                    <color key="titleColor" red="0.92841774225234985" green="0.81764370203018188" blue="0.66177988052368164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="2dE-IF-wfs" kind="show" id="rpE-pf-CUR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JW2-pd-lpF">
-                                <rect key="frame" x="30" y="120" width="128" height="128"/>
-                                <state key="normal" image="history"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxM-tI-nal">
-                                <rect key="frame" x="442" y="120" width="128" height="128"/>
-                                <state key="normal" image="education"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dq2-KA-6LW">
-                                <rect key="frame" x="30" y="333" width="128" height="128"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dq2-KA-6LW">
+                                <rect key="frame" x="235" y="89" width="128" height="128"/>
                                 <state key="normal" image="location"/>
                                 <connections>
                                     <segue destination="4fn-Fh-whu" kind="show" id="pai-Cz-6YV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJs-1h-Jt6">
-                                <rect key="frame" x="442" y="333" width="128" height="128"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJs-1h-Jt6">
+                                <rect key="frame" x="235" y="283" width="128" height="128"/>
                                 <state key="normal" image="hours"/>
                                 <connections>
                                     <segue destination="2dE-IF-wfs" kind="show" id="x9F-t4-JNk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vz0-zl-DxN">
-                                <rect key="frame" x="278.5" y="550" width="43" height="35"/>
+                                <rect key="frame" x="278" y="550" width="43" height="35"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
                                 <state key="normal" title="Home">
                                     <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -426,34 +399,21 @@
                                     <action selector="goHome:" destination="OEN-Hq-Iqe" eventType="touchUpInside" id="B9T-wk-GtV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBM-yj-hvT">
-                                <rect key="frame" x="441" y="258" width="130" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaH-Bn-J2B">
+                                <rect key="frame" x="270" y="441" width="60" height="35"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
-                                <state key="normal" title="Coffee Education">
-                                    <color key="titleColor" red="0.92841774225234985" green="0.81764370203018188" blue="0.66177988052368164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="HOURS">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="2dE-IF-wfs" kind="show" id="rpE-pf-CUR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="JW2-pd-lpF" firstAttribute="leading" secondItem="ZOD-re-gi1" secondAttribute="leading" constant="30" id="1qI-ye-jcc"/>
-                            <constraint firstItem="JW2-pd-lpF" firstAttribute="top" secondItem="pRe-hq-KgC" secondAttribute="bottom" constant="100" id="3gR-Vx-UVa"/>
-                            <constraint firstItem="dq2-KA-6LW" firstAttribute="leading" secondItem="ZOD-re-gi1" secondAttribute="leading" constant="30" id="4BP-7L-WsD"/>
-                            <constraint firstItem="JBM-yj-hvT" firstAttribute="centerX" secondItem="WxM-tI-nal" secondAttribute="centerX" id="5aa-Ey-X0x"/>
-                            <constraint firstItem="sNt-8k-V3n" firstAttribute="top" secondItem="JW2-pd-lpF" secondAttribute="bottom" constant="10" id="60F-v8-ieE"/>
-                            <constraint firstItem="oJs-1h-Jt6" firstAttribute="top" secondItem="JBM-yj-hvT" secondAttribute="bottom" constant="40" id="66e-nf-ZGJ"/>
-                            <constraint firstAttribute="trailing" secondItem="WxM-tI-nal" secondAttribute="trailing" constant="30" id="7lR-Yb-kwr"/>
-                            <constraint firstItem="f9Z-nr-Jw7" firstAttribute="centerX" secondItem="dq2-KA-6LW" secondAttribute="centerX" id="Atq-UX-fwY"/>
-                            <constraint firstItem="f9Z-nr-Jw7" firstAttribute="top" secondItem="dq2-KA-6LW" secondAttribute="bottom" constant="10" id="LX2-LD-QbG"/>
-                            <constraint firstItem="OaH-Bn-J2B" firstAttribute="top" secondItem="oJs-1h-Jt6" secondAttribute="bottom" constant="10" id="VTn-sc-gUr"/>
-                            <constraint firstItem="OaH-Bn-J2B" firstAttribute="centerX" secondItem="oJs-1h-Jt6" secondAttribute="centerX" id="Zfg-kX-S6z"/>
                             <constraint firstItem="jOt-6s-XS2" firstAttribute="top" secondItem="Vz0-zl-DxN" secondAttribute="bottom" constant="15" id="bVT-8k-7Bv"/>
                             <constraint firstItem="Vz0-zl-DxN" firstAttribute="centerX" secondItem="ZOD-re-gi1" secondAttribute="centerX" id="bZ1-On-HSO"/>
-                            <constraint firstItem="JBM-yj-hvT" firstAttribute="top" secondItem="WxM-tI-nal" secondAttribute="bottom" constant="10" id="deu-mE-hqN"/>
-                            <constraint firstItem="sNt-8k-V3n" firstAttribute="centerX" secondItem="JW2-pd-lpF" secondAttribute="centerX" id="eVm-Uw-lgf"/>
-                            <constraint firstItem="dq2-KA-6LW" firstAttribute="top" secondItem="sNt-8k-V3n" secondAttribute="bottom" constant="40" id="oLG-st-D1J"/>
-                            <constraint firstAttribute="trailing" secondItem="oJs-1h-Jt6" secondAttribute="trailing" constant="30" id="s8i-Tc-mEJ"/>
-                            <constraint firstItem="WxM-tI-nal" firstAttribute="top" secondItem="pRe-hq-KgC" secondAttribute="bottom" constant="100" id="wpo-op-3PL"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -480,13 +440,6 @@
                                     <segue destination="iAe-zz-cv0" kind="show" id="trh-z9-EsK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMo-Vd-WcF">
-                                <rect key="frame" x="276" y="258" width="48" height="35"/>
-                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
-                                <state key="normal" title="Events">
-                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5H-lZ-ENW">
                                 <rect key="frame" x="236" y="333" width="128" height="128"/>
                                 <state key="normal" image="mic"/>
@@ -495,10 +448,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbB-zv-gaH">
-                                <rect key="frame" x="263" y="471" width="74" height="35"/>
+                                <rect key="frame" x="259" y="471" width="81" height="35"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
-                                <state key="normal" title="Open Mic">
-                                    <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <state key="normal" title="OPEN MIC">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3WT-5g-a6I">
@@ -510,6 +463,13 @@
                                 <connections>
                                     <action selector="goBack:" destination="Fvb-IN-hsm" eventType="touchUpInside" id="x7U-RF-Xxz"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMo-Vd-WcF">
+                                <rect key="frame" x="266.5" y="258" width="67" height="35"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <state key="normal" title="EVENTS ">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -546,7 +506,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OPEN MIC NIGHT SIGN UP  " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TF8-Ks-dej">
                                 <rect key="frame" x="145" y="20" width="309" height="32.5"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="35"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSL-gF-g4F">
@@ -559,7 +519,7 @@
                                     <action selector="goHome:" destination="09d-Ch-woh" eventType="touchUpInside" id="Bl7-g5-yU8"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v79-98-lZM">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v79-98-lZM">
                                 <rect key="frame" x="0.0" y="72" width="600" height="491.5"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -571,14 +531,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNg-X4-Uqv">
-                                                    <rect key="frame" x="8" y="10" width="36" height="22.5"/>
-                                                    <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="24"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNg-X4-Uqv">
+                                                    <rect key="frame" x="8" y="12" width="30" height="18.5"/>
+                                                    <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="20"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qBQ-hj-tvp">
-                                                    <rect key="frame" x="69" y="10" width="521" height="22.5"/>
+                                                    <rect key="frame" x="90" y="10" width="500" height="22.5"/>
                                                     <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="24"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -590,7 +550,7 @@
                                                 <constraint firstItem="fNg-X4-Uqv" firstAttribute="leading" secondItem="DQl-rp-cBT" secondAttribute="leading" constant="8" id="D0j-a7-Mof"/>
                                                 <constraint firstItem="fNg-X4-Uqv" firstAttribute="centerY" secondItem="DQl-rp-cBT" secondAttribute="centerY" id="EX1-04-Qfe"/>
                                                 <constraint firstAttribute="trailing" secondItem="qBQ-hj-tvp" secondAttribute="trailing" constant="10" id="Ouu-ik-9N5"/>
-                                                <constraint firstItem="qBQ-hj-tvp" firstAttribute="leading" secondItem="DQl-rp-cBT" secondAttribute="leading" constant="69" id="zpE-ih-MoD"/>
+                                                <constraint firstItem="qBQ-hj-tvp" firstAttribute="leading" secondItem="DQl-rp-cBT" secondAttribute="leading" constant="90" id="zpE-ih-MoD"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -605,9 +565,9 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5Z-T6-MoK">
-                                <rect key="frame" x="517" y="39" width="73" height="30"/>
+                                <rect key="frame" x="559" y="39" width="31" height="30"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="19"/>
-                                <state key="normal" title="Admin Mode">
+                                <state key="normal" title="Reset">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -663,9 +623,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAf-5K-rDj">
-                                <rect key="frame" x="508" y="30" width="77" height="31"/>
+                                <rect key="frame" x="545" y="38" width="40" height="31"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="20"/>
-                                <state key="normal" title="Admin Mode">
+                                <state key="normal" title="Admin">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -673,10 +633,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAH-5f-hcV">
-                                <rect key="frame" x="15" y="45" width="77" height="35"/>
+                                <rect key="frame" x="15" y="45" width="82" height="35"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
-                                <state key="normal" title="Add Event">
-                                    <color key="titleColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Add Event ">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="addEvent:" destination="iAe-zz-cv0" eventType="touchUpInside" id="zkf-HV-NLL"/>
@@ -692,8 +652,8 @@
                                     <action selector="goHome:" destination="iAe-zz-cv0" eventType="touchUpInside" id="E7A-Mw-CCe"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wNB-V3-sQd">
-                                <rect key="frame" x="0.0" y="72.5" width="600" height="493.5"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wNB-V3-sQd">
+                                <rect key="frame" x="0.0" y="72" width="600" height="493.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EventCell" id="kqZ-yN-fvQ" customClass="EventsTableViewCell" customModule="TheCoffeeShop" customModuleProvider="target">
@@ -747,11 +707,17 @@
                             <constraint firstAttribute="trailing" secondItem="CAf-5K-rDj" secondAttribute="trailing" constant="15" id="IQX-9W-i2B"/>
                             <constraint firstItem="7PF-Aa-pnv" firstAttribute="top" secondItem="Xqj-QP-RRO" secondAttribute="bottom" id="J3L-5x-ywG"/>
                             <constraint firstItem="UAH-5f-hcV" firstAttribute="top" secondItem="pyq-fX-uj9" secondAttribute="bottom" constant="25" id="WHu-LC-dmT"/>
+                            <constraint firstItem="wNB-V3-sQd" firstAttribute="top" secondItem="CAf-5K-rDj" secondAttribute="bottom" constant="3" id="ZhO-lx-00s"/>
                             <constraint firstItem="wNB-V3-sQd" firstAttribute="leading" secondItem="FkS-kj-Y6m" secondAttribute="leading" id="k7r-V8-45R"/>
                             <constraint firstItem="779-hR-CNC" firstAttribute="top" secondItem="pyq-fX-uj9" secondAttribute="bottom" id="l5F-vA-VlK"/>
                             <constraint firstItem="779-hR-CNC" firstAttribute="centerX" secondItem="FkS-kj-Y6m" secondAttribute="centerX" id="uzb-fy-cSs"/>
                             <constraint firstItem="CAf-5K-rDj" firstAttribute="top" secondItem="pyq-fX-uj9" secondAttribute="bottom" constant="10" id="z2v-DP-F2d"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="z2v-DP-F2d"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="addEventOutlet" destination="UAH-5f-hcV" id="vye-AO-Uxq"/>
@@ -789,22 +755,21 @@
                                     <segue destination="wKK-ls-krB" kind="show" id="1hP-UQ-ndq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Epi-Ou-6Tg">
-                                <rect key="frame" x="29" y="258" width="129" height="35"/>
-                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
-                                <state key="normal" title="Signature Lattes">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="z5O-Ob-PxO">
+                                <rect key="frame" x="443" y="258" width="125" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="AYY-lP-kcP"/>
+                                    <constraint firstAttribute="height" constant="65" id="tmL-Zu-Abh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="" pointSize="25"/>
+                                <state key="normal" title="STANDARDS ">
                                     <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="abD-m4-5Vf" kind="show" id="2tQ-9Z-kfV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5O-Ob-PxO">
-                                <rect key="frame" x="440" y="258" width="132" height="35"/>
-                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
-                                <state key="normal" title="Standard Drinks">
-                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="tmL-Zu-Abh"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <segue destination="wKK-ls-krB" kind="show" id="il3-rR-bRM"/>
                                 </connections>
@@ -817,10 +782,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9u-lc-cDB">
-                                <rect key="frame" x="51" y="471" width="86" height="35"/>
+                                <rect key="frame" x="35" y="471" width="118" height="35"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
                                 <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
-                                <state key="normal" title="Non-Coffee">
+                                <state key="normal" title="NON-COFFEE  ">
                                     <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -828,9 +793,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUA-Oc-AH2">
-                                <rect key="frame" x="481" y="471" width="50" height="35"/>
+                                <rect key="frame" x="473" y="471" width="65" height="35"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
-                                <state key="normal" title="Juices">
+                                <state key="normal" title="JUICES ">
                                     <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -838,7 +803,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOa-B0-77B">
-                                <rect key="frame" x="278.5" y="550" width="43" height="35"/>
+                                <rect key="frame" x="278" y="550" width="43" height="35"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
                                 <state key="normal" title="Home">
                                     <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -852,6 +817,25 @@
                                 <state key="normal" image="juice"/>
                                 <connections>
                                     <segue destination="2lJ-JR-SPP" kind="show" id="pXy-MC-fkn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Epi-Ou-6Tg">
+                                <rect key="frame" x="31" y="258" width="125" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="HlU-sI-o3g"/>
+                                    <constraint firstAttribute="width" constant="125" id="Qhe-y9-XO8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="" pointSize="25"/>
+                                <state key="normal" title="SIGNATURES ">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="HlU-sI-o3g"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="abD-m4-5Vf" kind="show" id="2tQ-9Z-kfV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1017,7 +1001,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRG-sK-cbJ">
                                                     <rect key="frame" x="15" y="8" width="570" height="23"/>
                                                     <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
-                                                    <color key="textColor" red="0.92841774225234985" green="0.81764370203018188" blue="0.66177988052368164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKc-wE-uhJ">
@@ -1051,7 +1035,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGNATURE LATTES " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHk-MR-zBr">
                                 <rect key="frame" x="153" y="20" width="295.5" height="41.5"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="45"/>
-                                <color key="textColor" red="0.92841774225234985" green="0.81764370203018188" blue="0.66177988052368164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87M-Vr-6N9">
@@ -1076,10 +1060,16 @@
                             <constraint firstItem="cHk-MR-zBr" firstAttribute="top" secondItem="TF0-s0-Ian" secondAttribute="bottom" id="UNO-tc-WmK"/>
                             <constraint firstItem="cHk-MR-zBr" firstAttribute="centerX" secondItem="Bmp-2L-48y" secondAttribute="centerX" id="Xek-mt-HZn"/>
                             <constraint firstItem="QdD-Sp-eb3" firstAttribute="leading" secondItem="Bmp-2L-48y" secondAttribute="leading" id="cbt-4G-u3c"/>
+                            <constraint firstItem="QdD-Sp-eb3" firstAttribute="top" secondItem="3G8-CM-b2W" secondAttribute="bottom" constant="6" id="gcr-dn-hQ2"/>
                             <constraint firstItem="3G8-CM-b2W" firstAttribute="top" secondItem="cHk-MR-zBr" secondAttribute="bottom" constant="5.5" id="n6M-Sp-UOW"/>
                             <constraint firstItem="87M-Vr-6N9" firstAttribute="leading" secondItem="Bmp-2L-48y" secondAttribute="leading" constant="5" id="poB-2L-U34"/>
                             <constraint firstItem="vo7-s0-Op4" firstAttribute="top" secondItem="QdD-Sp-eb3" secondAttribute="bottom" id="zOW-pJ-7bz"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7Qe-mJ-xjR"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2sq-z2-Gtf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1215,13 +1205,13 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Tn-2B-jZr">
                                                     <rect key="frame" x="15" y="8" width="570" height="23"/>
                                                     <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
-                                                    <color key="textColor" red="0.92841774225234985" green="0.81764370203018188" blue="0.66177988052368164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7TE-B4-uwc">
                                                     <rect key="frame" x="25" y="37" width="555" height="18.5"/>
                                                     <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="20"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.92841774225234985" green="0.81764370203018188" blue="0.66177988052368164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1256,12 +1246,6 @@
                                     <segue destination="Pgw-ZV-12O" kind="unwind" unwindAction="unwindFromJuice:" id="YMW-xx-jBw"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREATE YOUR OWN!  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fir-cw-lYQ">
-                                <rect key="frame" x="15" y="505" width="179" height="23"/>
-                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
-                                <color key="textColor" red="0.92841774225234985" green="0.81764370203018188" blue="0.66177988052368164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeB-hd-LO1">
                                 <rect key="frame" x="25" y="534" width="555" height="60"/>
                                 <constraints>
@@ -1270,13 +1254,19 @@
                                 </constraints>
                                 <string key="text">Pick from: ORANGE, APPLE, LEMON, GRAPEFRUIT, BEET, CELERY, CARROT, PINEAPPLE, CILANTRO, CUCUMBER, KALE, JALEPEÑO, SPINACH, GINGER, PEPPERS, TOMATO</string>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.92841774225234985" green="0.81764370203018188" blue="0.66177988052368164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="L4o-LV-400"/>
                                     </mask>
                                 </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREATE YOUR OWN!  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fir-cw-lYQ">
+                                <rect key="frame" x="15" y="505" width="179" height="23"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -1323,7 +1313,7 @@
         <!--Loyalty Card View Controller-->
         <scene sceneID="5ZV-ub-fHW">
             <objects>
-                <viewController id="jeA-0f-who" customClass="LoyaltyCardViewController" customModule="TheCoffeeShop" customModuleProvider="target" propertyAccessControl="localizable" sceneMemberID="viewController">
+                <viewController id="jeA-0f-who" customClass="LoyaltyCardViewController" customModule="TheCoffeeShop" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z0C-yq-PYI"/>
                         <viewControllerLayoutGuide type="bottom" id="65L-4I-u6m"/>
@@ -1583,7 +1573,7 @@
                                 <rect key="frame" x="252" y="415" width="95" height="35"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
                                 <state key="normal" title="Add Stamps">
-                                    <color key="titleColor" red="0.92841774225234985" green="0.81764370203018188" blue="0.66177988052368164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="addStampTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="aNH-zL-YLc"/>
@@ -1617,14 +1607,14 @@
                                     <action selector="redeemCoffeeTapped:" destination="jeA-0f-who" eventType="touchUpInside" id="978-0U-t8e"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lattes and Juices" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSa-J7-VG4">
-                                <rect key="frame" x="71" y="282" width="135.5" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LATTES AND JUICES " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSa-J7-VG4">
+                                <rect key="frame" x="53.5" y="282" width="170.5" height="23"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drip Coffees and Teas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjF-EJ-ijm">
-                                <rect key="frame" x="374" y="282" width="173" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRIP COFFEES AND TEAS " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjF-EJ-ijm">
+                                <rect key="frame" x="356" y="282" width="209.5" height="23"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1796,10 +1786,8 @@
         <image name="about" width="128" height="128"/>
         <image name="calendar" width="128" height="128"/>
         <image name="coffee" width="128" height="128"/>
-        <image name="education" width="128" height="128"/>
         <image name="espresso" width="128" height="128"/>
         <image name="heart" width="128" height="128"/>
-        <image name="history" width="128" height="128"/>
         <image name="hours" width="128" height="128"/>
         <image name="juice" width="128" height="128"/>
         <image name="latte" width="128" height="128"/>
@@ -1810,15 +1798,15 @@
         <image name="unselectedStar" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="pai-Cz-6YV"/>
-        <segue reference="lpC-jG-MAx"/>
-        <segue reference="cMF-g6-hbR"/>
-        <segue reference="EZf-6E-QNj"/>
-        <segue reference="Mrx-jT-X2h"/>
-        <segue reference="pXy-MC-fkn"/>
-        <segue reference="PGR-16-8BB"/>
-        <segue reference="p2p-PN-qic"/>
-        <segue reference="il3-rR-bRM"/>
         <segue reference="x9F-t4-JNk"/>
+        <segue reference="lpC-jG-MAx"/>
+        <segue reference="EZf-6E-QNj"/>
+        <segue reference="cMF-g6-hbR"/>
+        <segue reference="Mrx-jT-X2h"/>
+        <segue reference="il3-rR-bRM"/>
+        <segue reference="p2p-PN-qic"/>
+        <segue reference="PGR-16-8BB"/>
+        <segue reference="pXy-MC-fkn"/>
+        <segue reference="pai-Cz-6YV"/>
     </inferredMetricsTieBreakers>
 </document>
