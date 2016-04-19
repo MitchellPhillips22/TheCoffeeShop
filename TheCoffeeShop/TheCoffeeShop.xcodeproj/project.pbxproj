@@ -234,7 +234,7 @@
 				TargetAttributes = {
 					1BE92E301CB49A27009284A0 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 3Q2C35Y544;
+						DevelopmentTeam = 86Z976V88Y;
 					};
 				};
 			};
@@ -469,6 +469,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TheCoffeeShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mitchell.TheCoffeeShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -485,6 +486,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TheCoffeeShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mitchell.TheCoffeeShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";

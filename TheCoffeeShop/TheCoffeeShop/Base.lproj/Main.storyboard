@@ -95,9 +95,6 @@
                                 <state key="normal" title="Loyalty">
                                     <color key="titleColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="jeA-0f-who" kind="show" id="VGi-DI-fFW"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fm7-ki-TAZ">
                                 <rect key="frame" x="72" y="315" width="44" height="35"/>
@@ -147,7 +144,7 @@
                                 <rect key="frame" x="442" y="177" width="128" height="128"/>
                                 <state key="normal" image="heart"/>
                                 <connections>
-                                    <segue destination="jeA-0f-who" kind="show" animates="NO" id="cMF-g6-hbR"/>
+                                    <segue destination="jeA-0f-who" kind="presentation" identifier="LoyaltySegue" animates="NO" id="dTz-P1-ZcX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8I-LP-1zv">
@@ -277,31 +274,31 @@
                                 <rect key="frame" x="15" y="92" width="570" height="493"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday-Thursday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJZ-mp-LsE">
-                                        <rect key="frame" x="0.0" y="0.0" width="570" height="61.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="570" height="62"/>
                                         <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="35"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 a.m. - 10 p.m. " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ec7-P3-5Ld">
-                                        <rect key="frame" x="0.0" y="61" width="570" height="62"/>
+                                        <rect key="frame" x="0.0" y="62" width="570" height="62"/>
                                         <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lt-wM-Drz">
-                                        <rect key="frame" x="0.0" y="123" width="570" height="61.5"/>
+                                        <rect key="frame" x="0.0" y="124" width="570" height="62"/>
                                         <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="35"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 a.m. - 12 a.m." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aV-8b-FhL">
-                                        <rect key="frame" x="0.0" y="185" width="570" height="61.5"/>
+                                        <rect key="frame" x="0.0" y="185" width="570" height="62"/>
                                         <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saturday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Etw-vX-ALj">
-                                        <rect key="frame" x="0.0" y="246" width="570" height="61.5"/>
+                                        <rect key="frame" x="0.0" y="247" width="570" height="62"/>
                                         <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="35"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -313,13 +310,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QwT-fP-ymZ">
-                                        <rect key="frame" x="0.0" y="370" width="570" height="61.5"/>
+                                        <rect key="frame" x="0.0" y="370" width="570" height="62"/>
                                         <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="35"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8 a.m. - 5:30 p.m." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inH-b8-HjO">
-                                        <rect key="frame" x="0.0" y="431" width="570" height="61.5"/>
+                                        <rect key="frame" x="0.0" y="432" width="570" height="62"/>
                                         <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -880,7 +877,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="an4-tR-JVA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1279" y="999"/>
+            <point key="canvasLocation" x="1383" y="1170"/>
         </scene>
         <!--Standards Menu View Controller-->
         <scene sceneID="yWh-ub-lOp">
@@ -1788,7 +1785,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4RE-Pb-PrD" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="629" y="983"/>
+            <point key="canvasLocation" x="614" y="1182"/>
         </scene>
     </scenes>
     <resources>
@@ -1810,15 +1807,14 @@
         <image name="unselectedStar" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="pai-Cz-6YV"/>
         <segue reference="lpC-jG-MAx"/>
-        <segue reference="cMF-g6-hbR"/>
-        <segue reference="EZf-6E-QNj"/>
         <segue reference="Mrx-jT-X2h"/>
+        <segue reference="EZf-6E-QNj"/>
+        <segue reference="p2p-PN-qic"/>
         <segue reference="pXy-MC-fkn"/>
         <segue reference="PGR-16-8BB"/>
-        <segue reference="p2p-PN-qic"/>
         <segue reference="il3-rR-bRM"/>
+        <segue reference="pai-Cz-6YV"/>
         <segue reference="x9F-t4-JNk"/>
     </inferredMetricsTieBreakers>
 </document>

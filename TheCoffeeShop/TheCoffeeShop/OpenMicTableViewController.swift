@@ -49,15 +49,15 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
         observeAuthCode()
 
     }
+
     //MARK: - Force portrait orientation
     override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         let value = UIInterfaceOrientation.Portrait.rawValue
         UIDevice.currentDevice().setValue(value, forKey: "orientation")
-        print("view did appear portrait")
     }
     
     override func shouldAutorotate() -> Bool {
-        print("should auto rotate")
         return false
     }
     
@@ -68,8 +68,6 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
     override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
         return .Portrait
     }
-
-    
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayOfTimeSlots.count
