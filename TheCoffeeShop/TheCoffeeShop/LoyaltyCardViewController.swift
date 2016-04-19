@@ -48,8 +48,9 @@ class LoyaltyCardViewController: UIViewController {
     }
     
     @IBAction func goHome(sender: UIButton) {
-        self.navigationController?.popToRootViewControllerAnimated(false)
+        self.dismissViewControllerAnimated(false, completion: nil)
     }
+    
     //MARK: - Outlets
     @IBOutlet weak var doneOutlet: UIButton!
     @IBOutlet weak var addStampsOutlet: UIButton!
@@ -82,6 +83,8 @@ class LoyaltyCardViewController: UIViewController {
     }
     // forces view to present in landscape only
     override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
         let value = UIInterfaceOrientation.LandscapeLeft.rawValue
         UIDevice.currentDevice().setValue(value, forKey: "orientation")
         print("view did appear landscape")
@@ -89,9 +92,6 @@ class LoyaltyCardViewController: UIViewController {
 
     override func shouldAutorotate() -> Bool {
         print("auto rotate to landscape")
-        if UIInterfaceOrientationIsLandscape(self.interfaceOrientation) {
-            return false
-        }
         return true
     }
 

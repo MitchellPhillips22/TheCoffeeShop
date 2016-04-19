@@ -19,14 +19,12 @@ class HomeViewController: UIViewController {
 //       seedAuthCode()
     }
     override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         let value = UIInterfaceOrientation.Portrait.rawValue
         UIDevice.currentDevice().setValue(value, forKey: "orientation")
     }
     
     override func shouldAutorotate() -> Bool {
-        if UIInterfaceOrientationIsLandscape(self.interfaceOrientation) {
-            return true
-        }
         return false
     }
     
