@@ -84,20 +84,25 @@ class LoyaltyCardViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         let value = UIInterfaceOrientation.LandscapeLeft.rawValue
         UIDevice.currentDevice().setValue(value, forKey: "orientation")
+        print("view did appear landscape")
     }
-    
+
     override func shouldAutorotate() -> Bool {
+        print("auto rotate to landscape")
         if UIInterfaceOrientationIsLandscape(self.interfaceOrientation) {
             return false
         }
         return true
     }
-    
+
     override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        print("supported landscape")
         return .Landscape
+  
     }
     
     override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
+         print("prefer landscape")
         return .LandscapeLeft
     }
     //MARK: - Button functions
@@ -158,10 +163,9 @@ class LoyaltyCardViewController: UIViewController {
             (verifyAction) -> Void in
             
             let textField = alertController.textFields?.first
-            let c = AuthCode()
             // test for verification
-            if textField!.text == c.code {
-                print(c.code)
+            if textField!.text == self.authCode.code {
+                print(self.authCode.code)
                 print("approved")
                 self.observeAuthCode()
                 self.latteStamps = 0
@@ -174,7 +178,7 @@ class LoyaltyCardViewController: UIViewController {
                 
             } else {
                 // fails authorization
-                print(c.code)
+                print(self.authCode.code)
                 print("wrong code")
             }
         }
@@ -253,11 +257,11 @@ class LoyaltyCardViewController: UIViewController {
     
     
                             let key = snap.key
-                            let c = AuthCode(key: key, dict: dict)
-                            c.ref = Firebase(url: "\(self.codeRef)/\(key)")
+                            self.authCode = AuthCode(key: key, dict: dict)
+                            self.authCode.ref = Firebase(url: "\(self.codeRef)/\(key)")
                             
     
-                            print(c.code)
+                            print(self.authCode.code)
     
     
                         }

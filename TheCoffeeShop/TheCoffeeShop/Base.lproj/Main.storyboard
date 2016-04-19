@@ -72,6 +72,8 @@
             <string>SignPainter-HouseScript</string>
             <string>SignPainter-HouseScript</string>
             <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
+            <string>SignPainter-HouseScript</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -214,15 +216,27 @@
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12571 Pasture Rd, Riverton, UT 84096" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9e-j4-Qnj">
-                                <rect key="frame" x="150.5" y="562" width="299" height="23"/>
+                                <rect key="frame" x="150" y="562" width="299" height="23"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qy-iq-D1i">
+                                <rect key="frame" x="15" y="28" width="50" height="35"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <state key="normal" title="BACK ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="r89-J2-fWM" kind="unwind" unwindAction="unwindFromLocation:" id="cN4-1P-Z4F"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="35u-kW-0sl" secondAttribute="trailing" constant="15" id="ITz-Hr-QCU"/>
+                            <constraint firstItem="7qy-iq-D1i" firstAttribute="leading" secondItem="ZJn-E8-Qpo" secondAttribute="leading" constant="15" id="IwY-Wt-vai"/>
+                            <constraint firstItem="7qy-iq-D1i" firstAttribute="top" secondItem="L8W-NJ-1gD" secondAttribute="bottom" constant="8" id="NNA-gK-Xh5"/>
                             <constraint firstItem="35u-kW-0sl" firstAttribute="leading" secondItem="ZJn-E8-Qpo" secondAttribute="leading" constant="15" id="SQY-gP-Rhe"/>
                             <constraint firstItem="V1L-5w-AXv" firstAttribute="top" secondItem="L8W-NJ-1gD" secondAttribute="bottom" constant="10" id="Tzl-w0-PkO"/>
                             <constraint firstItem="V1L-5w-AXv" firstAttribute="centerX" secondItem="ZJn-E8-Qpo" secondAttribute="centerX" id="YHW-7B-y2T"/>
@@ -237,6 +251,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KF6-oz-VV3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="r89-J2-fWM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1443" y="-351"/>
         </scene>
@@ -262,31 +277,31 @@
                                 <rect key="frame" x="15" y="92" width="570" height="493"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday-Thursday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJZ-mp-LsE">
-                                        <rect key="frame" x="0.0" y="0.0" width="570" height="62"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="570" height="61.5"/>
                                         <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="35"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 a.m. - 10 p.m. " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ec7-P3-5Ld">
-                                        <rect key="frame" x="0.0" y="62" width="570" height="62"/>
+                                        <rect key="frame" x="0.0" y="61" width="570" height="62"/>
                                         <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lt-wM-Drz">
-                                        <rect key="frame" x="0.0" y="124" width="570" height="62"/>
+                                        <rect key="frame" x="0.0" y="123" width="570" height="61.5"/>
                                         <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="35"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 a.m. - 12 a.m." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aV-8b-FhL">
-                                        <rect key="frame" x="0.0" y="185" width="570" height="62"/>
+                                        <rect key="frame" x="0.0" y="185" width="570" height="61.5"/>
                                         <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saturday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Etw-vX-ALj">
-                                        <rect key="frame" x="0.0" y="247" width="570" height="62"/>
+                                        <rect key="frame" x="0.0" y="246" width="570" height="61.5"/>
                                         <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="35"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -298,32 +313,45 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QwT-fP-ymZ">
-                                        <rect key="frame" x="0.0" y="370" width="570" height="62"/>
+                                        <rect key="frame" x="0.0" y="370" width="570" height="61.5"/>
                                         <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="35"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8 a.m. - 5:30 p.m." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inH-b8-HjO">
-                                        <rect key="frame" x="0.0" y="432" width="570" height="62"/>
+                                        <rect key="frame" x="0.0" y="431" width="570" height="61.5"/>
                                         <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcP-SY-pLx">
+                                <rect key="frame" x="15" y="28" width="50" height="35"/>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
+                                <state key="normal" title="BACK ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="S4R-Wb-6bF" kind="unwind" unwindAction="unwindFromHours:" id="ASC-xT-p6V"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="gcP-SY-pLx" firstAttribute="leading" secondItem="sU1-n9-mEK" secondAttribute="leading" constant="15" id="1Mf-t6-aLb"/>
                             <constraint firstItem="WXb-KA-qn0" firstAttribute="top" secondItem="M6U-zd-cfU" secondAttribute="bottom" constant="15" id="L6q-RE-Yhe"/>
                             <constraint firstItem="dCK-hb-i8M" firstAttribute="top" secondItem="adF-aT-lto" secondAttribute="bottom" constant="10" id="XmE-Ut-ksY"/>
                             <constraint firstAttribute="trailing" secondItem="M6U-zd-cfU" secondAttribute="trailing" constant="15" id="Zm4-LV-iSS"/>
                             <constraint firstItem="M6U-zd-cfU" firstAttribute="top" secondItem="dCK-hb-i8M" secondAttribute="bottom" constant="20" id="jg1-U8-nez"/>
                             <constraint firstItem="M6U-zd-cfU" firstAttribute="leading" secondItem="sU1-n9-mEK" secondAttribute="leading" constant="15" id="kBc-hK-OLR"/>
                             <constraint firstItem="dCK-hb-i8M" firstAttribute="centerX" secondItem="sU1-n9-mEK" secondAttribute="centerX" id="vlJ-Hy-wQK"/>
+                            <constraint firstItem="gcP-SY-pLx" firstAttribute="top" secondItem="adF-aT-lto" secondAttribute="bottom" constant="8" id="yMW-zl-h2l"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UOc-ae-Qon" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="S4R-Wb-6bF" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2086" y="-354"/>
         </scene>
@@ -870,8 +898,8 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rNL-rX-lZn">
-                                <rect key="frame" x="0.0" y="110" width="600" height="448"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rNL-rX-lZn">
+                                <rect key="frame" x="0.0" y="114.5" width="600" height="443.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -917,8 +945,8 @@
                                     <outlet property="delegate" destination="wKK-ls-krB" id="DZa-j0-SRa"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Non-dairy Milk Options: Soy, Almond, &amp; Coconut " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qbh-DY-RQF">
-                                <rect key="frame" x="10" y="72" width="580" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Non-dairy Milk Options: Soy, Almond, &amp; Coconut " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qbh-DY-RQF">
+                                <rect key="frame" x="10" y="76" width="580" height="23"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1226,14 +1254,14 @@
                                     <segue destination="Pgw-ZV-12O" kind="unwind" unwindAction="unwindFromJuice:" id="YMW-xx-jBw"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CREATE YOUR OWN!  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fir-cw-lYQ">
-                                <rect key="frame" x="15" y="504" width="179" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREATE YOUR OWN!  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fir-cw-lYQ">
+                                <rect key="frame" x="15" y="505" width="179" height="23"/>
                                 <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeB-hd-LO1">
-                                <rect key="frame" x="25" y="533" width="555" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeB-hd-LO1">
+                                <rect key="frame" x="25" y="534" width="555" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="500" id="L4o-LV-400"/>
                                     <constraint firstAttribute="height" constant="60" id="hMZ-OU-CAB"/>
@@ -1271,24 +1299,6 @@
                 <exit id="Pgw-ZV-12O" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1739" y="2538"/>
-        </scene>
-        <!--Food Menu View Controller-->
-        <scene sceneID="8C9-Ng-iAk">
-            <objects>
-                <viewController id="lmr-mT-Kab" customClass="FoodMenuViewController" customModule="TheCoffeeShop" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ljy-a2-kBf"/>
-                        <viewControllerLayoutGuide type="bottom" id="b1H-Dh-8pU"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="BVc-bM-cvn">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="icg-GL-gUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="956" y="3433"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0gh-Vf-S3u">

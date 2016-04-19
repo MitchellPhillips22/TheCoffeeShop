@@ -15,11 +15,11 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
     var timeSlotRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/timeslot")
     var openMicRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/openmic")
     var codeRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/code")
-    var observerHasRun = false
     var arrayOfTimeSlots = [Timeslot]()
     var arrayOfTimes = ["9:00-9:15","9:15-9:30","9:30-9:45","9:45-10:00","10:00-10:15","10:15-10:30","10:30-10:45","10:45-11:00","11:00-11:15","11:15-11:30","11:30-11:45","11:45-12:00"]
     var openMic = OpenMic()
-    var code = AuthCode()
+    var authCode = AuthCode()
+    var timeSlot = Timeslot()
     var isAuthorized = false
     @IBOutlet weak var tableView: UITableView!
     
@@ -38,24 +38,37 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
     
     @IBAction func goHome(sender: UIButton) {
         self.navigationController?.popToRootViewControllerAnimated(true)
-//        openMic.ref?.updateChildValues(["hasPopulated": true])
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        loadDefaults()  
-//        adminOutlet.hidden = true 
-        print(arrayOfTimeSlots.count)
+ 
+//        adminOutlet.hidden = true
         observeTimeSlots()
-        
-        print(arrayOfTimeSlots.count)
-        if openMic.hasPopulated == false {
-            seedTimeSlots()
-        }
-        print(arrayOfTimeSlots.count)
+//            seedTimeSlots()
+        observeAuthCode()
 
     }
+    //MARK: - Force portrait orientation
+    override func viewDidAppear(animated: Bool) {
+        let value = UIInterfaceOrientation.Portrait.rawValue
+        UIDevice.currentDevice().setValue(value, forKey: "orientation")
+        print("view did appear portrait")
+    }
+    
+    override func shouldAutorotate() -> Bool {
+        print("should auto rotate")
+        return false
+    }
+    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return .Portrait
+    }
+    
+    override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
+        return .Portrait
+    }
+
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -69,23 +82,19 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
         return cell
     }
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let str = "Click here to reserve this slot"
         let t = arrayOfTimeSlots[indexPath.row]
-        self.showAlert(t)
+        
+        print(str)
+        print(t.artist)
+        
+        if str == t.artist {
+            self.showAlert(t)
+        } else {
+            print("is populated")
+        }
     }
-//    func authorization() {
-//        if isAuthorized == true {
-//            func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-//       
-//                if editingStyle == .Delete {
-//            
-//                    let event = arrayOfTimeSlots[indexPath.row]
-//                    event.ref?.removeValue()
-//            
-//                }
-//            }
-//        }
-//    }
-    //MARK: - Set up admin function
+    //MARK: - delete function set up
     func showAlert() {
         
         let alertController = UIAlertController(title: "Delete All", message: "Enter code", preferredStyle: .Alert)
@@ -94,16 +103,21 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
             (verifyAction) -> Void in
             
             let textField = alertController.textFields?.first
-            let c = self.code
+       
             // test for verification
-            if textField!.text == c.code {
-                self.openMicRef.removeValue()
+            if textField!.text == self.authCode.code {
+//                self.observeAuthCode()
                 print("approved")
-                self.timeSlotRef.removeValue()
-                self.seedTimeSlots()
-                self.isAuthorized = true
-                self.tableView.beginUpdates()
-                self.tableView.endUpdates() 
+                for timeslot in self.arrayOfTimeSlots {
+                    timeslot.ref?.updateChildValues(["artist": "Click here to reserve this slot"])
+
+//                    artist.artist = "Click here to reserve this slot"
+//                    self.timeSlot.artist = artist.artist
+                }
+//                self.observeTimeSlots()
+//                self.timeSlot.artist = "Click here to reserve this slot"
+                
+                self.tableView.reloadData()
                          
             } else {
                 // fails authorization
@@ -124,27 +138,7 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
     }
 
 
-    //MARK: - Force portrait orientation
-    override func viewDidAppear(animated: Bool) {
-        let value = UIInterfaceOrientation.Portrait.rawValue
-        UIDevice.currentDevice().setValue(value, forKey: "orientation")
-    }
-    
-    override func shouldAutorotate() -> Bool {
-        if UIInterfaceOrientationIsPortrait(self.interfaceOrientation) {
-            return true
-        }
-        return false
-    }
-    
-    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-        return .Portrait
-    }
-    
-    override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
-        return .Portrait
-    }
-    //MARK: - Alert set up
+     //MARK: - Add artist Alert
 
     func showAlert(timeslot: Timeslot) {
         let alertController = UIAlertController(title: "Add artist", message: "Type artist name", preferredStyle: .Alert)
@@ -153,6 +147,7 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
             if let textField = alertController.textFields?.first {
                 if let artistName = textField.text {
                     timeslot.ref?.updateChildValues(["artist": artistName])
+                    
                 }
             }
         }
@@ -167,12 +162,8 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
         presentViewController(alertController, animated: true, completion: nil)
     }
     
-    //MARK: - Firebase set up
+    //MARK: - Seed function
     func seedTimeSlots() {
-        
-        
-        //Check if the current event has seeded time slots
-        if openMic.hasPopulated == false {
         //If the start date of event is before the end date
             let o = openMic
             o.hasPopulated = true
@@ -183,20 +174,15 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
                 slot.time = time
                 slot.artist = "Click here to reserve this slot"
                 slot.save()
-
-                
             }
-            o.ref?.updateChildValues(["hasPopulated": true])
-            self.tableView.reloadData()
-        }
-        
-        //Creates and saves new time slots for every 15 minutes of event duration
+        self.tableView.reloadData()
     }
+    //MARK: - Observers
     func observeTimeSlots() {
         
         self.timeSlotRef.observeEventType(.Value, withBlock: { snapshot in
             
-            print(snapshot.value)
+            print("snap shot value \(snapshot.value)")
             
             self.arrayOfTimeSlots = []
             
@@ -208,40 +194,51 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
                         
                         
                         let key = snap.key
-                        let timeSlot = Timeslot(key: key, dict: dict)
-                        timeSlot.ref = Firebase(url: "\(self.timeSlotRef)/\(key)")
-                        self.arrayOfTimeSlots.append(timeSlot)
+                        self.timeSlot = Timeslot(key: key, dict: dict)
+                        self.timeSlot.ref = Firebase(url: "\(self.timeSlotRef)/\(key)")
+                        self.arrayOfTimeSlots.append(self.timeSlot)
                         
-                        print(self.arrayOfTimeSlots.count)
-//                        self.openMic.hasPopulated = true
-//                        self.openMic.ref?.updateChildValues(["hasPopulated": true])
-//                        self.saveDefaults()
+                        print("observer array count \(self.arrayOfTimeSlots.count)")
                         self.tableView.reloadData()
+                    }
+                    
+                }
+            }
+            self.tableView.reloadData()
+        })
+        
+        
+    }
+    func observeAuthCode() {
+        
+        self.codeRef.observeEventType(.Value, withBlock: { snapshot in
+            
+            print(snapshot.value)
+            
+            self.authCode.code = ""
+            
+            if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
+                
+                for snap in snapshots {
+                    
+                    if let dict = snap.value as? Dictionary<String, AnyObject> {
+                        
+                        
+                        let key = snap.key
+                        self.authCode = AuthCode(key: key, dict: dict)
+                        self.authCode.ref = Firebase(url: "\(self.codeRef)/\(key)")
+                        
+                        
+                        print(self.authCode.code)
+                        
+                        
                     }
                     
                 }
             }
             
         })
-        
-        
     }
-//    func saveDefaults() {
-//        print("saved")
-//        let defaults = NSUserDefaults.standardUserDefaults()
-//        defaults.setBool(observerHasRun, forKey: "observerHasRun")
-//        defaults.synchronize()
-//        
-//    }
-//    
-//    func loadDefaults() {
-//        let defaults = NSUserDefaults.standardUserDefaults()
-//        let value = defaults.boolForKey("observerHasRun")
-//        self.observerHasRun = value
-//        print(self.observerHasRun)
-//  
-//    }
-
     
     
 }

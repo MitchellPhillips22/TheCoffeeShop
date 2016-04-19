@@ -13,7 +13,7 @@ class AuthCode {
     
     var codeRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/code")
     var key = ""
-    var code = "12345"
+    var code = ""
     var ref: Firebase? 
     
     

@@ -15,6 +15,12 @@ class AboutViewController: UIViewController {
         self.navigationController?.popToRootViewControllerAnimated(true)
         
     }
+    @IBAction func unwindFromLocation (segue: UIStoryboardSegue) {
+        
+    }
+    @IBAction func unwindFromHours (segue: UIStoryboardSegue) {
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

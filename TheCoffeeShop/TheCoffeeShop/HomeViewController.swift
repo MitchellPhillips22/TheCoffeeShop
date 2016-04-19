@@ -12,7 +12,8 @@ import Firebase
 class HomeViewController: UIViewController {
 
     var codeRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/code")
-    
+    var openMicRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/openmic")
+    var openMic = OpenMic()
     override func viewDidLoad() {
         super.viewDidLoad()
 //       seedAuthCode()
@@ -43,6 +44,32 @@ class HomeViewController: UIViewController {
         c.code = "12345"
         c.save()
     }
-
+    func observeOpenMic() {
+        
+        self.openMicRef.observeEventType(.Value, withBlock: { snapshot in
+            
+            print(snapshot.value)
+            
+            if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
+                
+                for snap in snapshots {
+                    
+                    if let dict = snap.value as? Dictionary<String, AnyObject> {
+                        
+                        
+                        let key = snap.key
+                        
+                        let openMic = OpenMic(key: key, dict: dict)
+                        
+                        openMic.ref = Firebase(url: "\(self.openMicRef)/\(key)")
+                        
+                        self.openMic = openMic
+                    }
+                    
+                }
+            }
+            
+        })
+    }
 }
 

@@ -15,7 +15,7 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
     var eventRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/event")
     var codeRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/code")
     
-    var code = AuthCode()
+    var authCode = AuthCode()
     var arrayOfEvents = [Event]()
     
     var isAdmin: Bool = false
@@ -51,6 +51,7 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
         super.viewDidLoad()
         addEventOutlet.hidden = true
         //        adminOutlet.hidden = true
+        observeAuthCode()
         observeEvents()
         tapGestureRecognized()
     }
@@ -95,7 +96,7 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
         let event = arrayOfEvents[indexPath.row]
         cell.eventNameLabel.text = event.name
         cell.eventDateLabel.text = event.eventDescription
-        print(event.name)
+
         
         //        cell.eventDateLabel.text = dateFormatter.stringFromDate(event.eventDate)
         return cell
@@ -122,9 +123,9 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
             (verifyAction) -> Void in
             
             let textField = alertController.textFields?.first
-            let c = self.code
             // test for verification
-            if textField!.text == c.code {
+            if textField!.text == self.authCode.code {
+                self.observeAuthCode()
                 print("approved")
                 self.addEventOutlet.hidden = false
                 self.isAuthorized = true
@@ -161,8 +162,8 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
                     e.name = eventName
                     e.eventDescription = eventDescription
                     e.save()
+                    self.isAuthorized = false
                     //                    e.ref?.updateChildValues(["name": eventName, "eventDate": eventDate])
-                    print(e.name)
                     
                 }
             }
@@ -185,7 +186,7 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
         
         self.eventRef.observeEventType(.Value, withBlock: { snapshot in
             
-            print(snapshot.value)
+            print("snapshot \(snapshot.value)")
             
             self.arrayOfEvents = []
             
@@ -201,9 +202,39 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
                         event.ref = Firebase(url: "\(self.eventRef)/\(key)")
                         self.arrayOfEvents.append(event)
                         
-                        print(self.arrayOfEvents.count)
+                        print("array count \(self.arrayOfEvents.count)")
                         
                         self.tableView.reloadData()
+                    }
+                    
+                }
+            }
+            self.tableView.reloadData()            
+        })
+    }
+    func observeAuthCode() {
+        
+        self.codeRef.observeEventType(.Value, withBlock: { snapshot in
+            
+            print(snapshot.value)
+            
+            self.authCode.code = ""
+            
+            if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
+                
+                for snap in snapshots {
+                    
+                    if let dict = snap.value as? Dictionary<String, AnyObject> {
+                        
+                        
+                        let key = snap.key
+                        self.authCode = AuthCode(key: key, dict: dict)
+                        self.authCode.ref = Firebase(url: "\(self.codeRef)/\(key)")
+                        
+                        
+                        print(self.authCode.code)
+                        
+                        
                     }
                     
                 }
@@ -211,4 +242,5 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
             
         })
     }
+
 }
