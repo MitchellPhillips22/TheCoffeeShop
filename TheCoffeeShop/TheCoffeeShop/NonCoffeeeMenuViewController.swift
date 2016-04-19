@@ -53,22 +53,19 @@ class NonCoffeeeMenuViewController: UIViewController, UITableViewDataSource, UIT
         cell.drinkDescriptionLabel.text = drink.description
         return cell 
     }
-    
-    //MARK: - Force Portrait orientation
 
+    //MARK: - Force portrait orientation
     override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         let value = UIInterfaceOrientation.Portrait.rawValue
         UIDevice.currentDevice().setValue(value, forKey: "orientation")
+        print("view did appear portrait")
     }
     
     override func shouldAutorotate() -> Bool {
-        if UIInterfaceOrientationIsPortrait(self.interfaceOrientation) {
-            return true
-        }
+        print("should auto rotate")
         return false
     }
-    
-    
     
     override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
         return .Portrait

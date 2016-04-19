@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TheCoffeeShop/EventsHomeViewController.swift"
-            timestampString = "482374974.248658"
+            timestampString = "482785547.756282"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "observeOpenMic()"
             landmarkType = "5">
          </BreakpointContent>

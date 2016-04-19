@@ -94,7 +94,7 @@
                                     <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="jeA-0f-who" kind="show" id="VGi-DI-fFW"/>
+                                    <segue destination="jeA-0f-who" kind="presentation" animates="NO" id="GrA-2n-0DW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TzW-K9-H8u">
@@ -135,7 +135,7 @@
                                 <rect key="frame" x="442" y="177" width="128" height="128"/>
                                 <state key="normal" image="heart"/>
                                 <connections>
-                                    <segue destination="jeA-0f-who" kind="show" animates="NO" id="cMF-g6-hbR"/>
+                                    <segue destination="jeA-0f-who" kind="presentation" animates="NO" id="7Of-WG-niY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8I-LP-1zv">
@@ -1075,7 +1075,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2sq-z2-Gtf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="2bi-W8-tsI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="635" y="1633"/>
+            <point key="canvasLocation" x="634" y="1710"/>
         </scene>
         <!--Non Coffeee Menu View Controller-->
         <scene sceneID="HZl-yL-Qbu">
@@ -1778,7 +1778,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4RE-Pb-PrD" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="629" y="983"/>
+            <point key="canvasLocation" x="552" y="1056"/>
         </scene>
     </scenes>
     <resources>
@@ -1801,7 +1801,7 @@
         <segue reference="x9F-t4-JNk"/>
         <segue reference="lpC-jG-MAx"/>
         <segue reference="EZf-6E-QNj"/>
-        <segue reference="cMF-g6-hbR"/>
+        <segue reference="7Of-WG-niY"/>
         <segue reference="Mrx-jT-X2h"/>
         <segue reference="il3-rR-bRM"/>
         <segue reference="p2p-PN-qic"/>

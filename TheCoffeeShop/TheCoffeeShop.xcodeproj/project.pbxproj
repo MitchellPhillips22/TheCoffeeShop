@@ -34,7 +34,6 @@
 		1BE92E531CB4A035009284A0 /* JuiceMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E521CB4A035009284A0 /* JuiceMenuViewController.swift */; };
 		1BE92E551CB4A0CA009284A0 /* UpcomingEventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E541CB4A0CA009284A0 /* UpcomingEventsTableViewController.swift */; };
 		1BE92E571CB4A0D7009284A0 /* OpenMicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E561CB4A0D7009284A0 /* OpenMicTableViewController.swift */; };
-		1BE92E591CB4A155009284A0 /* FoodMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E581CB4A155009284A0 /* FoodMenuViewController.swift */; };
 		1BE92E5F1CB5C40C009284A0 /* EventsHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E5E1CB5C40C009284A0 /* EventsHomeViewController.swift */; };
 		1BE92E611CB81188009284A0 /* SignPainter-HouseScript.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE92E601CB81188009284A0 /* SignPainter-HouseScript.ttf */; };
 		1BE92E631CB84528009284A0 /* SignatureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE92E621CB84528009284A0 /* SignatureTableViewCell.swift */; };
@@ -75,7 +74,6 @@
 		1BE92E521CB4A035009284A0 /* JuiceMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuiceMenuViewController.swift; sourceTree = "<group>"; };
 		1BE92E541CB4A0CA009284A0 /* UpcomingEventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingEventsTableViewController.swift; sourceTree = "<group>"; };
 		1BE92E561CB4A0D7009284A0 /* OpenMicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenMicTableViewController.swift; sourceTree = "<group>"; };
-		1BE92E581CB4A155009284A0 /* FoodMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodMenuViewController.swift; sourceTree = "<group>"; };
 		1BE92E5E1CB5C40C009284A0 /* EventsHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsHomeViewController.swift; sourceTree = "<group>"; };
 		1BE92E601CB81188009284A0 /* SignPainter-HouseScript.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignPainter-HouseScript.ttf"; sourceTree = "<group>"; };
 		1BE92E621CB84528009284A0 /* SignatureTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureTableViewCell.swift; sourceTree = "<group>"; };
@@ -143,7 +141,6 @@
 				1BE92E4E1CB4A019009284A0 /* StandardsMenuViewController.swift */,
 				1BE92E501CB4A027009284A0 /* NonCoffeeeMenuViewController.swift */,
 				1BE92E521CB4A035009284A0 /* JuiceMenuViewController.swift */,
-				1BE92E581CB4A155009284A0 /* FoodMenuViewController.swift */,
 				1BE92E5E1CB5C40C009284A0 /* EventsHomeViewController.swift */,
 				1BE92E541CB4A0CA009284A0 /* UpcomingEventsTableViewController.swift */,
 				1BE92E561CB4A0D7009284A0 /* OpenMicTableViewController.swift */,
@@ -341,7 +338,6 @@
 				1BDEFB741CBC185100167920 /* Event.swift in Sources */,
 				1BBFE0221CC01B0C0031F75C /* OpenMicTableViewCell.swift in Sources */,
 				1B9C99191CC4BB5F007BACA4 /* LocationViewController.swift in Sources */,
-				1BE92E591CB4A155009284A0 /* FoodMenuViewController.swift in Sources */,
 				1BDEFB6C1CBC01FB00167920 /* NonCoffeeDrink.swift in Sources */,
 				1BE92E5F1CB5C40C009284A0 /* EventsHomeViewController.swift in Sources */,
 				1BE92E511CB4A027009284A0 /* NonCoffeeeMenuViewController.swift in Sources */,
@@ -469,11 +465,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TheCoffeeShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mitchell.TheCoffeeShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -485,11 +482,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TheCoffeeShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mitchell.TheCoffeeShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

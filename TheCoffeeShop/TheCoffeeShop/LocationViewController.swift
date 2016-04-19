@@ -21,6 +21,28 @@ class LocationViewController: UIViewController {
         let request = NSURLRequest(URL: webViewURL!)
         webView.loadRequest(request)
     }
+    //MARK: - Force portrait orientation
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        let value = UIInterfaceOrientation.Portrait.rawValue
+        UIDevice.currentDevice().setValue(value, forKey: "orientation")
+        print("view did appear portrait")
+    }
+    
+    override func shouldAutorotate() -> Bool {
+        print("should auto rotate")
+        return false
+    }
+    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return .Portrait
+    }
+    
+    override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
+        return .Portrait
+    }
+    
+
 
 
 
