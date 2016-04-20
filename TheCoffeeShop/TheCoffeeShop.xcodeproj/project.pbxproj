@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1B2905631CC04A1600DFABE2 /* OpenMic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2905621CC04A1600DFABE2 /* OpenMic.swift */; };
 		1B7F3F431CBED48900E477C3 /* Timeslot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7F3F421CBED48900E477C3 /* Timeslot.swift */; };
-		1B7F3F451CBEEFD900E477C3 /* SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7F3F441CBEEFD900E477C3 /* SwiftDate.swift */; };
 		1B9C99191CC4BB5F007BACA4 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C99181CC4BB5F007BACA4 /* LocationViewController.swift */; };
 		1B9C991B1CC4BB6B007BACA4 /* HoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C991A1CC4BB6B007BACA4 /* HoursViewController.swift */; };
 		1BBFE0201CC019860031F75C /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBFE01F1CC019860031F75C /* EventsTableViewCell.swift */; };
@@ -47,7 +46,6 @@
 		073D7B6C3DC018D3C21F1F1F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		1B2905621CC04A1600DFABE2 /* OpenMic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenMic.swift; sourceTree = "<group>"; };
 		1B7F3F421CBED48900E477C3 /* Timeslot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeslot.swift; sourceTree = "<group>"; };
-		1B7F3F441CBEEFD900E477C3 /* SwiftDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDate.swift; sourceTree = "<group>"; };
 		1B9C99181CC4BB5F007BACA4 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		1B9C991A1CC4BB6B007BACA4 /* HoursViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoursViewController.swift; sourceTree = "<group>"; };
 		1BBFE01F1CC019860031F75C /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
@@ -157,7 +155,6 @@
 				1BE92E681CB859CF009284A0 /* StandardDrink.swift */,
 				1BDEFB6B1CBC01FB00167920 /* NonCoffeeDrink.swift */,
 				1BDEFB6D1CBC025F00167920 /* JuiceDrink.swift */,
-				1B7F3F441CBEEFD900E477C3 /* SwiftDate.swift */,
 				1BDEFB731CBC185100167920 /* Event.swift */,
 				1B2905621CC04A1600DFABE2 /* OpenMic.swift */,
 				1B7F3F421CBED48900E477C3 /* Timeslot.swift */,
@@ -327,7 +324,6 @@
 				1BE92E371CB49A27009284A0 /* HomeViewController.swift in Sources */,
 				1BE92E471CB49EAD009284A0 /* LoyaltyCardViewController.swift in Sources */,
 				1BE3EF341CC414560074E853 /* AuthCode.swift in Sources */,
-				1B7F3F451CBEEFD900E477C3 /* SwiftDate.swift in Sources */,
 				1BBFE0201CC019860031F75C /* EventsTableViewCell.swift in Sources */,
 				1BDEFB6E1CBC025F00167920 /* JuiceDrink.swift in Sources */,
 				1BE92E651CB85077009284A0 /* SignatureLatte.swift in Sources */,

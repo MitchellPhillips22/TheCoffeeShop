@@ -77,6 +77,7 @@ class LoyaltyCardViewController: UIViewController {
         observeAuthCode()
         loadDefaults()
         checkForRedeemable()
+        checkForRedeemableCoffee()
         updateUI()
         
     }
