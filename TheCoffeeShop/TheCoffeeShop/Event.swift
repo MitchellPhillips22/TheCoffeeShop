@@ -10,14 +10,13 @@ import Foundation
 import Firebase
 
 class Event {
-    
+    //MARK: - Variables
     var eventRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/event")
-    
     var eventDescription = ""
     var key = ""
     var name = ""
     var ref: Firebase?
-    
+    //MARK: - Initializers
     init() {
         
     }
@@ -35,7 +34,7 @@ class Event {
          self.eventRef = self.eventRef.childByAppendingPath(self.key)
         
     }
-    
+    //MARK: - Save
     func save() {
         
         let dict: [String: AnyObject] = [

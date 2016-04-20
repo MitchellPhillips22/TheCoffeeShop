@@ -11,12 +11,13 @@ import UIKit
 class StandardsMenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var drinksArray = [StandardDrink]()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         seedArray()
     }
+    //MARK: - Seed Array
     func seedArray() {
         
         self.drinksArray = [
@@ -37,7 +38,7 @@ class StandardsMenuViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     //MARK: - Table View set up
-
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return drinksArray.count
     }

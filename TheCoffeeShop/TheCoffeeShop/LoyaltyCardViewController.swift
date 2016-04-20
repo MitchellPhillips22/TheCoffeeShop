@@ -34,21 +34,21 @@ class LoyaltyCardViewController: UIViewController {
     
     @IBAction func redeemLatteTapped(sender: UIButton) {
         if isAuthorized == true {
-        latteStamps = 0
-        redeemLatteOutlet.hidden = true
-        updateUI()
+            latteStamps = 0
+            redeemLatteOutlet.hidden = true
+            updateUI()
         }
     }
     @IBAction func redeemCoffeeTapped(sender: UIButton) {
         if isAuthorized == true {
-        coffeeStamps = 0
-        redeemCoffeeOutlet.hidden = true
-        updateUI()
+            coffeeStamps = 0
+            redeemCoffeeOutlet.hidden = true
+            updateUI()
         }
     }
     
     @IBAction func goHome(sender: UIButton) {
-       self.dismissViewControllerAnimated(false, completion: nil)
+        self.dismissViewControllerAnimated(false, completion: nil)
     }
     //MARK: - Outlets
     @IBOutlet weak var doneOutlet: UIButton!
@@ -58,7 +58,7 @@ class LoyaltyCardViewController: UIViewController {
     @IBOutlet var latteButtonCollection: Array<UIButton>?
     
     @IBOutlet var coffeeButtonCollection: Array<UIButton>?
-    
+    //MARK: - Variables
     var authCode = AuthCode()
     
     var latteStamps = 0
@@ -68,7 +68,7 @@ class LoyaltyCardViewController: UIViewController {
     var isAuthorized: Bool = false
     
     var codeRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/code")
-
+    
     
     //MARK: - View
     override func viewDidLoad() {
@@ -81,28 +81,28 @@ class LoyaltyCardViewController: UIViewController {
         updateUI()
         
     }
-    // forces view to present in landscape only
+    //MARK: - Force view to present in landscape only
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         let value = UIInterfaceOrientation.LandscapeLeft.rawValue
         UIDevice.currentDevice().setValue(value, forKey: "orientation")
         print("view did appear landscape")
     }
-
+    
     override func shouldAutorotate() -> Bool {
         print("auto rotate to landscape")
-
+        
         return false
     }
-
+    
     override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
         print("supported landscape")
         return .Landscape
-  
+        
     }
     
     override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
-         print("prefer landscape")
+        print("prefer landscape")
         return .LandscapeLeft
     }
     //MARK: - Button functions
@@ -194,9 +194,9 @@ class LoyaltyCardViewController: UIViewController {
         
         presentViewController(alertController, animated: true, completion: nil)
     }
-   
- 
-     //MARK: - UI interaction functions
+    
+    
+    //MARK: - UI interaction functions
     func updateUI() {
         
         for button in latteButtonCollection! {
@@ -205,7 +205,6 @@ class LoyaltyCardViewController: UIViewController {
             if button.tag <= latteStamps {
                 button.selected = true
             }
-            
         }
         for button in coffeeButtonCollection! {
             button.selected = false
@@ -213,9 +212,7 @@ class LoyaltyCardViewController: UIViewController {
             if button.tag <= coffeeStamps {
                 button.selected = true
             }
-            
         }
-        
     }
     
     //MARK: - NSUserDefaults functions
@@ -241,35 +238,31 @@ class LoyaltyCardViewController: UIViewController {
         print("loaded stamps \(latteStamps)")
         
     }
-        func observeAuthCode() {
-    
-            self.codeRef.observeEventType(.Value, withBlock: { snapshot in
-    
-                print(snapshot.value)
-    
-                self.authCode.code = ""
-    
-                if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
-    
-                    for snap in snapshots {
-    
-                        if let dict = snap.value as? Dictionary<String, AnyObject> {
-    
-    
-                            let key = snap.key
-                            self.authCode = AuthCode(key: key, dict: dict)
-                            self.authCode.ref = Firebase(url: "\(self.codeRef)/\(key)")
-                            
-    
-                            print(self.authCode.code)
-    
-    
-                        }
-    
+    //MARK: - Firebase observer set up
+    func observeAuthCode() {
+        
+        self.codeRef.observeEventType(.Value, withBlock: { snapshot in
+            
+            print(snapshot.value)
+            
+            self.authCode.code = ""
+            
+            if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
+                
+                for snap in snapshots {
+                    
+                    if let dict = snap.value as? Dictionary<String, AnyObject> {
+                        
+                        
+                        let key = snap.key
+                        self.authCode = AuthCode(key: key, dict: dict)
+                        self.authCode.ref = Firebase(url: "\(self.codeRef)/\(key)")
+                        
+                        
+                        print(self.authCode.code)
                     }
                 }
-                
-            })
-        }
-
+            }
+        })
+    }
 }

@@ -10,13 +10,12 @@ import Foundation
 import Firebase
 
 class AuthCode {
-    
+    //MARK: - Variables
     var codeRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/code")
     var key = ""
     var code = ""
     var ref: Firebase? 
-    
-    
+    //MARK: - Initializers
     init() {
         
     }
@@ -30,6 +29,7 @@ class AuthCode {
         self.codeRef = codeRef.childByAppendingPath(self.key)
         }
     }
+    //MARK: - Save 
     func save() {
         
         let dict: [String: AnyObject] = [

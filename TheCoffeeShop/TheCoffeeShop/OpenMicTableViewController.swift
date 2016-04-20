@@ -10,25 +10,18 @@ import UIKit
 import Firebase
 
 class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+    //MARK: - Variables
     var ref = Firebase(url: "https://the-coffee-shop.firebaseio.com")
     var timeSlotRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/timeslot")
-    var openMicRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/openmic")
     var codeRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/code")
     var arrayOfTimeSlots = [Timeslot]()
     var arrayOfTimes = ["9:00-9:15","9:15-9:30","9:30-9:45","9:45-10:00","10:00-10:15","10:15-10:30","10:30-10:45","10:45-11:00","11:00-11:15","11:15-11:30","11:30-11:45","11:45-12:00"]
-    var openMic = OpenMic()
     var authCode = AuthCode()
     var timeSlot = Timeslot()
     var isAuthorized = false
-    @IBOutlet weak var tableView: UITableView!
-    
-    var dateFormatter: NSDateFormatter = {
-        var formatter = NSDateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm"
-        return formatter
-    }()
     var arrayOfStrings = [String]()
+    //MARK: - IBActions and Outlets
+    @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var adminOutlet: UIButton!
     
@@ -39,15 +32,14 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
     @IBAction func goHome(sender: UIButton) {
         self.navigationController?.popToRootViewControllerAnimated(true)
     }
-    
+    //MARK: - View
     override func viewDidLoad() {
         super.viewDidLoad()
- 
-//        adminOutlet.hidden = true
+        
         observeTimeSlots()
-//            seedTimeSlots()
+        //            seedTimeSlots()
         observeAuthCode()
-
+        
     }
     //MARK: - Force portrait orientation
     override func viewDidAppear(animated: Bool) {
@@ -69,9 +61,7 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
     override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
         return .Portrait
     }
-
-    
-    
+    //MARK: - Table view set up
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayOfTimeSlots.count
     }
@@ -104,22 +94,14 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
             (verifyAction) -> Void in
             
             let textField = alertController.textFields?.first
-       
             // test for verification
             if textField!.text == self.authCode.code {
-//                self.observeAuthCode()
                 print("approved")
                 for timeslot in self.arrayOfTimeSlots {
                     timeslot.ref?.updateChildValues(["artist": "Click here to reserve this slot"])
-
-//                    artist.artist = "Click here to reserve this slot"
-//                    self.timeSlot.artist = artist.artist
                 }
-//                self.observeTimeSlots()
-//                self.timeSlot.artist = "Click here to reserve this slot"
-                
                 self.tableView.reloadData()
-                         
+                
             } else {
                 // fails authorization
                 print("wrong code")
@@ -137,10 +119,8 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
         
         presentViewController(alertController, animated: true, completion: nil)
     }
-
-
-     //MARK: - Add artist Alert
-
+    //MARK: - Add artist Alert
+    
     func showAlert(timeslot: Timeslot) {
         let alertController = UIAlertController(title: "Add artist", message: "Type artist name", preferredStyle: .Alert)
         let addAction = UIAlertAction(title: "Add", style: .Default) {
@@ -165,17 +145,12 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
     
     //MARK: - Seed function
     func seedTimeSlots() {
-        //If the start date of event is before the end date
-            let o = openMic
-            o.hasPopulated = true
-            o.save()
-            for time in arrayOfTimes {
-                
-                let slot = Timeslot()
-                slot.time = time
-                slot.artist = "Click here to reserve this slot"
-                slot.save()
-            }
+        for time in arrayOfTimes {
+            let slot = Timeslot()
+            slot.time = time
+            slot.artist = "Click here to reserve this slot"
+            slot.save()
+        }
         self.tableView.reloadData()
     }
     //MARK: - Observers
@@ -193,7 +168,6 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
                     
                     if let dict = snap.value as? Dictionary<String, AnyObject> {
                         
-                        
                         let key = snap.key
                         self.timeSlot = Timeslot(key: key, dict: dict)
                         self.timeSlot.ref = Firebase(url: "\(self.timeSlotRef)/\(key)")
@@ -202,13 +176,10 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
                         print("observer array count \(self.arrayOfTimeSlots.count)")
                         self.tableView.reloadData()
                     }
-                    
                 }
             }
             self.tableView.reloadData()
         })
-        
-        
     }
     func observeAuthCode() {
         
@@ -224,22 +195,13 @@ class OpenMicTableViewController: UIViewController, UITableViewDelegate, UITable
                     
                     if let dict = snap.value as? Dictionary<String, AnyObject> {
                         
-                        
                         let key = snap.key
                         self.authCode = AuthCode(key: key, dict: dict)
                         self.authCode.ref = Firebase(url: "\(self.codeRef)/\(key)")
                         
-                        
-                        print(self.authCode.code)
-                        
-                        
                     }
-                    
                 }
             }
-            
         })
     }
-    
-    
 }

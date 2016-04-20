@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
+    //MARK: - Variables
     var ref = Firebase(url: "https://the-coffee-shop.firebaseio.com")
     var eventRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/event")
     var codeRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/code")
@@ -18,17 +18,8 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
     var authCode = AuthCode()
     var arrayOfEvents = [Event]()
     
-    var isAdmin: Bool = false
     var isAuthorized = false
-    
-    var totalTouches = 0
-    
-    var dateFormatter: NSDateFormatter = {
-        var formatter = NSDateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm"
-        return formatter
-    }()
-    
+    //MARK: IBActions and Outlets
     @IBOutlet weak var tableView: UITableView!
     
     @IBAction func goHome(sender: UIButton) {
@@ -50,10 +41,8 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
         addEventOutlet.hidden = true
-        //        adminOutlet.hidden = true
         observeAuthCode()
         observeEvents()
-        tapGestureRecognized()
     }
     
     //MARK: - Force portrait orientation
@@ -74,45 +63,32 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
     override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
         return .Portrait
     }
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        let touchCount = touches.count
-        totalTouches = totalTouches + touchCount
-        print(totalTouches)
-    }
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        totalTouches = 0
-    }
-    func tapGestureRecognized() {
-        let tapRecognizer = UITapGestureRecognizer()
-        let requiredTaps = tapRecognizer.numberOfTouches()
-        if requiredTaps == 5 {
-            adminOutlet.hidden = false
-        }
-    }
     //MARK: - Set up table view
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("EventCell", forIndexPath: indexPath) as! EventsTableViewCell
         let event = arrayOfEvents[indexPath.row]
         cell.eventNameLabel.text = event.name
         cell.eventDateLabel.text = event.eventDescription
-
-        
-        //        cell.eventDateLabel.text = dateFormatter.stringFromDate(event.eventDate)
         return cell
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayOfEvents.count
     }
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if isAuthorized == true {
+        if editingStyle == .Delete {
             
-            if editingStyle == .Delete {
-                
-                let event = self.arrayOfEvents[indexPath.row]
-                event.ref?.removeValue()
-            }
+            let event = self.arrayOfEvents[indexPath.row]
+            event.ref?.removeValue()
         }
-        isAuthorized = false 
+        isAuthorized = false
+        addEventOutlet.hidden = true
+    }
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        
+        if isAuthorized == true {
+            return true
+        }
+        return false
     }
     //MARK: - Set up admin functions
     func showAlert() {
@@ -180,7 +156,7 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
         presentViewController(alertController, animated: true, completion: nil)
     }
     
-    
+    //MARK: - Firebase observers
     func observeEvents() {
         
         self.eventRef.observeEventType(.Value, withBlock: { snapshot in
@@ -205,10 +181,9 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
                         
                         self.tableView.reloadData()
                     }
-                    
                 }
             }
-            self.tableView.reloadData()            
+            self.tableView.reloadData()
         })
     }
     func observeAuthCode() {
@@ -232,14 +207,9 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
                         
                         
                         print(self.authCode.code)
-                        
-                        
                     }
-                    
                 }
             }
-            
         })
     }
-
 }

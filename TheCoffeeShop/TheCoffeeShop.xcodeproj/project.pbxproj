@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B2905631CC04A1600DFABE2 /* OpenMic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2905621CC04A1600DFABE2 /* OpenMic.swift */; };
 		1B7F3F431CBED48900E477C3 /* Timeslot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7F3F421CBED48900E477C3 /* Timeslot.swift */; };
 		1B9C99191CC4BB5F007BACA4 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C99181CC4BB5F007BACA4 /* LocationViewController.swift */; };
 		1B9C991B1CC4BB6B007BACA4 /* HoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C991A1CC4BB6B007BACA4 /* HoursViewController.swift */; };
@@ -44,7 +43,6 @@
 
 /* Begin PBXFileReference section */
 		073D7B6C3DC018D3C21F1F1F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		1B2905621CC04A1600DFABE2 /* OpenMic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenMic.swift; sourceTree = "<group>"; };
 		1B7F3F421CBED48900E477C3 /* Timeslot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeslot.swift; sourceTree = "<group>"; };
 		1B9C99181CC4BB5F007BACA4 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		1B9C991A1CC4BB6B007BACA4 /* HoursViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoursViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +92,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B9C991C1CC7F62D007BACA4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BE92E381CB49A27009284A0 /* Main.storyboard */,
+				1BE92E3B1CB49A27009284A0 /* Assets.xcassets */,
+				1BE92E601CB81188009284A0 /* SignPainter-HouseScript.ttf */,
+				1BE92E3D1CB49A27009284A0 /* LaunchScreen.storyboard */,
+				1BE92E401CB49A27009284A0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		1BE92E281CB49A27009284A0 = {
 			isa = PBXGroup;
 			children = (
@@ -119,11 +129,7 @@
 				1BE92E6A1CB859F3009284A0 /* Controllers */,
 				1BE92E6C1CB85A56009284A0 /* Views */,
 				1BE92E6B1CB85A49009284A0 /* Models */,
-				1BE92E381CB49A27009284A0 /* Main.storyboard */,
-				1BE92E3B1CB49A27009284A0 /* Assets.xcassets */,
-				1BE92E601CB81188009284A0 /* SignPainter-HouseScript.ttf */,
-				1BE92E3D1CB49A27009284A0 /* LaunchScreen.storyboard */,
-				1BE92E401CB49A27009284A0 /* Info.plist */,
+				1B9C991C1CC7F62D007BACA4 /* Supporting Files */,
 			);
 			path = TheCoffeeShop;
 			sourceTree = "<group>";
@@ -156,7 +162,6 @@
 				1BDEFB6B1CBC01FB00167920 /* NonCoffeeDrink.swift */,
 				1BDEFB6D1CBC025F00167920 /* JuiceDrink.swift */,
 				1BDEFB731CBC185100167920 /* Event.swift */,
-				1B2905621CC04A1600DFABE2 /* OpenMic.swift */,
 				1B7F3F421CBED48900E477C3 /* Timeslot.swift */,
 				1BE3EF331CC414560074E853 /* AuthCode.swift */,
 			);
@@ -343,7 +348,6 @@
 				1BE92E4F1CB4A019009284A0 /* StandardsMenuViewController.swift in Sources */,
 				1BE92E691CB859CF009284A0 /* StandardDrink.swift in Sources */,
 				1BE92E671CB859B5009284A0 /* StandardsTableViewCell.swift in Sources */,
-				1B2905631CC04A1600DFABE2 /* OpenMic.swift in Sources */,
 				1BE92E351CB49A27009284A0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

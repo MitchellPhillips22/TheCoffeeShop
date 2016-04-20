@@ -9,11 +9,11 @@
 import UIKit
 
 class LocationViewController: UIViewController {
-
+    
+//MARK: - Web View Outlet
     @IBOutlet weak var webView: UIWebView!
     
-
-    
+    //MARK: - View 
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -41,9 +41,4 @@ class LocationViewController: UIViewController {
     override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
         return .Portrait
     }
-    
-
-
-
-
 }

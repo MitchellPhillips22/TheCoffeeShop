@@ -9,14 +9,14 @@
 import UIKit
 
 class JuiceMenuViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
     var drinksArray = [JuiceDrink]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         seedArray()
     }
-
+    
     //MARK: - Force portrait orientation
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -38,6 +38,7 @@ class JuiceMenuViewController: UIViewController, UITableViewDataSource, UITableV
         return .Portrait
     }
     
+    //MARK: - Seed Array
     func seedArray() {
         self.drinksArray = [
             JuiceDrink(name: "THE ORIGINAL  ", description: "APPLE, ORANGE, CARROT"),
@@ -50,8 +51,8 @@ class JuiceMenuViewController: UIViewController, UITableViewDataSource, UITableV
             JuiceDrink(name: "MERRIL'S MAGIC  ", description: "GINGER, CARROT, SPINACH, CUCUMBER, ORANGE, APPLE, PINEAPPLE")
         ]
     }
-
-    //MARK: - Set up table view 
+    
+    //MARK: - Set up table view
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return drinksArray.count
     }
@@ -60,7 +61,7 @@ class JuiceMenuViewController: UIViewController, UITableViewDataSource, UITableV
         let drink = drinksArray[indexPath.row]
         cell.drinkNameLabel.text = drink.name
         cell.drinkDescriptionLabel.text = drink.description
-        return cell 
+        return cell
     }
-
+    
 }

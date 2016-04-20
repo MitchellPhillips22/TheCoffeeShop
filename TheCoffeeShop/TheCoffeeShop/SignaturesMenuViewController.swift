@@ -9,7 +9,7 @@
 import UIKit
 
 class SignaturesMenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     var drinksArray = [SignatureLatte]()
     
     // MARK: - Set up view
@@ -48,7 +48,7 @@ class SignaturesMenuViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     override func shouldAutorotate() -> Bool {
-
+        
         return false
     }
     
@@ -60,7 +60,7 @@ class SignaturesMenuViewController: UIViewController, UITableViewDelegate, UITab
         return .Portrait
     }
     // MARK: - Table View set up
-
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return drinksArray.count
     }

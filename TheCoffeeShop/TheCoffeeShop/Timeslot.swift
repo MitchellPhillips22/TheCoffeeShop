@@ -10,7 +10,7 @@ import Foundation
 import Firebase
 
 class Timeslot {
-    
+    //MARK: Variables
     var timeslotRef = Firebase(url: "https://the-coffee-shop.firebaseio.com/timeslot")
     
     var key: String = ""
@@ -18,7 +18,7 @@ class Timeslot {
     var time: String = ""
     var eventKey: String = ""
     var ref: Firebase?
-    
+    //MARK: Initializers
     init() {
         
     }
@@ -38,7 +38,7 @@ class Timeslot {
         
         self.timeslotRef = timeslotRef.childByAppendingPath(self.key)
     }
-    
+    //MARK: - Save 
     func save() {
         
         let dict: [String: AnyObject] = [

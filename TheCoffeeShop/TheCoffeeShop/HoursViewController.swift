@@ -13,7 +13,6 @@ class HoursViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     //MARK: - Force portrait orientation
     override func viewDidAppear(animated: Bool) {

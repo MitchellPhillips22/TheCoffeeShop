@@ -9,19 +9,19 @@
 import UIKit
 
 class NonCoffeeeMenuViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
     var drinksArray = [NonCoffeeDrink]()
     
- 
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         seedArray()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    
     //MARK: - Set up drinks array
     
     func seedArray() {
@@ -51,9 +51,9 @@ class NonCoffeeeMenuViewController: UIViewController, UITableViewDataSource, UIT
         let drink = drinksArray[indexPath.row]
         cell.drinkNameLabel.text = drink.name
         cell.drinkDescriptionLabel.text = drink.description
-        return cell 
+        return cell
     }
-
+    
     //MARK: - Force portrait orientation
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -74,5 +74,5 @@ class NonCoffeeeMenuViewController: UIViewController, UITableViewDataSource, UIT
     override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
         return .Portrait
     }
-
+    
 }
