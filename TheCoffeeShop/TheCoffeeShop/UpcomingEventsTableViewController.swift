@@ -112,6 +112,7 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
                 event.ref?.removeValue()
             }
         }
+        isAuthorized = false 
     }
     //MARK: - Set up admin functions
     func showAlert() {
@@ -162,8 +163,7 @@ class UpcomingEventsTableViewController: UIViewController, UITableViewDataSource
                     e.eventDescription = eventDescription
                     e.save()
                     self.isAuthorized = false
-                    //                    e.ref?.updateChildValues(["name": eventName, "eventDate": eventDate])
-                    
+                    self.addEventOutlet.hidden = true
                 }
             }
         }

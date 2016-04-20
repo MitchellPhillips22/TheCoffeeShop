@@ -16,6 +16,12 @@ class EventsHomeViewController: UIViewController {
     @IBAction func goBack(sender: UIButton) {
         self.navigationController?.popToRootViewControllerAnimated(true)
     }
+    @IBAction func unwindFromOpenMic (segue: UIStoryboardSegue) {
+        
+    }
+    @IBAction func unwindFromEvents (segue: UIStoryboardSegue) {
+        
+    }
     var openMic = OpenMic()
     
     override func viewDidLoad() {
