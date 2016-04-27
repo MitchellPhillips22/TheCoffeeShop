@@ -13,7 +13,7 @@ class LoyaltyCardViewController: UIViewController {
     //MARK: - Actions
     @IBAction func addStampTapped(sender: UIButton) {
         showAlert()
-        checkForRedeemable()
+
     }
     
     @IBAction func latteTapped(sender: UIButton) {
